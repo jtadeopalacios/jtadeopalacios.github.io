@@ -1,0 +1,49 @@
+# ACTIVIDADES Y EVENTOS
+# Cada actividad empieza con un guion. Copia un bloque completo, pégalo arriba y cambia los datos.
+# Campos:
+#   fecha:       "AAAA-MM-DD" (obligatorio, entre comillas)
+#   fecha_fin:   "AAAA-MM-DD" (opcional, si dura varios días)
+#   titulo:      nombre del evento o actividad
+#   lugar:       institución y ciudad
+#   descripcion: una o dos líneas
+#   imagen:      "/galeria/archivo.jpg" (opcional, foto subida a la carpeta galeria)
+#   linkedin:    enlace a tu publicación de LinkedIn (opcional)
+#   instagram:   enlace a tu publicación de Instagram (opcional)
+#   enlace:      página del evento (opcional)
+# Las actividades con fecha futura aparecen en "Próximas" y las pasadas en "Realizadas".
+
+- fecha: "2026-04-19"
+  fecha_fin: "2026-04-28"
+  titulo: "XIX Congreso Internacional de la Asociación Latinoamericana de Estudios de Asia y África (ALADAA)"
+  lugar: "Buenos Aires, Argentina"
+  descripcion: "Ponencia: «Símbolo, iconografía y gráfica del manga/anime en las movilizaciones sociales peruanas (2020-2025)»."
+  linkedin: ""
+  instagram: ""
+  enlace: ""
+
+- fecha: "2025-10-29"
+  fecha_fin: "2025-10-31"
+  titulo: "I Simposio Internacional de Estudios Japoneses"
+  lugar: "Centro de Estudios Orientales, PUCP. Lima"
+  descripcion: "Ponencia: «Dan Da Dan de Yukinobu Tatsu: folklor tradicional, leyenda urbana y weird fiction en el manga y anime contemporáneo»."
+  linkedin: ""
+  instagram: ""
+  enlace: ""
+
+- fecha: "2025-07-16"
+  fecha_fin: "2025-07-19"
+  titulo: "XLV Congreso Internacional del Instituto Internacional de Literatura Iberoamericana (IILI)"
+  lugar: "Pontificia Universidad Católica del Perú. Lima"
+  descripcion: "Ponencia: «\"El cantar de la Zarca\" o la construcción transgresora del sujeto femenino heroico beligerante en la novela La destrucción del reino de Miguel Gutiérrez»."
+  linkedin: ""
+  instagram: ""
+  enlace: ""
+
+- fecha: "2025-06-04"
+  fecha_fin: "2025-06-06"
+  titulo: "XXX Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana"
+  lugar: "Posgrado en Literatura Hispanoamericana, PUCP. Lima"
+  descripcion: "Ponencia: «Dengue, capitalismo patológico y necropolítica ecocida: una lectura distópica y mutante de La infancia del mundo (2023) de Michel Nieva»."
+  linkedin: ""
+  instagram: ""
+  enlace: ""

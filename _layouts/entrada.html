@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · Tadeo Palacios Valverde</title>
+<meta name="description" content="{{ page.resumen | default: page.excerpt | strip_html | strip_newlines | truncate: 200 }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.resumen | default: page.excerpt | strip_html | strip_newlines | truncate: 200 }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+{% if page.imagen %}<meta property="og:image" content="{{ site.url }}{{ page.imagen }}">{% endif %}
+<link rel="canonical" href="{{ site.url }}/#blog/{{ page.slug }}">
+<meta http-equiv="refresh" content="0; url=/#blog/{{ page.slug }}">
+<script>location.replace('/#blog/{{ page.slug }}');</script>
+<style>body{font-family:Georgia,serif;max-width:680px;margin:40px auto;padding:0 16px;line-height:1.6;color:#1e1b18;background:#faf7f0}a{color:#7a2a24}</style>
+</head>
+<body>
+  <!-- Esta página redirige a la entrada dentro del sitio principal. El texto queda aquí para buscadores y lectores sin JavaScript. -->
+  <p><a href="/#blog/{{ page.slug }}">Ir a la entrada en el sitio de Tadeo Palacios Valverde</a></p>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</body>
+</html>

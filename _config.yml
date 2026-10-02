@@ -1,0 +1,25 @@
+# Configuración del sitio (GitHub Pages lo procesa automáticamente con Jekyll)
+title: Tadeo Palacios Valverde
+description: Investigador, docente, narrador y abogado.
+url: "https://jtadeopalacios.github.io"
+lang: es
+timezone: America/Lima
+markdown: kramdown
+
+# Dirección de cada entrada del blog: jtadeopalacios.github.io/blog/titulo-de-la-entrada/
+permalink: /blog/:title/
+
+# Archivos que no se publican
+exclude:
+  - README.md
+  - "*.zip"
+  - galeria/LEEME.txt
+  - archivos/LEEME.txt
+
+# Todas las entradas usan el diseño "entrada"
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: entrada
