@@ -1,0 +1,105 @@
+{%- assign meses = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," -%}
+{%- assign mes = page.date | date: "%-m" | minus: 1 -%}
+{%- assign dia = page.date | date: "%-d" -%}
+{%- assign anio = page.date | date: "%Y" -%}
+{%- assign fecha = dia | append: " de " | append: meses[mes] | append: " de " | append: anio -%}
+{%- assign descripcion = page.resumen | default: page.excerpt | strip_html | strip_newlines | truncate: 200 -%}
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · Tadeo Palacios</title>
+<meta name="description" content="{{ descripcion | escape }}">
+<meta name="author" content="Jesús Tadeo Palacios Valverde">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ descripcion | escape }}">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_PE">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+{% if page.imagen %}<meta property="og:image" content="{{ site.url }}{{ page.imagen }}">
+<meta name="twitter:card" content="summary_large_image">{% else %}<meta property="og:image" content="{{ site.url }}/foto.jpg">
+<meta name="twitter:card" content="summary">{% endif %}
+{% if page.etiquetas %}<meta name="keywords" content="{{ page.etiquetas | join: ', ' | escape }}">{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ descripcion | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "inLanguage": "es",
+  "url": "{{ site.url }}{{ page.url }}",
+  {% if page.imagen %}"image": "{{ site.url }}{{ page.imagen }}",{% endif %}
+  {% if page.etiquetas %}"keywords": {{ page.etiquetas | jsonify }},{% endif %}
+  "author": { "@type": "Person", "name": "Jesús Tadeo Palacios Valverde", "url": "{{ site.url }}/" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --paper:#efe7d8; --paper-2:#e4d9c5; --ink:#1e1b18; --ink-2:#4a443d; --ink-3:#645c51; --rule:#d3c6ae; --accent:#7a2a24; --bar:#1f1a17;
+    --serif:"Newsreader", Georgia, "Times New Roman", serif; --sans:"IBM Plex Sans", system-ui, sans-serif; }
+  @media (prefers-color-scheme: dark) { :root { --paper:#16130f; --paper-2:#1f1b16; --ink:#ece6da; --ink-2:#c5bdb0; --ink-3:#958c80; --rule:#3a342c; --accent:#e2a294; --bar:#0c0a08; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 19px/1.7 var(--serif); -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .bar { background: var(--bar); position: sticky; top: 0; z-index: 2; }
+  .bar div { max-width: 760px; margin: 0 auto; padding: 0 20px; height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .bar a { color: #fbf8f2; text-decoration: none; }
+  .bar .brand { font: 500 19px var(--serif); }
+  .bar nav { display: flex; gap: 6px; font: 13.5px var(--sans); }
+  .bar nav a { padding: 6px 12px; border-radius: 999px; color: rgba(251,248,242,.75); }
+  .bar nav a:hover { color: #fff; background: rgba(255,255,255,.08); box-shadow: 0 0 16px rgba(226,162,148,.35); }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 40px; }
+  .meta { font: 600 12px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); display: flex; flex-wrap: wrap; gap: 4px 12px; }
+  .meta .cat { color: var(--accent); }
+  h1 { font: 500 40px/1.15 var(--serif); margin: 12px 0 14px; }
+  .lead { font: 15px/1.6 var(--sans); color: var(--ink-3); margin: 0 0 28px; }
+  .hero { margin: 0 0 28px; } .hero img { width: 100%; border-radius: 3px; display: block; }
+  .prose p { margin: 0 0 20px; text-align: justify; hyphens: auto; }
+  .prose h2 { font-size: 27px; font-weight: 500; margin: 36px 0 12px; }
+  .prose h3 { font-size: 22px; font-weight: 500; margin: 28px 0 10px; }
+  .prose blockquote { margin: 24px 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--accent); font-style: italic; }
+  .prose img { max-width: 100%; height: auto; }
+  .prose .footnotes { border-top: 1px solid var(--rule); margin-top: 36px; padding-top: 12px; font-size: 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 28px 0 0; font: 13px var(--sans); color: var(--ink-3); }
+  .tags a { border: 1px solid var(--rule); background: var(--paper-2); border-radius: 999px; padding: 4px 12px; text-decoration: none; }
+  .btns { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 0; }
+  .btn { font: 500 13.5px var(--sans); padding: 9px 16px; border: 1px solid var(--accent); border-radius: 2px; text-decoration: none; }
+  .btn:hover { background: var(--accent); color: var(--paper); }
+  footer { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; border-top: 1px solid var(--rule); font: 13px var(--sans); color: var(--ink-3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  @media (max-width: 600px) { body { font-size: 18px; } h1 { font-size: 30px; } .prose p { text-align: left; } .bar nav a:first-child { display: none; } }
+</style>
+</head>
+<body>
+  <header class="bar"><div>
+    <a class="brand" href="/">Tadeo Palacios</a>
+    <nav><a href="/#biodata">Biodata</a><a href="/#blog">← Volver al blog</a></nav>
+  </div></header>
+
+  <main>
+    <article>
+      <div class="meta"><span class="cat">{{ page.categoria | default: "Ensayo" }}</span><time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ fecha }}</time></div>
+      <h1>{{ page.title }}</h1>
+      {% if page.resumen %}<p class="lead">{{ page.resumen }}</p>{% endif %}
+      {% if page.imagen %}<figure class="hero"><img src="{{ page.imagen }}" alt=""></figure>{% endif %}
+      <div class="prose">{{ content }}</div>
+      {% if page.etiquetas %}<div class="tags"><span>Etiquetas:</span>{% for t in page.etiquetas %}<a href="/#blog/etiqueta/{{ t | uri_escape }}">#{{ t }}</a>{% endfor %}</div>{% endif %}
+      <div class="btns">
+        {% if page.archivo %}<a class="btn" href="{{ page.archivo }}" target="_blank" rel="noopener">Leer el PDF</a>{% endif %}
+        {% if page.enlace %}<a class="btn" href="{{ page.enlace }}" target="_blank" rel="noopener">Publicación original ↗</a>{% endif %}
+        <a class="btn" href="/#blog">Ver más entradas</a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <span>© {{ site.time | date: "%Y" }} Jesús Tadeo Palacios Valverde</span>
+    <a href="/#contacto">Contacto</a>
+  </footer>
+</body>
+</html>
