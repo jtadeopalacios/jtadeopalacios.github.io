@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadeo Palacios Valverde</title>
+<meta name="description" content="Jesús Tadeo Palacios Valverde. Doctorando en Literatura Hispanoamericana (PUCP), investigador, docente, narrador y abogado. Narrativa peruana contemporánea, memoria y violencia política, estudios de género y cultura popular japonesa.">
+<meta name="author" content="Jesús Tadeo Palacios Valverde">
+<meta property="og:title" content="Tadeo Palacios Valverde">
+<meta property="og:description" content="Doctorando en Literatura Hispanoamericana (PUCP). Investigador, docente y narrador.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jtadeopalacios.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%237a2a24'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23faf7f0' text-anchor='middle'%3ETP%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --paper: #faf7f0;
+    --paper-2: #f2ede1;
+    --ink: #1e1b18;
+    --ink-2: #4a443d;
+    --ink-3: #7a7268;
+    --rule: #ddd5c6;
+    --accent: #7a2a24;
+    --accent-soft: #f1e3df;
+    --link: #7a2a24;
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #16130f;
+      --paper-2: #1f1b16;
+      --ink: #ece6da;
+      --ink-2: #c5bdb0;
+      --ink-3: #958c80;
+      --rule: #3a342c;
+      --accent: #e2a294;
+      --accent-soft: #2e1f1b;
+      --link: #e9ad9f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #16130f;
+    --paper-2: #1f1b16;
+    --ink: #ece6da;
+    --ink-2: #c5bdb0;
+    --ink-3: #958c80;
+    --rule: #3a342c;
+    --accent: #e2a294;
+    --accent-soft: #2e1f1b;
+    --link: #e9ad9f;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--link) 40%, transparent); }
+  a:hover { text-decoration-color: var(--link); }
+  em, i { font-style: italic; }
+
+  /* Barra superior */
+  .topbar {
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-inner {
+    max-width: 1120px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    height: 56px;
+  }
+  .brand { font-family: var(--serif); font-weight: 500; font-size: 18px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+  .nav { display: flex; gap: 22px; font-family: var(--sans); font-size: 13.5px; letter-spacing: .02em; }
+  .nav a { color: var(--ink-2); text-decoration: none; }
+  .nav a:hover, .nav a.active { color: var(--accent); }
+  .theme-toggle {
+    border: 1px solid var(--rule); background: transparent; color: var(--ink-2);
+    width: 34px; height: 34px; border-radius: 50%; cursor: pointer; display: grid; place-items: center; flex: none;
+  }
+  .theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+  .menu-toggle { display: none; }
+
+  /* Diseño general */
+  .layout {
+    max-width: 1120px; margin: 0 auto; padding: 56px 24px 40px;
+    display: grid; grid-template-columns: 280px 1fr; gap: 72px;
+  }
+  .sidebar { position: sticky; top: 96px; align-self: start; }
+  .portrait {
+    width: 180px; height: 180px; border-radius: 50%; overflow: hidden;
+    background: var(--accent); color: var(--paper);
+    display: grid; place-items: center; margin-bottom: 24px;
+    font-family: var(--serif); font-size: 64px; font-weight: 400; letter-spacing: .02em;
+  }
+  .portrait { position: relative; }
+  .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .sidebar h1 { font-size: 28px; line-height: 1.2; font-weight: 500; margin: 0 0 10px; }
+  .role { font-family: var(--sans); font-size: 14px; line-height: 1.55; color: var(--ink-2); margin: 0 0 22px; }
+  .links { list-style: none; padding: 0; margin: 0 0 24px; font-family: var(--sans); font-size: 14px; }
+  .links li { margin: 0 0 10px; display: flex; align-items: center; gap: 10px; }
+  .links svg { width: 16px; height: 16px; flex: none; color: var(--ink-3); }
+  .links a { color: var(--ink-2); text-decoration: none; word-break: break-word; }
+  .links a:hover { color: var(--accent); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--sans); font-size: 13.5px; font-weight: 500; letter-spacing: .02em;
+    padding: 9px 16px; border: 1px solid var(--accent); color: var(--accent);
+    border-radius: 2px; text-decoration: none;
+  }
+  .btn:hover { background: var(--accent); color: var(--paper); }
+
+  main { min-width: 0; }
+  section { padding: 0 0 56px; }
+  section + section { border-top: 1px solid var(--rule); padding-top: 48px; }
+  h2 {
+    font-family: var(--sans); font-size: 13px; font-weight: 600; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 24px;
+  }
+  h3 { font-size: 21px; font-weight: 500; margin: 32px 0 14px; line-height: 1.3; }
+  h3:first-of-type { margin-top: 0; }
+  .lead { font-size: 22px; line-height: 1.5; color: var(--ink); margin: 0 0 20px; }
+  p { margin: 0 0 16px; color: var(--ink-2); }
+  .lead + p, .lead ~ p { color: var(--ink-2); }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; }
+  .tags li {
+    font-family: var(--sans); font-size: 13px; color: var(--ink-2);
+    background: var(--paper-2); border: 1px solid var(--rule); padding: 4px 11px; border-radius: 999px;
+  }
+
+  /* Entradas con fecha */
+  .entries { list-style: none; margin: 0; padding: 0; }
+  .entry { display: grid; grid-template-columns: 110px 1fr; gap: 20px; padding: 12px 0; }
+  .entry + .entry { border-top: 1px dashed var(--rule); }
+  .when { font-family: var(--sans); font-size: 13.5px; color: var(--ink-3); padding-top: 3px; font-variant-numeric: tabular-nums; }
+  .what { color: var(--ink); }
+  .what strong { font-weight: 500; }
+  .what .meta { display: block; color: var(--ink-2); font-size: 17px; }
+
+  /* Bibliografía */
+  .biblio { list-style: none; margin: 0; padding: 0; }
+  .biblio li { padding: 10px 0 10px 28px; text-indent: -28px; color: var(--ink); }
+  .biblio li + li { border-top: 1px dashed var(--rule); }
+  .biblio a.ext { font-family: var(--sans); font-size: 12.5px; letter-spacing: .03em; text-decoration: none; white-space: nowrap; margin-left: 6px; }
+  .biblio a.ext::after { content: " ↗"; }
+
+  /* Tarjetas de obra creativa */
+  .works { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+  .work { border: 1px solid var(--rule); background: var(--paper-2); padding: 18px 18px 16px; border-radius: 3px; display: flex; flex-direction: column; }
+  .work .kind { font-family: var(--sans); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+  .work .title { font-size: 20px; font-style: italic; line-height: 1.3; margin-bottom: 6px; color: var(--ink); }
+  .work .detail { font-size: 16px; color: var(--ink-2); line-height: 1.45; flex: 1; }
+  .work a { font-family: var(--sans); font-size: 13px; margin-top: 12px; text-decoration: none; }
+  .work a::after { content: " ↗"; }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+
+  details { margin-top: 8px; }
+  summary {
+    cursor: pointer; font-family: var(--sans); font-size: 13.5px; color: var(--accent); padding: 10px 0; list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "+ "; }
+  details[open] summary::before { content: "− "; }
+
+  footer {
+    max-width: 1120px; margin: 0 auto; padding: 28px 24px 48px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans); font-size: 13px; color: var(--ink-3);
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+
+  @media (max-width: 920px) {
+    .nav { display: none; }
+    .menu-toggle {
+      display: grid; place-items: center; border: 1px solid var(--rule); background: transparent; color: var(--ink-2);
+      width: 34px; height: 34px; border-radius: 50%; cursor: pointer;
+    }
+    .nav.open {
+      display: flex; flex-direction: column; gap: 0;
+      position: absolute; top: 56px; left: 0; right: 0;
+      background: var(--paper); border-bottom: 1px solid var(--rule); padding: 8px 16px 16px;
+    }
+    .nav.open a { padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 15px; }
+    .layout { grid-template-columns: 1fr; gap: 40px; padding: 32px 16px 24px; }
+    .sidebar { position: static; display: grid; grid-template-columns: 120px 1fr; gap: 0 24px; align-items: start; }
+    .portrait { width: 120px; height: 120px; font-size: 44px; grid-row: span 2; margin: 0; }
+    .sidebar .links, .sidebar .btn { grid-column: 1 / -1; }
+    .sidebar .btn { justify-self: start; }
+    .sidebar .links { margin-top: 20px; }
+    .topbar-inner { padding: 0 16px; }
+    footer { padding: 24px 16px 40px; }
+  }
+  @media (max-width: 600px) {
+    body { font-size: 18px; }
+    .lead { font-size: 20px; }
+    .sidebar { grid-template-columns: 1fr; }
+    .portrait { width: 112px; height: 112px; margin-bottom: 18px; grid-row: auto; }
+    .entry { grid-template-columns: 1fr; gap: 2px; }
+    .cols { grid-template-columns: 1fr; gap: 0; }
+    .brand { font-size: 16px; }
+  }
+  @media print {
+    .topbar, .theme-toggle, details summary { display: none; }
+    details > * { display: block; }
+    .layout { display: block; padding: 0; }
+    .sidebar { position: static; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#inicio">Tadeo Palacios Valverde</a>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#investigacion">Investigación</a>
+      <a href="#publicaciones">Publicaciones</a>
+      <a href="#obra">Obra creativa</a>
+      <a href="#docencia">Docencia</a>
+      <a href="#ponencias">Ponencias</a>
+      <a href="#cv">CV</a>
+    </nav>
+    <div style="display:flex; gap:8px;">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="layout" id="inicio">
+
+  <!-- ===================== BARRA LATERAL ===================== -->
+  <aside class="sidebar">
+    <div class="portrait" aria-hidden="true">
+      <!-- Sube tu foto con el nombre foto.jpg a la raíz del repositorio y aparecerá aquí -->
+      <span>TP</span>
+      <img src="foto.jpg" alt="" onerror="this.style.display='none'">
+    </div>
+    <div>
+      <h1>Jesús Tadeo Palacios Valverde</h1>
+      <p class="role">Doctorando en Literatura Hispanoamericana<br>Pontificia Universidad Católica del Perú<br>Investigador · Docente · Narrador · Abogado</p>
+    </div>
+    <ul class="links">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <a href="mailto:tadeo.palacios@pucp.edu.pe">tadeo.palacios@pucp.edu.pe</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.3 17.2H6.6V9.3h1.7v7.9zM7.4 8.2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3 9V9.3h3c2.6 0 4 1.7 4 3.9 0 2.3-1.6 4-4 4h-3zm1.7-1.5h1.2c1.8 0 2.4-1.3 2.4-2.5 0-1.4-.8-2.5-2.4-2.5h-1.2v5z"/></svg>
+        <a href="https://orcid.org/0000-0003-1207-0770" target="_blank" rel="noopener">ORCID 0000-0003-1207-0770</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
+        <a href="https://www.linkedin.com/in/tadeopalacios/" target="_blank" rel="noopener">LinkedIn</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span style="color:var(--ink-2)">Lima, Perú</span>
+      </li>
+    </ul>
+    <a class="btn" href="cv.pdf" target="_blank" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+      Descargar CV (PDF)
+    </a>
+  </aside>
+
+  <!-- ===================== CONTENIDO ===================== -->
+  <main>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p class="lead">Investigo la narrativa peruana y latinoamericana contemporánea desde los estudios de la memoria, los estudios de género y los derechos humanos, y estudio el manga y el anime como objetos culturales de pleno derecho.</p>
+      <p>Soy doctorando en Literatura Hispanoamericana en la Pontificia Universidad Católica del Perú (PUCP), con la Beca Doctoral PUCP 2025, y maestro en Literatura Hispanoamericana por la misma casa de estudios. Enseño cultura popular japonesa en el Centro de Estudios Orientales (CEO) de la PUCP y he dictado cursos de escritura creativa y de derecho y ciencias políticas. Integro el Grupo de Investigación José León Herrera / Estudios Asiáticos en el Perú (CEO–PUCP) y la Red Interdisciplinaria de Estudios Latinoamericanos del Siglo XIX (RIEL–PUCP).</p>
+      <p>Como narrador, soy autor del libro de cuentos <em>Mañana nunca llega</em> (Pesopluma, 2021) y mis relatos figuran en antologías como <em>El tiempo es nuestro. Cuentos peruanos post-2000</em> (Seix Barral, 2023). He preparado las ediciones críticas de <em>La premeditación y el azar</em> de Pilar Dughi (Pesopluma, 2024) y <em>La destrucción del reino</em> de Miguel Gutiérrez (Pesopluma, 2025).</p>
+      <p>Soy también abogado colegiado, con experiencia en asesoría legal a instituciones públicas (MINSA–DIGESA, PCM, OSIPTEL, Municipalidad Provincial de Piura, Poder Judicial), y corrector de estilo con formación acreditada por el Ministerio de Cultura del Perú.</p>
+      <ul class="tags" aria-label="Áreas de interés">
+        <li>Narrativa peruana contemporánea</li>
+        <li>Memoria y violencia política</li>
+        <li>Estudios de género</li>
+        <li>Derechos humanos</li>
+        <li>Manga y anime</li>
+        <li>Terror y ficción especulativa</li>
+        <li>Edición crítica</li>
+      </ul>
+    </section>
+
+    <section id="investigacion">
+      <h2>Investigación y formación</h2>
+
+      <h3>Formación académica</h3>
+      <ul class="entries">
+        <li class="entry"><span class="when">2025 – hoy</span><span class="what"><strong>Doctorado en Literatura Hispanoamericana</strong><span class="meta">Pontificia Universidad Católica del Perú. Beca Doctoral PUCP 2025.</span></span></li>
+        <li class="entry"><span class="when">2024</span><span class="what"><strong>Maestro en Literatura Hispanoamericana</strong><span class="meta">PUCP. Tesis: «La representación del sujeto femenino alzado en armas y militante en los cuentos de la violencia política de Pilar Dughi». Calificación: Muy bien.</span></span></li>
+        <li class="entry"><span class="when">2022</span><span class="what"><strong>Diploma de Posgrado en Literatura Hispanoamericana</strong><span class="meta">PUCP.</span></span></li>
+        <li class="entry"><span class="when">2019</span><span class="what"><strong>Título de Abogado</strong><span class="meta">Universidad Nacional de Piura. Bachiller en Derecho (2018), décimo superior.</span></span></li>
+      </ul>
+
+      <h3>Grupos y redes de investigación</h3>
+      <ul class="entries">
+        <li class="entry"><span class="when">CEO–PUCP</span><span class="what">Grupo de Investigación José León Herrera / Estudios Asiáticos en el Perú</span></li>
+        <li class="entry"><span class="when">RIEL–PUCP</span><span class="what">Red Interdisciplinaria de Estudios Latinoamericanos del Siglo XIX</span></li>
+      </ul>
+
+      <h3>Evaluación de pares</h3>
+      <ul class="entries">
+        <li class="entry"><span class="when">2026</span><span class="what"><strong>Revisor</strong>, <em>América sin Nombre</em><span class="meta">Universidad de Alicante. Scopus Q2.</span></span></li>
+        <li class="entry"><span class="when">2026</span><span class="what"><strong>Revisor</strong>, <em>Revista de la Unidad de Investigaciones</em><span class="meta">Facultad de Letras y Ciencias Humanas, UNMSM. DOAJ, Latindex Catálogo 2.0, MIAR.</span></span></li>
+        <li class="entry"><span class="when">2021</span><span class="what"><strong>Jurado</strong>, VII Concurso Nacional de Cuentos Jurídicos <em>Fabellae Iuris</em><span class="meta">Asociación Civil Derecho &amp; Sociedad / Grupo Pólemos, PUCP.</span></span></li>
+      </ul>
+    </section>
+
+    <section id="publicaciones">
+      <h2>Publicaciones académicas</h2>
+
+      <h3>Capítulos de libro y estudios críticos</h3>
+      <ol class="biblio">
+        <li>Palacios, T. (2025). El influjo salingeriano en Guillermo Niño de Guzmán y Pilar Dughi: suicidio, género y violencia. En M. Mascarell García, M. Arriaga Flórez y F. Denegri (Eds.), <em>Textos olvidados. Archivos periféricos y archivos inusuales</em> (pp. 391-396). Dykinson. <a class="ext" href="https://www.dykinson.com/libros/textos-olvidados-archivos-perifericos-y-archivos-inusuales/9791370064792/" target="_blank" rel="noopener">Dykinson</a></li>
+        <li>Palacios, T. (2025). <em>La destrucción del reino</em>: memorias y canto espectral desde las ruinas de una era. En M. Gutiérrez, <em>La destrucción del reino</em> (pp. 243-263). Pesopluma. <a class="ext" href="https://www.academia.edu/143698170/La_destrucci%C3%B3n_del_reino_memorias_y_canto_espectral_desde_las_ruinas_de_una_era_Ep%C3%ADlogo_de_La_destrucci%C3%B3n_del_reino_" target="_blank" rel="noopener">Academia.edu</a></li>
+        <li>Palacios, T. (2024). Treinta y cinco años de una vehemente poética de lo inesperado. En P. Dughi, <em>La premeditación y el azar</em> (pp. 9-35). Pesopluma. <a class="ext" href="https://www.academia.edu/127406936/Pilar_Dughi_Treinta_y_cinco_a%C3%B1os_de_una_vehemente_po%C3%A9tica_de_lo_inesperado_Pr%C3%B3logo_de_La_premeditaci%C3%B3n_y_el_azar_" target="_blank" rel="noopener">Academia.edu</a></li>
+      </ol>
+
+      <h3>Artículos y ensayos</h3>
+      <ol class="biblio">
+        <li>Palacios, T. (2025). El ahayu-watan, la muerte germinal y el retorno del hijo difunto en el poema «Epopeya del qe buelbe» de Gamaliel Churata. <em>Espinela</em>, (13), 46-53. <a class="ext" href="https://revistas.pucp.edu.pe/index.php/espinela/article/view/32558" target="_blank" rel="noopener">Revistas PUCP</a></li>
+        <li>Palacios, T. (2022). «El beso de Evans»: la influencia del dandismo en un cuento de Abraham Valdelomar. <em>Archivo Vallejo</em>, <em>5</em>(9), 133-164. <a class="ext" href="https://doi.org/10.31381/archivoVallejo.v5n9.5231" target="_blank" rel="noopener">DOI</a></li>
+        <li>Palacios, T. (2022). Cuerpo atormentado y necropolítica en <em>Purgatorio</em> (1979) de Raúl Zurita. <em>Espinela</em>, (10), 60-68. <a class="ext" href="https://revistas.pucp.edu.pe/index.php/espinela/article/view/26178" target="_blank" rel="noopener">Revistas PUCP</a></li>
+        <li>Palacios, T. (2022). Enter the Jojos: ¿De qué hablamos cuando hablamos de Jojo? <em>Sugoi</em>, (31), 46-49. <a class="ext" href="https://www.academia.edu/90781063/Enter_the_Jojos_De_qu%C3%A9_hablamos_cuando_hablamos_de_Jojo" target="_blank" rel="noopener">Academia.edu</a></li>
+        <li>Palacios, T. (2021). «Bajo el agua negra» de Mariana Enríquez: memoria, desapariciones forzadas y terror lovecraftiano en Argentina. <em>Espinela</em>, (9), 52-59. <a class="ext" href="https://revistas.pucp.edu.pe/index.php/espinela/article/view/25243" target="_blank" rel="noopener">Revistas PUCP</a></li>
+        <li>Palacios, T. (2020). El búho que acariciaba la penumbra: apuntes sobre <em>Ave de la noche</em> de Pilar Dughi. <em>Red Literaria Peruana</em>. <a class="ext" href="https://redlitperu.wordpress.com/2020/09/02/el-buho-que-acariciaba-la-penumbra-apuntes-sobre-ave-de-la-noche-de-pilar-dughi/" target="_blank" rel="noopener">Leer</a></li>
+      </ol>
+
+      <h3>Reseñas</h3>
+      <ol class="biblio">
+        <li>Palacios, T. (2025). [Reseña del libro <em>La violencia del tiempo</em>, por M. Gutiérrez]. <em>Guaraguao</em>, <em>29</em>(80), 241-244. <a class="ext" href="https://www.jstor.org/stable/27433686" target="_blank" rel="noopener">JSTOR</a></li>
+        <li>Palacios, T. (2025). El mundo sin Xóchitl. <em>Círculo de Lectores</em>, (16), 8. <a class="ext" href="https://circulodelectores.pe/revista-literaria/miguel-gutierrez/" target="_blank" rel="noopener">Leer</a></li>
+        <li>Palacios, T. (2022). En el jardín de lirios: entre la confidencia y la diversificación del ensayo peruano. <em>Crónicas de la Diversidad</em>, (31), 48-49.</li>
+      </ol>
+
+      <h3>Tesis</h3>
+      <ol class="biblio">
+        <li>Palacios, T. (2024). <em>La representación del sujeto femenino alzado en armas y militante en los cuentos de la violencia política de Pilar Dughi</em> [Tesis de maestría, Pontificia Universidad Católica del Perú].</li>
+      </ol>
+    </section>
+
+    <section id="obra">
+      <h2>Obra creativa</h2>
+      <ul class="works">
+        <li class="work">
+          <span class="kind">Libro de cuentos</span>
+          <span class="title">Mañana nunca llega</span>
+          <span class="detail">Pesopluma, 2021.</span>
+          <a href="https://pesopluma.net/tienda/manana-nunca-llega/" target="_blank" rel="noopener">Ver en Pesopluma</a>
+        </li>
+        <li class="work">
+          <span class="kind">Antología · 2026</span>
+          <span class="title">Antología del cuento peruano</span>
+          <span class="detail">Relato «Un par de cuencas vacías» (pp. 166-173). SB editorial.</span>
+          <a href="https://www.editorialsb.com/es/productos/antologia-del-cuento-peruano" target="_blank" rel="noopener">Ver en SB</a>
+        </li>
+        <li class="work">
+          <span class="kind">Antología · 2023</span>
+          <span class="title">El tiempo es nuestro. Cuentos peruanos post-2000</span>
+          <span class="detail">Relato «Un par de cuencas vacías» (pp. 259-270). Ed. V. Ruiz Velazco. Seix Barral.</span>
+          <a href="https://www.planetadelibros.com.pe/libro-el-tiempo-es-nuestro/341760" target="_blank" rel="noopener">Ver en Planeta</a>
+        </li>
+        <li class="work">
+          <span class="kind">Manga digital · 2023</span>
+          <span class="title">La espera</span>
+          <span class="detail">Guion, adaptación del cuento «Horizonte de eventos». Ilustración de S. Palacios. MANGA Plus Creators by SHUEISHA.</span>
+          <a href="https://mangaplus-creators.jp/episodes/6c2303211424546840009732193" target="_blank" rel="noopener">Leer en MANGA Plus Creators</a>
+        </li>
+        <li class="work">
+          <span class="kind">Antología · 2023</span>
+          <span class="title">Nuestros relatos</span>
+          <span class="detail">Relato «El legado» (pp. 10-13), obra ganadora del concurso nacional. Ministerio de Cultura del Perú.</span>
+        </li>
+        <li class="work">
+          <span class="kind">Antología · 2020</span>
+          <span class="title">Narrar desde la nueva vida</span>
+          <span class="detail">Relato «Horizonte de eventos» (pp. 15-16). Ed. R. Sumalavia. Petroperú.</span>
+          <a href="https://cultura.petroperu.com.pe/wp-content/uploads/2020/12/Narrar-desde-la-nueva-vida.pdf" target="_blank" rel="noopener">PDF</a>
+        </li>
+      </ul>
+
+      <h3 style="margin-top:40px">Ediciones críticas</h3>
+      <ul class="entries">
+        <li class="entry"><span class="when">2025</span><span class="what">Miguel Gutiérrez, <em>La destrucción del reino</em>. Pesopluma. Edición y epílogo.</span></li>
+        <li class="entry"><span class="when">2024</span><span class="what">Pilar Dughi, <em>La premeditación y el azar</em>. Pesopluma. Edición y prólogo.</span></li>
+      </ul>
+
+      <h3>Premios y distinciones</h3>
+      <ul class="entries">
+        <li class="entry"><span class="when">2025</span><span class="what"><strong>Finalista</strong>, 7.° Premio Nacional de Narrativa Gráfica<span class="meta">Casa de la Literatura Peruana, Ministerio de Cultura del Perú y Alianza Francesa.</span></span></li>
+        <li class="entry"><span class="when">2024</span><span class="what"><strong>Beca Doctoral PUCP 2025</strong><span class="meta">Doctorado en Literatura Hispanoamericana, PUCP.</span></span></li>
+        <li class="entry"><span class="when">2020</span><span class="what"><strong>Ganador</strong>, Concurso Nacional de Cuento «Nuestros Relatos»<span class="meta">Presidencia del Consejo de Ministros y Programa Bicentenario del Perú.</span></span></li>
+        <li class="entry"><span class="when">2019</span><span class="what"><strong>Ganador</strong>, Concurso «Duelo de Escritura Espontánea»<span class="meta">Alianza Francesa.</span></span></li>
+        <li class="entry"><span class="when">2017</span><span class="what"><strong>Autor seleccionado</strong>, Programa de Pasantías «Arequipa Imaginada»<span class="meta">Ministerio de Cultura del Perú, primera edición.</span></span></li>
+        <li class="entry"><span class="when">2017</span><span class="what"><strong>Ganador</strong>, Certamen Nacional de Cuento Jurídico «La Justicia»<span class="meta">Universidad del Pacífico. Cuento «Miserable», adaptado al teatro por François Vallaeys.</span></span></li>
+        <li class="entry"><span class="when">2014</span><span class="what"><strong>Reconocimiento a la trayectoria literaria joven</strong><span class="meta">ICPNA, Región Grau.</span></span></li>
+      </ul>
+    </section>
+
+    <section id="docencia">
+      <h2>Docencia</h2>
+      <ul class="entries">
+        <li class="entry"><span class="when">2026-II</span><span class="what"><strong>Vínculos masculinos apasionados: deseo, amistad y rivalidad en el manga y anime contemporáneos (1970-2025)</strong><span class="meta">Centro de Estudios Orientales, PUCP.</span></span></li>
+        <li class="entry"><span class="when">2025-II</span><span class="what"><strong>Mecanismos de la ficción en el manga y el anime contemporáneos</strong><span class="meta">Centro de Estudios Orientales, PUCP.</span></span></li>
+        <li class="entry"><span class="when">2024-II</span><span class="what"><strong>Taller de Escritura Creativa</strong><span class="meta">Universidad Nacional de Piura. Docente instructor.</span></span></li>
+        <li class="entry"><span class="when">2024-II</span><span class="what"><strong>Derechos Humanos · Ciencia Política · Historia del Derecho</strong><span class="meta">Facultad de Derecho, Universidad Tecnológica del Perú.</span></span></li>
+        <li class="entry"><span class="when">2022-II</span><span class="what"><strong>Técnicas de Escritura: Cuento</strong><span class="meta">Maestría en Escritura Creativa, PUCP. Asistente de docencia del Dr. Ezio Neyra.</span></span></li>
+        <li class="entry"><span class="when">2021-II</span><span class="what"><strong>Técnicas de Escritura: Novela</strong><span class="meta">Maestría en Escritura Creativa, PUCP. Asistente de docencia del Dr. Ezio Neyra.</span></span></li>
+      </ul>
+    </section>
+
+    <section id="ponencias">
+      <h2>Ponencias y conferencias</h2>
+      <ul class="entries">
+        <li class="entry"><span class="when">2026</span><span class="what">«Un dios hambriento y jadeante: derivas del deseo, ritualidad y terror en <em>El cielo de la selva</em> (2025), de Elaine Vilar Madruga».<span class="meta">XXXI Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP. Lima.</span></span></li>
+        <li class="entry"><span class="when">2026</span><span class="what">«Símbolo, iconografía y gráfica del manga/anime en las movilizaciones sociales peruanas (2020-2025)».<span class="meta">XIX Congreso Internacional de ALADAA. Buenos Aires.</span></span></li>
+        <li class="entry"><span class="when">2025</span><span class="what">«<em>Dan Da Dan</em> de Yukinobu Tatsu: folklor tradicional, leyenda urbana y <em>weird fiction</em> en el manga y anime contemporáneo».<span class="meta">I Simposio Internacional de Estudios Japoneses, CEO–PUCP. Lima.</span></span></li>
+        <li class="entry"><span class="when">2025</span><span class="what">«"El cantar de la Zarca" o la construcción transgresora del sujeto femenino heroico beligerante en la novela <em>La destrucción del reino</em> de Miguel Gutiérrez».<span class="meta">XLV Congreso Internacional del IILI. Lima.</span></span></li>
+        <li class="entry"><span class="when">2025</span><span class="what">«Dengue, capitalismo patológico y necropolítica ecocida: una lectura distópica y mutante de <em>La infancia del mundo</em> (2023) de Michel Nieva».<span class="meta">XXX Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP. Lima.</span></span></li>
+        <li class="entry"><span class="when">2025</span><span class="what">«La investigación y el ensayo literario: reflexiones sobre su práctica en la literatura peruana contemporánea a partir de Mario Vargas Llosa y Miguel Gutiérrez». Conferencia invitada.<span class="meta">Universidad Nacional de Piura.</span></span></li>
+        <li class="entry"><span class="when">2025</span><span class="what">«Subversión, brujería y mujer monstrificada en el relato "Christi nomine invocato"».<span class="meta">I Andean and Amazonian Symposium, CLAS, Rutgers University. Nueva Jersey.</span></span></li>
+        <li class="entry"><span class="when">2025</span><span class="what">Conversatorio sobre <em>Ave de la noche</em> y <em>La premeditación y el azar</em> de Pilar Dughi.<span class="meta">XI Congreso Internacional de Estudiantes de Literatura «Voces y Resistencias».</span></span></li>
+      </ul>
+      <details>
+        <summary>Ver ponencias anteriores (2017-2024)</summary>
+        <ul class="entries">
+          <li class="entry"><span class="when">2024</span><span class="what">«El Cantar de la Zarca». Conferencia invitada.<span class="meta">Universidad Nacional de Piura.</span></span></li>
+          <li class="entry"><span class="when">2024</span><span class="what">Taller didáctico «Domina el uso de las Normas APA».<span class="meta">Facultad de Derecho y Ciencias Políticas, Universidad Nacional de Piura.</span></span></li>
+          <li class="entry"><span class="when">2024</span><span class="what">«Los dilemas de la ficción y el lugar del creador en los mangas <em>Look Back</em> (2021) y <em>Sayonara Eri</em> (2022) de Tatsuki Fujimoto».<span class="meta">I Jornada Internacional de Estudios Japoneses, CEO–PUCP.</span></span></li>
+          <li class="entry"><span class="when">2024</span><span class="what">«Subversión, brujería y mujer monstrificada en el relato "Christi nomine invocato"».<span class="meta">XXIX Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP.</span></span></li>
+          <li class="entry"><span class="when">2023</span><span class="what">Trayectoria literaria de Pilar Dughi. Conversatorio por los 25 años de <em>Puñales escondidos</em>.<span class="meta">44.ª Feria del Libro Ricardo Palma, Cámara Peruana del Libro.</span></span></li>
+          <li class="entry"><span class="when">2023</span><span class="what">«Influjo de J. D. Salinger en la narrativa de Guillermo Niño de Guzmán y Pilar Dughi».<span class="meta">Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP.</span></span></li>
+          <li class="entry"><span class="when">2022</span><span class="what">«<em>Chainsaw Man</em>: un espejo de precarización, sangre y desencanto para un presente envuelto en llamas».<span class="meta">Jornadas de Estudios Japoneses, CEO–PUCP.</span></span></li>
+          <li class="entry"><span class="when">2022</span><span class="what">Pilar Dughi: «Uno de los trece» y «Kentoripayeni» / Guillermo Niño de Guzmán: «10».<span class="meta">Lecturas Peruanas en Casa, Biblioteca Mario Vargas Llosa.</span></span></li>
+          <li class="entry"><span class="when">2021</span><span class="what">«Cultura popular japonesa: <em>shōnen</em>».<span class="meta">Ciclo «Japón: cultura popular ayer y hoy», CEO–PUCP.</span></span></li>
+          <li class="entry"><span class="when">2021</span><span class="what">«"Bajo el agua negra": memoria, desapariciones forzadas y terror lovecraftiano en Argentina».<span class="meta">Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP.</span></span></li>
+          <li class="entry"><span class="when">2021</span><span class="what">«<em>Shingeki no Kyojin</em>: memoria, guerra y política».<span class="meta">Semana del Manga, CEO–PUCP.</span></span></li>
+          <li class="entry"><span class="when">2020</span><span class="what">«Violencia de género y estética gótica en "Si haces mal no esperes bien" de Juana Manuela Gorriti».<span class="meta">Congreso de Literatura siglos XIX y XX, RIEL–Perú XIX y PUCP.</span></span></li>
+          <li class="entry"><span class="when">2020</span><span class="what">Taller de análisis crítico de literatura y derecho.<span class="meta">I Taller de Escritura Creativa <em>Fabellae Iuris</em>, Derecho &amp; Sociedad / Grupo Pólemos, PUCP.</span></span></li>
+          <li class="entry"><span class="when">2017</span><span class="what">«Mi experiencia lectora con Gabriel García Márquez y Mario Vargas Llosa».<span class="meta">Panel sobre el Boom hispanoamericano, Universidad Nacional de Piura.</span></span></li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="cv">
+      <h2>Curriculum vitae</h2>
+      <div class="cols">
+        <div>
+          <p>El CV completo incluye la experiencia profesional en el ámbito jurídico y de gestión pública, los diplomados y cursos de especialización, los registros profesionales (ORCID, RENTOCA, ICAS) y las referencias académicas.</p>
+          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+            Descargar CV (PDF)
+          </a>
+        </div>
+        <div>
+          <h3 style="margin-top:0">Idiomas</h3>
+          <ul class="entries">
+            <li class="entry"><span class="when">Español</span><span class="what">Lengua nativa</span></li>
+            <li class="entry"><span class="when">Inglés</span><span class="what">Intermedio (B1)</span></li>
+            <li class="entry"><span class="when">Portugués</span><span class="what">Básico (A1), en curso</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Para colaboraciones académicas, invitaciones a eventos, cursos o consultas editoriales, puede escribirme a <a href="mailto:tadeo.palacios@pucp.edu.pe">tadeo.palacios@pucp.edu.pe</a>.</p>
+      <p>Pontificia Universidad Católica del Perú<br>Av. Universitaria 1801, San Miguel, Lima 15088, Perú</p>
+    </section>
+
+  </main>
+</div>
+
+<footer>
+  <span>© 2026 Jesús Tadeo Palacios Valverde</span>
+  <span>Última actualización: octubre de 2026</span>
+</footer>
+
+<script>
+  // Tema claro / oscuro
+  (function () {
+    var root = document.documentElement;
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    if (saved) root.setAttribute('data-theme', saved);
+    document.getElementById('themeToggle').addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+
+  // Menú móvil
+  (function () {
+    var btn = document.getElementById('menuToggle');
+    var nav = document.getElementById('nav');
+    btn.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { nav.classList.remove('open'); btn.setAttribute('aria-expanded', false); });
+    });
+  })();
+
+  // Resaltar la sección visible en el menú
+  (function () {
+    var links = document.querySelectorAll('.nav a');
+    var map = {};
+    links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+    if (!('IntersectionObserver' in window)) return;
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && map[e.target.id]) {
+          links.forEach(function (a) { a.classList.remove('active'); });
+          map[e.target.id].classList.add('active');
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('main section').forEach(function (s) { obs.observe(s); });
+  })();
+</script>
+</body>
+</html>
