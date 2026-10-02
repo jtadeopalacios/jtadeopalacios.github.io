@@ -610,6 +610,23 @@
     .layout { display: block; padding: 0; }
     .sidebar { position: static; }
   }
+   /* Iconos de contacto en el pie de página */
+  footer { align-items: center; }
+  .foot-social { display: flex; gap: 10px; }
+  .foot-social a {
+    width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center;
+    color: var(--ink-2); border: 1px solid var(--rule); text-decoration: none;
+    transition: color .2s ease, border-color .2s ease, box-shadow .25s ease, transform .2s ease;
+  }
+  .foot-social a:hover, .foot-social a:focus-visible {
+    color: var(--accent); border-color: var(--accent); outline: none; transform: translateY(-2px);
+    box-shadow: 0 0 16px rgba(var(--glow), .45);
+  }
+  .foot-social svg { width: 17px; height: 17px; }
+  @media (max-width: 600px) {
+    footer { flex-direction: column; text-align: center; gap: 14px; }
+    .foot-social { order: -1; }
+  }
 </style>
 </head>
 <body>
@@ -1185,7 +1202,6 @@
           </div>
         </div>
         <div class="card">
-          <h3>Deja tu comentario</h3>
           <p>Si leíste alguno de mis textos o quieres compartirme una idea, este es el momento.</p>
           <!-- El formulario usa el servicio gratuito FormSubmit. Para recibir los mensajes en otro correo, cambia la dirección en data-email. -->
           <form class="form" id="commentForm" data-email="tadeo.palacios@pucp.edu.pe" action="https://formsubmit.co/tadeo.palacios@pucp.edu.pe" method="POST">
@@ -1217,7 +1233,7 @@
 </div>
 
 <footer>
-  <span>© 2026 Tadeo Palacios Valverde</span>
+  <span>© 2026 Jesús Tadeo Palacios Valverde</span>
   <nav class="foot-social" aria-label="Redes y contacto">
     <a href="mailto:tadeo.palacios@pucp.edu.pe" aria-label="Correo" title="Correo">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
