@@ -1,0 +1,2379 @@
+---
+# Esta línea de guiones permite que GitHub Pages complete la dirección del sitio (url en _config.yml)
+---
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tadeo Palacios</title>
+<meta name="description" content="Tadeo Palacios. Candidato a doctor en Literatura Hispanoamericana (PUCP), autor, investigador, docente y abogado. Narrativa peruana contemporánea, memoria y violencia política, estudios de género y cultura popular japonesa.">
+<meta name="author" content="Jesús Tadeo Palacios Valverde">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ site.url }}/">
+<meta property="og:title" content="Tadeo Palacios">
+<meta property="og:description" content="Candidato a doctor en Literatura Hispanoamericana (PUCP). Autor, investigador y docente.">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="es_PE">
+<meta property="og:url" content="{{ site.url }}/">
+<meta property="og:image" content="{{ site.url }}/foto.jpg">
+<meta name="twitter:card" content="summary">
+<!-- Datos estructurados para Google: quién eres, dónde trabajas, tus perfiles y tu libro -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#persona",
+      "name": "Jesús Tadeo Palacios Valverde",
+      "alternateName": "Tadeo Palacios",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}/foto.jpg",
+      "jobTitle": "Investigador, docente y narrador",
+      "worksFor": { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Católica del Perú" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Pontificia Universidad Católica del Perú" },
+        { "@type": "CollegeOrUniversity", "name": "Universidad Nacional de Piura" }
+      ],
+      "knowsAbout": ["Literatura hispanoamericana", "Narrativa peruana", "Memoria y violencia política", "Estudios de género", "Manga y anime", "Edición crítica"],
+      "sameAs": [
+        "https://orcid.org/0000-0003-1207-0770",
+        "https://www.linkedin.com/in/tadeopalacios/",
+        "https://scholar.google.com/citations?user=0ieccrkAAAAJ",
+        "https://www.instagram.com/sonambulario/",
+        "https://linktr.ee/tadeopalacios"
+      ]
+    },
+    {
+      "@type": "Book",
+      "name": "Mañana nunca llega",
+      "author": { "@id": "{{ site.url }}/#persona" },
+      "publisher": { "@type": "Organization", "name": "Pesopluma" },
+      "datePublished": "2021",
+      "isbn": "9786124416286",
+      "inLanguage": "es",
+      "image": "{{ site.url }}/portadas/manana-nunca-llega.jpg"
+    },
+    {
+      "@type": "WebSite",
+      "name": "Tadeo Palacios",
+      "url": "{{ site.url }}/",
+      "inLanguage": "es"
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%237a2a24'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23faf7f0' text-anchor='middle'%3ETP%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root {
+    --paper: #efe7d8;
+    --paper-2: #e4d9c5;
+    --ink: #1e1b18;
+    --ink-2: #4a443d;
+    --ink-3: #645c51;
+    --rule: #d3c6ae;
+    --accent: #7a2a24;
+    --accent-soft: #ead8cc;
+    --link: #7a2a24;
+    --cover-bg: #7a2a24;
+    --cover-ink: #faf7f0;
+    --bar-bg: #1f1a17;
+    --bar-ink: #fbf8f2;
+    --bar-ink-2: rgba(251, 248, 242, .72);
+    --bar-line: rgba(255, 255, 255, .10);
+    --glow: 226, 162, 148;
+    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #16130f;
+      --paper-2: #1f1b16;
+      --ink: #ece6da;
+      --ink-2: #c5bdb0;
+      --ink-3: #958c80;
+      --rule: #3a342c;
+      --accent: #e2a294;
+      --accent-soft: #2e1f1b;
+      --link: #e9ad9f;
+      --cover-bg: #4a1e1a;
+      --cover-ink: #f1e3df;
+      --bar-bg: #0c0a08;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #16130f;
+    --paper-2: #1f1b16;
+    --ink: #ece6da;
+    --ink-2: #c5bdb0;
+    --ink-3: #958c80;
+    --rule: #3a342c;
+    --accent: #e2a294;
+    --accent-soft: #2e1f1b;
+    --link: #e9ad9f;
+    --cover-bg: #4a1e1a;
+    --cover-ink: #f1e3df;
+    --bar-bg: #0c0a08;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: 76px; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--link) 40%, transparent); }
+  a:hover { text-decoration-color: var(--link); }
+  em, i { font-style: italic; }
+
+  /* Barra superior oscura */
+  .topbar {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--bar-bg);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--bar-line);
+    box-shadow: 0 6px 20px -14px rgba(0, 0, 0, .6);
+  }
+  .topbar-inner {
+    max-width: 1120px; margin: 0 auto; padding: 0 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    height: 60px;
+  }
+  .brand { font-family: var(--serif); font-weight: 500; font-size: 19px; color: var(--bar-ink); text-decoration: none; white-space: nowrap; transition: text-shadow .3s ease; }
+  .brand:hover { text-shadow: 0 0 14px rgba(var(--glow), .55); }
+
+  /* Menú con efecto de luz que sigue al cursor */
+  .nav { position: relative; display: flex; align-items: center; gap: 2px; font-family: var(--sans); font-size: 13.5px; letter-spacing: .02em; }
+  .nav::before {
+    content: ""; position: absolute; inset: -10px -6px; pointer-events: none; border-radius: 999px;
+    background: radial-gradient(140px circle at var(--mx, 50%) var(--my, 50%), rgba(var(--glow), .20), transparent 70%);
+    opacity: 0; transition: opacity .35s ease;
+  }
+  .nav:hover::before { opacity: 1; }
+  .nav a {
+    position: relative; z-index: 1;
+    color: var(--bar-ink-2); text-decoration: none; white-space: nowrap;
+    padding: 7px 12px; border-radius: 999px;
+    transition: color .2s ease, background-color .2s ease, box-shadow .25s ease, text-shadow .25s ease;
+  }
+  .nav a:hover, .nav a:focus-visible {
+    color: #fff; outline: none;
+    background: rgba(255, 255, 255, .08);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .10), 0 0 18px rgba(var(--glow), .30);
+    text-shadow: 0 0 10px rgba(255, 255, 255, .45);
+  }
+  .nav a.active {
+    color: #fff;
+    background: rgba(var(--glow), .20);
+    box-shadow: inset 0 0 0 1px rgba(var(--glow), .55), 0 0 20px rgba(var(--glow), .35);
+  }
+  .nav a.active::after {
+    content: ""; position: absolute; left: 50%; bottom: -9px; width: 5px; height: 5px; margin-left: -2.5px;
+    border-radius: 50%; background: rgb(var(--glow)); box-shadow: 0 0 10px 2px rgba(var(--glow), .8);
+  }
+  .theme-toggle, .menu-toggle {
+    border: 1px solid rgba(255, 255, 255, .18); background: transparent; color: var(--bar-ink-2);
+    width: 36px; height: 36px; border-radius: 50%; cursor: pointer; display: grid; place-items: center; flex: none;
+    transition: color .2s ease, background-color .2s ease, box-shadow .25s ease, border-color .2s ease;
+  }
+  .theme-toggle:hover, .menu-toggle:hover, .theme-toggle:focus-visible, .menu-toggle:focus-visible, .menu-toggle[aria-expanded="true"] {
+    color: #fff; outline: none; border-color: rgba(var(--glow), .6);
+    background: rgba(255, 255, 255, .08); box-shadow: 0 0 16px rgba(var(--glow), .40);
+  }
+  .menu-toggle { display: none; }
+
+  /* Diseño general */
+  .layout {
+    max-width: 1120px; margin: 0 auto; padding: 56px 24px 40px;
+    display: grid; grid-template-columns: 280px 1fr; gap: 72px;
+    min-height: calc(100vh - 56px - 90px);
+  }
+  .sidebar { position: sticky; top: 96px; align-self: start; }
+  .portrait {
+    position: relative;
+    width: 180px; height: 180px; border-radius: 50%; overflow: hidden;
+    background: var(--accent); color: var(--paper);
+    display: grid; place-items: center; margin-bottom: 24px;
+    font-family: var(--serif); font-size: 64px; font-weight: 400; letter-spacing: .02em;
+  }
+  .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .sidebar h1 { font-size: 28px; line-height: 1.2; font-weight: 500; margin: 0 0 10px; }
+  .role { font-family: var(--sans); font-size: 14px; line-height: 1.55; color: var(--ink-2); margin: 0 0 22px; }
+  .links { list-style: none; padding: 0; margin: 0 0 24px; font-family: var(--sans); font-size: 14px; }
+  .links li { margin: 0 0 10px; display: flex; align-items: center; gap: 10px; }
+  .links svg { width: 16px; height: 16px; flex: none; color: var(--ink-3); }
+  .links a { color: var(--ink-2); text-decoration: none; word-break: break-word; }
+  .links a:hover { color: var(--accent); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--sans); font-size: 13.5px; font-weight: 500; letter-spacing: .02em;
+    padding: 9px 16px; border: 1px solid var(--accent); color: var(--accent);
+    border-radius: 2px; text-decoration: none; background: transparent; cursor: pointer;
+  }
+  .btn:hover { background: var(--accent); color: var(--paper); }
+
+  /* Paneles: una sección visible a la vez */
+  main { min-width: 0; }
+  .js main > section { display: none; }
+  .js main > section.active { display: block; animation: fade .35s ease both; }
+  @keyframes drop { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .js main > section.active, .js .subpanel.active { animation: none; } }
+  html:not(.js) main > section + section { border-top: 1px solid var(--rule); padding-top: 48px; margin-top: 56px; }
+
+  h2 {
+    font-family: var(--serif); font-size: 34px; font-weight: 500; line-height: 1.15;
+    color: var(--ink); margin: 0 0 8px; letter-spacing: -.005em;
+  }
+  .eyebrow {
+    display: block; font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 10px;
+  }
+  .intro { font-family: var(--sans); font-size: 14.5px; color: var(--ink-3); margin: 0 0 28px; max-width: 60ch; }
+  h3 { font-size: 21px; font-weight: 500; margin: 32px 0 14px; line-height: 1.3; }
+  p { margin: 0 0 16px; color: var(--ink-2); }
+
+  /* Subpestañas dentro de una sección */
+  .subtabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 24px; border-bottom: 1px solid var(--rule); }
+  .subtabs button {
+    font-family: var(--sans); font-size: 13.5px; color: var(--ink-2); background: none; border: 0;
+    padding: 8px 12px 10px; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
+  }
+  .subtabs button:hover { color: var(--accent); }
+  .subtabs button[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); font-weight: 500; }
+  .subtabs .count { font-size: 11.5px; color: var(--ink-3); margin-left: 5px; font-variant-numeric: tabular-nums; font-weight: 400; }
+  .js .subpanel { display: none; }
+  .js .subpanel.active { display: block; animation: fade .3s ease both; }
+  html:not(.js) .subtabs { display: none; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; padding: 0; list-style: none; }
+  .tags li {
+    font-family: var(--sans); font-size: 13px; color: var(--ink-2);
+    background: var(--paper-2); border: 1px solid var(--rule); padding: 4px 11px; border-radius: 999px;
+  }
+
+  /* Entradas con fecha */
+  .entries { list-style: none; margin: 0; padding: 0; }
+  .entry { display: grid; grid-template-columns: 110px 1fr; gap: 20px; padding: 12px 0; }
+  .entry + .entry { border-top: 1px dashed var(--rule); }
+  .when { font-family: var(--sans); font-size: 13.5px; color: var(--ink-3); padding-top: 3px; font-variant-numeric: tabular-nums; }
+  .what { color: var(--ink); }
+  .what strong { font-weight: 500; }
+  .what .meta { display: block; color: var(--ink-2); font-size: 17px; }
+
+  /* Bibliografía */
+  .biblio { list-style: none; margin: 0; padding: 0; }
+  .biblio li { padding: 10px 0 10px 28px; text-indent: -28px; color: var(--ink); }
+  .biblio li + li { border-top: 1px dashed var(--rule); }
+  .biblio a.ext { font-family: var(--sans); font-size: 12.5px; letter-spacing: .03em; text-decoration: none; white-space: nowrap; margin-left: 6px; }
+  .biblio a.ext::after { content: " ↗"; }
+
+  /* Obras con portada */
+  .books { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 36px 24px; margin: 0; padding: 0; list-style: none; }
+  .book { display: flex; flex-direction: column; min-width: 0; }
+  .cover {
+    position: relative; margin: 0 0 14px; aspect-ratio: 2 / 3; border-radius: 2px; overflow: hidden;
+    background: var(--paper-2); box-shadow: 0 1px 2px rgba(0,0,0,.08), 0 8px 24px -10px rgba(0,0,0,.35);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .book:hover .cover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 14px 30px -12px rgba(0,0,0,.4); }
+  .cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .cover-fb {
+    position: absolute; inset: 0; display: none; flex-direction: column; justify-content: space-between;
+    padding: 20px 18px; background: var(--cover-bg); color: var(--cover-ink);
+  }
+  .cover-fb::before { content: ""; position: absolute; inset: 8px; border: 1px solid color-mix(in srgb, var(--cover-ink) 35%, transparent); pointer-events: none; }
+  .cover-fb .fb-title { font-family: var(--serif); font-style: italic; font-size: 22px; line-height: 1.2; }
+  .cover-fb .fb-pub { font-family: var(--sans); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; opacity: .85; }
+  .cover.noimg .cover-fb { display: flex; }
+  .cover.noimg img { display: none; }
+  .book .kind { font-family: var(--sans); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+  .book .title { font-size: 19px; font-style: italic; line-height: 1.3; margin-bottom: 4px; color: var(--ink); }
+  .book .detail { font-size: 15.5px; color: var(--ink-2); line-height: 1.45; }
+  .book .acts { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; }
+  .book .acts a { font-family: var(--sans); font-size: 13px; text-decoration: none; }
+  .book .acts a::after { content: " ↗"; }
+
+  /* Podcasts */
+  .pods { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 0; padding: 0; list-style: none; }
+  .pod { border: 1px solid var(--rule); background: var(--paper-2); padding: 20px; border-radius: 3px; display: flex; flex-direction: column; min-width: 0; }
+  .pod .kind { font-family: var(--sans); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+  .pod .title { font-size: 22px; font-style: italic; line-height: 1.3; margin-bottom: 6px; color: var(--ink); }
+  .pod .detail { font-size: 16px; color: var(--ink-2); line-height: 1.45; flex: 1; margin-bottom: 16px; }
+  .pod iframe { width: 100%; border: 0; border-radius: 12px; display: block; background: var(--paper); }
+  .pod a { font-family: var(--sans); font-size: 13px; margin-top: 12px; text-decoration: none; }
+  .pod a::after { content: " ↗"; }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card { border: 1px solid var(--rule); background: var(--paper-2); padding: 22px; border-radius: 3px; }
+  .card h3 { margin-top: 0; }
+  .card .btns { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  /* Navegación anterior / siguiente al pie de cada sección */
+  .pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 14px; }
+  .pager a { text-decoration: none; color: var(--ink-2); display: flex; flex-direction: column; gap: 2px; }
+  .pager a:hover { color: var(--accent); }
+  .pager small { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
+  .pager .next { text-align: right; margin-left: auto; }
+  html:not(.js) .pager { display: none; }
+
+  footer {
+    max-width: 1120px; margin: 0 auto; padding: 28px 24px 48px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans); font-size: 13px; color: var(--ink-3);
+    display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  }
+
+
+  /* Submenú desplegable "Trayectoria" */
+  .nav-group { position: relative; z-index: 1; }
+  .nav-group-btn {
+    font: inherit; letter-spacing: inherit; cursor: pointer; border: 0; background: transparent;
+    color: var(--bar-ink-2); white-space: nowrap; padding: 7px 10px 7px 12px; border-radius: 999px;
+    display: inline-flex; align-items: center; gap: 4px;
+    transition: color .2s ease, background-color .2s ease, box-shadow .25s ease, text-shadow .25s ease;
+  }
+  .nav-group-btn svg { transition: transform .25s ease; opacity: .8; }
+  .nav-group-btn:hover, .nav-group-btn:focus-visible, .nav-group.open .nav-group-btn {
+    color: #fff; outline: none; background: rgba(255, 255, 255, .08);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .10), 0 0 18px rgba(var(--glow), .30);
+    text-shadow: 0 0 10px rgba(255, 255, 255, .45);
+  }
+  .nav-group-btn.active {
+    color: #fff; background: rgba(var(--glow), .20);
+    box-shadow: inset 0 0 0 1px rgba(var(--glow), .55), 0 0 20px rgba(var(--glow), .35);
+  }
+  .nav-group:hover .nav-group-btn svg, .nav-group.open .nav-group-btn svg { transform: rotate(180deg); }
+  .nav-menu {
+    position: absolute; top: calc(100% + 14px); left: 50%; min-width: 230px;
+    transform: translate(-50%, -6px); opacity: 0; visibility: hidden;
+    background: var(--bar-bg); border: 1px solid var(--bar-line); border-radius: 12px; padding: 8px;
+    box-shadow: 0 18px 40px -16px rgba(0, 0, 0, .7), 0 0 30px -10px rgba(var(--glow), .25);
+    transition: opacity .2s ease, transform .2s ease, visibility .2s;
+  }
+  .nav-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -16px; height: 16px; }
+  .nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu, .nav-group.open .nav-menu { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
+  .nav-menu a { display: block; border-radius: 8px; padding: 9px 30px 9px 14px; }
+  .nav-menu a.active::after { left: auto; right: 12px; top: 50%; bottom: auto; margin: -2.5px 0 0; }
+
+  /* Video con vista previa (carga YouTube solo al pulsar) */
+  .yt {
+    position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; padding: 0; cursor: pointer;
+    background: #000 center / cover no-repeat; border-radius: 4px; overflow: hidden;
+  }
+  .yt::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.45)); transition: background .3s ease; }
+  .yt:hover::before { background: linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.3)); }
+  .yt .play {
+    position: absolute; left: 50%; top: 50%; width: 72px; height: 72px; margin: -36px 0 0 -36px; border-radius: 50%;
+    background: rgba(122, 42, 36, .92); display: grid; place-items: center; color: #fff;
+    box-shadow: 0 0 0 6px rgba(255,255,255,.18), 0 10px 30px rgba(0,0,0,.4); transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .yt:hover .play { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(255,255,255,.22), 0 0 30px rgba(var(--glow), .7); }
+  .yt iframe, .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .trailer { margin: 0 0 36px; }
+  .trailer figcaption { font-family: var(--sans); font-size: 13.5px; color: var(--ink-3); margin-top: 10px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+  .trailer figcaption .tag { font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  .trailer figcaption em { font-family: var(--serif); font-size: 16px; color: var(--ink); }
+
+  /* Portadas: variante sin recorte y portada con enlace */
+  .cover.contain { background: transparent; box-shadow: none; overflow: visible; }
+  .cover.contain img { object-fit: contain; object-position: center bottom; filter: drop-shadow(0 8px 14px rgba(0,0,0,.28)); }
+  .cover-link { display: block; text-decoration: none; color: inherit; }
+  .cover-link .cover::after {
+    content: attr(data-label); position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 12px 12px;
+    font-family: var(--sans); font-size: 12px; letter-spacing: .06em; color: #fff; text-align: center;
+    background: linear-gradient(180deg, transparent, rgba(0,0,0,.72)); opacity: 0; transition: opacity .25s ease;
+  }
+  .cover-link:hover .cover::after, .cover-link:focus-visible .cover::after { opacity: 1; }
+  .book .acts a.more { font-weight: 600; }
+  .book .acts a.more::after { content: " →"; }
+
+  /* Subpágina de libro */
+  .carousel { position: relative; border-radius: 4px; overflow: hidden; background: #1f1a17; }
+  .c-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; }
+  .c-track::-webkit-scrollbar { display: none; }
+  .c-slide { flex: 0 0 100%; margin: 0; scroll-snap-align: center; position: relative; aspect-ratio: 3 / 2; cursor: zoom-in; }
+  .c-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .c-slide.contain img { object-fit: contain; }
+  .c-slide figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 36px 18px 34px;
+    font: 14px var(--sans); color: #fff; background: linear-gradient(180deg, transparent, rgba(0,0,0,.72));
+  }
+  .c-btn {
+    position: absolute; top: 50%; margin-top: -22px; width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
+    border: 1px solid rgba(255,255,255,.35); background: rgba(20,16,13,.55); color: #fff; font-size: 24px; line-height: 1;
+    display: grid; place-items: center; transition: box-shadow .25s ease, border-color .25s ease;
+  }
+  .c-btn:hover { box-shadow: 0 0 18px rgba(var(--glow), .7); border-color: rgba(var(--glow), .8); }
+  .c-prev { left: 12px; } .c-next { right: 12px; }
+  .c-dots { position: absolute; left: 0; right: 0; bottom: 12px; display: flex; justify-content: center; gap: 8px; }
+  .c-dots button { width: 9px; height: 9px; border-radius: 50%; border: 0; padding: 0; cursor: pointer; background: rgba(255,255,255,.45); }
+  .c-dots button[aria-selected="true"] { background: #fff; box-shadow: 0 0 10px rgba(var(--glow), .9); }
+  .fb-embed { max-width: 500px; }
+  .fb-embed iframe { width: 100%; border: 1px solid var(--rule); border-radius: 6px; background: #fff; display: block; }
+  .ig-embed { max-width: 540px; }
+  .ig-embed iframe { width: 100%; border: 1px solid var(--rule); border-radius: 6px; background: #fff; display: block; }
+  .person {
+    color: var(--accent); font-weight: 600; text-decoration: none; padding: 0 2px; border-radius: 2px;
+    background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 16%, transparent) 0);
+    transition: background-color .2s ease, box-shadow .2s ease;
+  }
+  .person:hover, .person:focus-visible { background: color-mix(in srgb, var(--accent) 14%, transparent); box-shadow: 0 0 12px rgba(var(--glow), .35); outline: none; }
+  .back { display: inline-flex; gap: 6px; font-family: var(--sans); font-size: 13.5px; text-decoration: none; margin-bottom: 24px; color: var(--ink-2); }
+  .back:hover { color: var(--accent); }
+  .book-hero { display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: end; margin-bottom: 40px; }
+  .book-hero .cover { margin: 0; aspect-ratio: auto; }
+  .book-hero .cover img { position: static; height: auto; }
+  .book-hero .cover.noimg { aspect-ratio: 2 / 3; }
+  .book-hero h2 { font-size: 40px; }
+  .book-hero .btns, .btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .label { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 40px 0 16px; }
+  .quote { margin: 0; padding: 0; }
+  .quote p { color: var(--ink); margin: 0 0 14px; }
+  .quote footer { font-family: var(--sans); font-size: 13.5px; font-weight: 500; color: var(--accent); display: flex; align-items: center; gap: 10px; }
+  .quote footer::before { content: ""; width: 24px; height: 1px; background: currentColor; }
+  .quote-lg { border-left: 3px solid var(--accent); padding: 4px 0 4px 26px; }
+  .quote-lg p { font-size: 21px; line-height: 1.6; font-style: italic; }
+  .quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .quotes .quote { background: var(--paper-2); border: 1px solid var(--rule); border-radius: 3px; padding: 24px 24px 20px; position: relative; }
+  .quotes .quote::before { content: "«"; position: absolute; top: 4px; right: 16px; font-family: var(--serif); font-size: 64px; line-height: 1; color: color-mix(in srgb, var(--accent) 22%, transparent); }
+  .quotes .quote p { font-size: 17px; line-height: 1.6; }
+
+  /* Blog */
+  .blog-tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 18px; }
+  .blog-tools input {
+    flex: 1 1 220px; font: 15px var(--sans); color: var(--ink); background: var(--paper-2);
+    border: 1px solid var(--rule); border-radius: 999px; padding: 9px 16px;
+  }
+  .blog-tools input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips button {
+    font: 13px var(--sans); color: var(--ink-2); background: transparent; border: 1px solid var(--rule);
+    border-radius: 999px; padding: 5px 12px; cursor: pointer;
+  }
+  .chips button:hover { border-color: var(--accent); color: var(--accent); }
+  .chips button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--paper); }
+  .post-feature { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .post-card {
+    display: flex; flex-direction: column; border: 1px solid var(--rule); background: var(--paper-2); border-radius: 3px;
+    overflow: hidden; text-decoration: none; color: inherit; transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  .post-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 26px -18px rgba(0,0,0,.45); }
+  .post-card.big { grid-column: 1 / -1; }
+  .post-card .pc-img { aspect-ratio: 16 / 7; background: var(--accent) center 28% / cover no-repeat; }
+  .post-card .pc-body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
+  .post-meta { font-family: var(--sans); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; display: flex; flex-wrap: wrap; gap: 4px 10px; }
+  .post-meta .cat { color: var(--accent); font-weight: 600; }
+  .post-card h3 { margin: 0 0 8px; font-size: 22px; color: var(--ink); }
+  .post-card.big h3 { font-size: 28px; }
+  .post-card p { font-size: 16.5px; margin: 0 0 14px; flex: 1; }
+  .post-card .read { font-family: var(--sans); font-size: 13px; color: var(--accent); font-weight: 500; }
+  .badges { display: inline-flex; gap: 6px; }
+  .badge { font-family: var(--sans); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 3px; padding: 1px 6px; color: var(--ink-3); }
+  .ptags { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 0 0 12px; font-family: var(--sans); font-size: 12.5px; color: var(--accent); }
+  .post-list .ptags { margin: 6px 0 0; }
+  .tag-cloud { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; }
+  .tag {
+    display: inline-flex; align-items: baseline; gap: 6px; font-family: var(--sans); text-decoration: none;
+    color: var(--ink-2); border: 1px solid var(--rule); background: var(--paper-2); border-radius: 999px; padding: 5px 14px;
+    transition: color .2s ease, border-color .2s ease, box-shadow .2s ease;
+  }
+  .tag:hover { color: var(--accent); border-color: var(--accent); box-shadow: 0 0 12px rgba(var(--glow), .35); }
+  .tag .n { font-size: 11px; color: var(--ink-3); }
+  .tag.t1 { font-size: 13px; } .tag.t2 { font-size: 15px; } .tag.t3 { font-size: 17px; font-weight: 500; }
+  .tag-filter { font-family: var(--sans); font-size: 14px; color: var(--ink-2); background: var(--accent-soft); border-radius: 3px; padding: 10px 14px; margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
+  .tag-filter strong { color: var(--accent); }
+  .tag-filter a { margin-left: auto; font-size: 13px; text-decoration: none; }
+  .post-tags { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 28px 0 0; font-family: var(--sans); font-size: 13px; color: var(--ink-3); }
+  .post-tags .tag { font-size: 13px; padding: 4px 12px; }
+  .post-list { list-style: none; margin: 0; padding: 0; }
+  .post-list li { border-top: 1px dashed var(--rule); }
+  .post-list li:first-child { border-top: 0; }
+  .post-list a { display: grid; grid-template-columns: 110px 1fr; gap: 20px; padding: 14px 0; text-decoration: none; color: inherit; }
+  .post-list a:hover .pl-title { color: var(--accent); }
+  .pl-title { font-size: 19px; color: var(--ink); display: block; transition: color .2s ease; }
+  .pl-sum { display: block; font-size: 16px; color: var(--ink-2); margin-top: 2px; }
+  .archive details { border-top: 1px solid var(--rule); }
+  .archive details:last-child { border-bottom: 1px solid var(--rule); }
+  .archive summary { font-family: var(--serif); font-size: 22px; color: var(--ink); padding: 14px 0; display: flex; gap: 14px; align-items: baseline; }
+  .archive summary::before { content: none; }
+  .archive summary .n { font-family: var(--sans); font-size: 12.5px; color: var(--ink-3); }
+  .archive summary::after { content: "+"; font-family: var(--sans); color: var(--accent); margin-left: auto; }
+  .archive details[open] summary::after { content: "−"; }
+  .archive .month { font-family: var(--sans); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 4px 0 6px; }
+  .archive ul { list-style: none; margin: 0 0 18px; padding: 0; }
+  .archive li { padding: 5px 0; display: flex; gap: 14px; }
+  .archive li .d { font-family: var(--sans); font-size: 13px; color: var(--ink-3); min-width: 24px; font-variant-numeric: tabular-nums; padding-top: 3px; }
+  .archive li a { text-decoration: none; color: var(--ink); }
+  .archive li a:hover { color: var(--accent); }
+  .empty { font-family: var(--sans); font-size: 14.5px; color: var(--ink-3); padding: 24px; border: 1px dashed var(--rule); border-radius: 3px; text-align: center; }
+
+  .post-title { font-size: 38px; margin-bottom: 12px; }
+  .post-hero { margin: 8px 0 28px; border-radius: 3px; overflow: hidden; }
+  .post-hero { background: var(--paper-2); text-align: center; }
+  .post-hero img { width: auto; max-width: 100%; max-height: 560px; display: inline-block; vertical-align: top; }
+  .prose { color: var(--ink); }
+  .prose p, .prose li { color: var(--ink); font-size: 19px; line-height: 1.75; }
+  .prose p { margin: 0 0 20px; text-align: justify; hyphens: auto; }
+  .prose h2 { font-size: 27px; margin: 36px 0 12px; }
+  .prose h3 { font-size: 22px; margin: 28px 0 10px; }
+  .prose blockquote { margin: 24px 0; padding: 4px 0 4px 22px; border-left: 3px solid var(--accent); font-style: italic; }
+  .prose img { max-width: 100%; height: auto; border-radius: 3px; }
+  .prose .footnotes { border-top: 1px solid var(--rule); margin-top: 36px; padding-top: 12px; font-size: 16px; }
+  .prose .footnotes p, .prose .footnotes li { font-size: 16px; }
+  .prose sup a, .prose .reversefootnote { text-decoration: none; }
+  .attach { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; border: 1px solid var(--rule); background: var(--paper-2); border-radius: 3px; padding: 16px 18px; margin: 28px 0; }
+  .attach .ic { width: 40px; height: 48px; border-radius: 3px; background: var(--accent); color: var(--paper); font: 600 11px var(--sans); display: grid; place-items: center; flex: none; }
+  .attach .txt { flex: 1 1 200px; font-family: var(--sans); font-size: 14px; color: var(--ink-2); }
+  .attach .txt strong { display: block; color: var(--ink); font-weight: 500; }
+  .pdf-frame { width: 100%; height: 80vh; border: 1px solid var(--rule); border-radius: 3px; margin-top: -12px; }
+  .share { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 32px 0 0; padding-top: 18px; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 13px; color: var(--ink-3); }
+  .share a, .share button { font: 13px var(--sans); color: var(--ink-2); border: 1px solid var(--rule); background: transparent; border-radius: 999px; padding: 5px 12px; text-decoration: none; cursor: pointer; }
+  .share a:hover, .share button:hover { color: var(--accent); border-color: var(--accent); }
+  .post-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+  .post-nav a { border: 1px solid var(--rule); border-radius: 3px; padding: 14px 16px; text-decoration: none; color: var(--ink); font-size: 16.5px; line-height: 1.35; }
+  .post-nav a:hover { border-color: var(--accent); }
+  .post-nav small { display: block; font: 11px var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 4px; }
+  .post-nav .nx { text-align: right; grid-column: 2; }
+
+  /* Eventos */
+  .events { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+  .event { display: grid; grid-template-columns: 84px 1fr; gap: 20px; border: 1px solid var(--rule); background: var(--paper-2); border-radius: 3px; padding: 20px; }
+  .ev-date { text-align: center; border-right: 1px solid var(--rule); padding-right: 16px; font-family: var(--sans); line-height: 1.1; }
+  .ev-date .dd { display: block; font-family: var(--serif); font-size: 36px; color: var(--accent); }
+  .ev-date .mm { display: block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); margin-top: 4px; }
+  .ev-date .yy { display: block; font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+  .ev-body h3 { margin: 0 0 4px; font-size: 20px; }
+  .ev-place { font-family: var(--sans); font-size: 13.5px; color: var(--ink-3); margin-bottom: 8px; }
+  .ev-body p { font-size: 16.5px; margin: 0 0 12px; }
+  .ev-img { width: 100%; max-height: 320px; object-fit: cover; border-radius: 3px; margin: 4px 0 12px; display: block; }
+  .ev-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px; font: 500 12.5px var(--sans); letter-spacing: .02em;
+    color: var(--ink-2); border: 1px solid var(--rule); background: var(--paper); border-radius: 999px; padding: 5px 12px; text-decoration: none; cursor: pointer;
+  }
+  .pill:hover { color: var(--accent); border-color: var(--accent); }
+  .pill svg { width: 14px; height: 14px; }
+  .embeds { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 14px; }
+  .embeds iframe { width: 100%; max-width: 504px; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+  .ev-photos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin: 0 0 14px; max-width: 520px; }
+  .ev-ph { position: relative; aspect-ratio: 1; border: 0; padding: 0; border-radius: 3px; overflow: hidden; cursor: zoom-in; background: var(--paper); }
+  .ev-ph img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+  .ev-ph:hover img { transform: scale(1.07); }
+  .ev-ph .more-n { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,.55); color: #fff; font: 600 18px var(--sans); }
+  .lb-n { display: block; font-size: 12px; color: #b9b0a3; margin-top: 4px; letter-spacing: .08em; }
+  .follow { display: flex; flex-wrap: wrap; gap: 8px; margin: 32px 0 0; align-items: center; font-family: var(--sans); font-size: 13.5px; color: var(--ink-3); }
+
+  /* Galería */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .g-item { position: relative; aspect-ratio: 4 / 3; border: 0; padding: 0; cursor: zoom-in; border-radius: 3px; overflow: hidden; background: var(--paper-2); }
+  .g-item img, .g-item video { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
+  .g-item:hover img, .g-item:hover video { transform: scale(1.05); }
+  .g-item .g-cap {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 12px 10px; text-align: left;
+    font: 13px var(--sans); color: #fff; background: linear-gradient(180deg, transparent, rgba(0,0,0,.7));
+    opacity: 0; transition: opacity .25s ease;
+  }
+  .g-item:hover .g-cap, .g-item:focus-visible .g-cap { opacity: 1; }
+  .g-item .g-play { position: absolute; left: 50%; top: 50%; width: 52px; height: 52px; margin: -26px 0 0 -26px; border-radius: 50%; background: rgba(122,42,36,.9); color: #fff; display: grid; place-items: center; box-shadow: 0 0 0 5px rgba(255,255,255,.2); }
+  .lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(12, 10, 8, .92); display: grid; place-items: center; padding: 56px 64px; }
+  .lightbox[hidden] { display: none; }
+  .lb-stage { width: min(1000px, 100%); max-height: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .lb-stage img { max-width: 100%; max-height: calc(100vh - 160px); object-fit: contain; border-radius: 3px; }
+  .lb-stage video { max-width: 100%; max-height: calc(100vh - 160px); }
+  .lb-stage .video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; }
+  .lb-cap { font: 14px var(--sans); color: #e9e2d6; text-align: center; }
+  .lb-cap strong { display: block; font: 500 18px var(--serif); color: #fff; }
+  .lb-btn { position: absolute; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.06); color: #fff; width: 44px; height: 44px; border-radius: 50%; cursor: pointer; display: grid; place-items: center; font-size: 20px; }
+  .lb-btn:hover { box-shadow: 0 0 18px rgba(var(--glow), .6); border-color: rgba(var(--glow), .7); }
+  .lb-close { top: 14px; right: 14px; }
+  .lb-prev { left: 12px; top: 50%; margin-top: -22px; }
+  .lb-next { right: 12px; top: 50%; margin-top: -22px; }
+
+  /* Formulario de comentarios */
+  .contact-grid { display: grid; gap: 20px; }
+  .form { display: grid; gap: 14px; }
+  .form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form label { display: grid; gap: 6px; font: 500 13px var(--sans); color: var(--ink-2); }
+  .form input, .form textarea {
+    font: 16px var(--sans); color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: 3px; padding: 10px 12px; width: 100%;
+  }
+  .form textarea { min-height: 150px; resize: vertical; line-height: 1.5; }
+  .form input:focus, .form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent); }
+  .form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .form-status { font: 14px var(--sans); margin: 0; min-height: 1.4em; }
+  .form-status.ok { color: #2f6b3a; }
+  .form-status.err { color: var(--accent); }
+  :root[data-theme="dark"] .form-status.ok { color: #9bd3a5; }
+  .btn[disabled] { opacity: .6; cursor: wait; }
+  .note { font: 12.5px var(--sans); color: var(--ink-3); margin: 0; }
+  .lb-btn[hidden] { display: none; }
+
+  @media (max-width: 1080px) {
+    .nav { display: none; }
+    .menu-toggle { display: grid; }
+    .nav.open {
+      display: flex; flex-direction: column; align-items: stretch; gap: 4px;
+      position: absolute; top: 60px; left: 0; right: 0;
+      background: var(--bar-bg); border-bottom: 1px solid var(--bar-line); padding: 10px 12px 16px;
+      box-shadow: 0 18px 30px -18px rgba(0, 0, 0, .7);
+      animation: drop .25s ease both;
+      max-height: calc(100vh - 60px); overflow-y: auto;
+    }
+    .nav.open::before { inset: 0; border-radius: 0; background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), rgba(var(--glow), .16), transparent 70%); }
+    .nav.open a { padding: 12px 16px; font-size: 15px; border-radius: 8px; }
+    .nav.open a.active::after { left: auto; right: 16px; top: 50%; bottom: auto; margin: -2.5px 0 0; }
+    .topbar-inner { position: relative; }
+    .layout { gap: 48px; grid-template-columns: 240px 1fr; }
+    .pods { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 920px) {
+    .layout { grid-template-columns: 1fr; gap: 32px; padding: 32px 16px 24px; }
+    .sidebar { position: static; display: grid; grid-template-columns: 120px 1fr; gap: 0 24px; align-items: start; }
+    .portrait { width: 120px; height: 120px; font-size: 44px; grid-row: span 2; margin: 0; }
+    .sidebar .links, .sidebar .btn { grid-column: 1 / -1; }
+    .sidebar .btn { justify-self: start; }
+    .sidebar .links { margin-top: 20px; }
+    main { border-top: 1px solid var(--rule); padding-top: 32px; }
+    .topbar-inner { padding: 0 16px; }
+    footer { padding: 24px 16px 40px; }
+    .cols { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    body { font-size: 18px; }
+    h2 { font-size: 29px; }
+    .sidebar { grid-template-columns: 1fr; }
+    .portrait { width: 112px; height: 112px; margin-bottom: 18px; grid-row: auto; }
+    .entry { grid-template-columns: 1fr; gap: 2px; }
+    .brand { font-size: 16px; }
+    .books { grid-template-columns: 1fr 1fr; gap: 28px 16px; }
+    .cover-fb .fb-title { font-size: 18px; }
+    .subtabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
+    .subtabs::-webkit-scrollbar { display: none; }
+    .subtabs button { white-space: nowrap; }
+  }
+
+  @media (max-width: 1080px) {
+    .nav.open .nav-group { display: block; }
+    .nav.open .nav-group-btn {
+      display: block; width: 100%; text-align: left; cursor: default; pointer-events: none;
+      padding: 14px 16px 6px; font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase;
+      color: rgba(var(--glow), .9); background: none; box-shadow: none; text-shadow: none;
+    }
+    .nav.open .nav-group-btn svg { display: none; }
+    .nav.open .nav-menu {
+      position: static; transform: none; opacity: 1; visibility: visible; min-width: 0;
+      background: none; border: 0; box-shadow: none; padding: 0 0 6px 10px; display: grid; gap: 4px;
+    }
+    .nav.open .nav-menu::before { content: none; }
+  }
+  @media (max-width: 760px) {
+    .quotes { grid-template-columns: 1fr; }
+    .post-feature { grid-template-columns: 1fr; }
+    .book-hero { grid-template-columns: 130px 1fr; gap: 20px; align-items: center; }
+    .book-hero h2 { font-size: 30px; }
+  }
+  @media (max-width: 600px) {
+    .c-slide { aspect-ratio: 4 / 3; }
+    .c-slide figcaption { font-size: 13px; padding: 30px 14px 30px; }
+    .c-btn { width: 36px; height: 36px; margin-top: -18px; font-size: 20px; }
+    .book-hero { grid-template-columns: 1fr; }
+    .book-hero .cover { width: 160px; }
+    .quotes .quote::before { content: none; }
+    .quote-lg p { font-size: 18.5px; }
+    .post-title { font-size: 30px; }
+    .post-card.big h3 { font-size: 23px; }
+    .post-list a { grid-template-columns: 1fr; gap: 2px; }
+    .event { grid-template-columns: 1fr; gap: 10px; padding: 16px; }
+    .ev-date { text-align: left; border-right: 0; border-bottom: 1px solid var(--rule); padding: 0 0 8px; display: flex; gap: 8px; align-items: baseline; }
+    .ev-date .dd { font-size: 26px; }
+    .ev-date .mm, .ev-date .yy { margin: 0; }
+    .form .row2 { grid-template-columns: 1fr; }
+    .gallery { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .lightbox { padding: 56px 8px 72px; }
+    .lb-prev, .lb-next { top: auto; bottom: 14px; margin: 0; }
+    .lb-prev { left: calc(50% - 56px); }
+    .lb-next { right: calc(50% - 56px); }
+    .post-nav { grid-template-columns: 1fr; }
+    .post-nav .nx { grid-column: 1; }
+    .prose p { text-align: left; }
+  }
+
+  /* ================= REDISEÑO VISUAL ================= */
+  /* Estructura a todo el ancho, sin barra lateral */
+  .layout { display: block; max-width: none; padding: 0; min-height: calc(100vh - 60px); }
+  main { border: 0 !important; padding: 0 !important; }
+  main > section { max-width: 1040px; margin: 0 auto; padding: 64px 24px 56px; }
+  main > section#inicio { max-width: none; padding: 0; }
+  #inicio > .pager { display: none; }
+  h2 { font-size: clamp(34px, 4.4vw, 48px); line-height: 1.08; letter-spacing: -.012em; margin-bottom: 12px; }
+  .eyebrow, .label {
+    text-transform: none; letter-spacing: 0; font-family: var(--serif); font-style: italic;
+    font-weight: 400; font-size: 18px; color: var(--accent);
+  }
+  .label { margin-top: 44px; }
+
+  /* Portada partida: foto a la izquierda, nombre a la derecha */
+  .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - 60px); }
+  .hero-photo { margin: 0; position: relative; overflow: hidden; background: var(--bar-bg); }
+  .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 47% 30%; }
+  .hero-text { display: flex; flex-direction: column; justify-content: center; padding: 56px clamp(28px, 6vw, 96px); max-width: 680px; }
+  .hero-name {
+    font-family: var(--serif); font-weight: 400; font-size: clamp(64px, 9vw, 132px); line-height: .9;
+    letter-spacing: -.035em; margin: 0 0 28px; color: var(--ink);
+  }
+  .hero-role { font-family: var(--serif); font-style: italic; font-size: clamp(20px, 2vw, 24px); color: var(--accent); margin: 0 0 14px; }
+  .hero-bio { font-size: 19px; line-height: 1.6; color: var(--ink-2); max-width: 46ch; margin: 0 0 30px; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
+  .btn-solid { background: var(--accent); color: var(--paper); }
+  .btn-solid:hover { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .hero-links { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0 0 18px; }
+  .hero-links a {
+    width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; color: var(--ink-2);
+    border: 1px solid var(--rule); text-decoration: none; transition: color .2s ease, border-color .2s ease, box-shadow .25s ease;
+  }
+  .hero-links a:hover, .hero-links a:focus-visible { color: var(--accent); border-color: var(--accent); box-shadow: 0 0 14px rgba(var(--glow), .45); outline: none; }
+  .hero-links svg { width: 18px; height: 18px; }
+  .btn-cv { align-self: flex-start; background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .btn-cv:hover { background: var(--accent); border-color: var(--accent); color: var(--paper); box-shadow: 0 0 16px rgba(var(--glow), .45); }
+
+  /* Franja de libros */
+  .shelf { background: var(--bar-bg); color: var(--bar-ink); }
+  .shelf-in { max-width: 1180px; margin: 0 auto; padding: 64px 24px 72px; }
+  .shelf-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 32px; }
+  .shelf-head h2 { color: var(--bar-ink); margin: 0; }
+  .shelf-head a { font-family: var(--sans); font-size: 14.5px; color: rgba(var(--glow), 1); }
+  .shelf-row { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px; align-items: end; }
+  .shelf-row a { display: block; text-decoration: none; color: inherit; }
+  .shelf-cover {
+    display: block; position: relative; aspect-ratio: 2 / 3; overflow: hidden; border-radius: 2px; background: #2c2520;
+    box-shadow: 0 18px 30px -16px rgba(0,0,0,.8); transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .shelf-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .shelf-fb { display: none; position: absolute; inset: 0; padding: 16px; font: italic 20px/1.2 var(--serif); color: var(--bar-ink); background: var(--accent); }
+  .shelf-cover.noimg img { display: none; }
+  .shelf-cover.noimg .shelf-fb { display: block; }
+  .shelf-row a:hover .shelf-cover, .shelf-row a:focus-visible .shelf-cover { transform: translateY(-6px); box-shadow: 0 26px 36px -16px rgba(0,0,0,.9), 0 0 28px -6px rgba(var(--glow), .55); }
+  .shelf-title { display: block; font: italic 18px/1.3 var(--serif); margin-top: 14px; color: var(--bar-ink); }
+  .shelf-meta { display: block; font: 13px var(--sans); color: var(--bar-ink-2); margin-top: 4px; }
+
+  /* Cita destacada */
+  .home-quote { max-width: 900px; margin: 0 auto; padding: 88px 24px 72px; text-align: center; }
+  .home-quote { margin: 0 auto; }
+  .hq-stage { display: grid; }
+  .hq { grid-area: 1 / 1; opacity: 0; visibility: hidden; transition: opacity .9s ease, visibility .9s; display: flex; flex-direction: column; justify-content: center; }
+  .hq.active { opacity: 1; visibility: visible; }
+  .home-quote p { font-family: var(--serif); font-size: clamp(28px, 3.6vw, 42px); line-height: 1.22; letter-spacing: -.01em; color: var(--ink); margin: 0 0 22px; }
+  .hq.long p { font-size: clamp(22px, 2.6vw, 31px); line-height: 1.32; }
+  .hq-dots { display: flex; justify-content: center; gap: 10px; margin-top: 30px; }
+  .hq-dots button { width: 10px; height: 10px; padding: 0; border-radius: 50%; border: 1px solid var(--accent); background: transparent; cursor: pointer; }
+  .hq-dots button[aria-pressed="true"] { background: var(--accent); box-shadow: 0 0 10px rgba(var(--glow), .6); }
+  @media (prefers-reduced-motion: reduce) { .hq { transition: none; } }
+  .home-quote footer { display: block; max-width: none; margin: 0; padding: 0; border: 0; font-family: var(--sans); font-size: 15px; color: var(--ink-3); }
+
+  /* Sellos de laurel con las distinciones */
+  .laurels { max-width: 1100px; margin: 0 auto; padding: 0 24px 80px; text-align: center; }
+  .laurel-row { list-style: none; margin: 0 auto; padding: 0; display: grid; max-width: 360px; }
+  .laurel-row > li { grid-area: 1 / 1; opacity: 0; visibility: hidden; transition: opacity .9s ease, visibility .9s; }
+  .laurel-row > li.active { opacity: 1; visibility: visible; }
+  .laurel {
+    position: relative; display: grid; place-items: center; aspect-ratio: 1; width: 100%; max-width: 340px; margin: 0 auto;
+    text-decoration: none; color: var(--ink); border-radius: 50%; transition: transform .3s ease;
+  }
+  .laurel-art { position: absolute; inset: -6%; width: 112%; height: 112%; color: var(--accent); transition: filter .3s ease; }
+  .laurel:hover, .laurel:focus-visible { transform: translateY(-3px); outline: none; }
+  .laurel:hover .laurel-art, .laurel:focus-visible .laurel-art { filter: drop-shadow(0 0 6px rgba(var(--glow), .7)); }
+  .laurel-txt { position: relative; width: 60%; display: flex; flex-direction: column; align-items: center; gap: 9px; padding-top: 12px; }
+  .l-prize { font: 600 20px/1.18 var(--serif); color: var(--ink); text-wrap: balance; }
+  .l-org { font: 14px/1.35 var(--sans); color: var(--ink-3); text-wrap: balance; padding-top: 8px; border-top: 1px solid color-mix(in srgb, var(--accent) 45%, transparent); }
+  .l-year { font: 600 30px/1 var(--serif); color: var(--accent); letter-spacing: .02em; }
+  .laurels .l-dots { margin-top: 34px; }
+  .laurels-more { display: inline-block; margin-top: 22px; font: 14.5px var(--sans); }
+  @media (max-width: 600px) {
+    .laurel-row { max-width: 300px; }
+    .l-prize { font-size: 17.5px; } .l-org { font-size: 13px; } .l-year { font-size: 26px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .laurel-row > li { transition: none; } }
+
+  /* Tráiler en la portada */
+  .home-trailer { background: var(--paper-2); border-top: 1px solid var(--rule); }
+  .ht-in { max-width: 1040px; margin: 0 auto; padding: 72px 24px 80px; }
+  .ht-head { text-align: center; margin-bottom: 30px; }
+  .ht-head h2 { font: 400 clamp(32px, 4vw, 46px)/1.1 var(--serif); margin: 6px 0 10px; }
+  .ht-head p { font: 14.5px var(--sans); color: var(--ink-3); margin: 0; }
+  .home-trailer .yt { box-shadow: 0 18px 50px rgba(0,0,0,.18); }
+  @media (max-width: 600px) { .ht-in { padding: 52px 16px 56px; } }
+
+  /* Accesos con imagen */
+  .tiles { max-width: 1180px; margin: 0 auto; padding: 0 24px 88px; display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 16px; }
+  .tile { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 380px; border-radius: 3px; overflow: hidden; text-decoration: none; color: #fff; background: var(--bar-bg); }
+  .tile-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+  .tile-img img.top { object-position: center 18%; }
+  .tile-img::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,.82)); }
+  .tile:hover img { transform: scale(1.04); }
+  .tile-body { position: relative; z-index: 1; padding: 24px; }
+  .tile-k { display: block; font: italic 17px var(--serif); color: rgba(var(--glow), 1); margin-bottom: 6px; }
+  .tile strong { display: block; font: 400 23px/1.25 var(--serif); }
+  .tile-text { background: var(--accent); justify-content: space-between; padding: 26px; }
+  .tile-text .tile-k { color: rgba(255,255,255,.75); }
+  .tile-text strong { font-size: 30px; line-height: 1.15; }
+  .tile-more { font: 500 14px var(--sans); color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+
+  /* Biodata con foto */
+  .bio-photo { float: right; width: 44%; margin: 6px 0 24px 36px; }
+  .bio-photo img { width: 100%; display: block; border-radius: 3px; }
+  .bio-photo figcaption { font: 13.5px/1.5 var(--sans); color: var(--ink-3); margin-top: 10px; }
+  #biodata .label { clear: both; padding-top: 8px; }
+
+  /* Pie de página ampliado */
+  .site-foot { max-width: none; padding: 0; display: block; background: var(--bar-bg); color: var(--bar-ink-2); border: 0; font-family: var(--sans); }
+  .foot-in { max-width: 1180px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: 1fr 1.6fr; gap: 40px; }
+  .foot-brand strong { display: block; font: 400 30px var(--serif); color: var(--bar-ink); margin-bottom: 6px; }
+  .foot-brand span { display: block; font: italic 17px var(--serif); margin-bottom: 20px; }
+  .foot-brand .btn { color: var(--bar-ink); border-color: rgba(255,255,255,.35); }
+  .foot-brand .btn:hover { background: rgba(255,255,255,.08); box-shadow: 0 0 16px rgba(var(--glow), .45); }
+  .foot-links { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; align-content: start; }
+  .foot-links a { display: flex; align-items: center; gap: 12px; color: var(--bar-ink-2); text-decoration: none; font-size: 14.5px; word-break: break-word; }
+  .foot-links a:hover { color: #fff; text-shadow: 0 0 10px rgba(var(--glow), .6); }
+  .foot-links svg { width: 17px; height: 17px; flex: none; color: rgba(var(--glow), 1); }
+  .foot-bottom { max-width: 1180px; margin: 0 auto; padding: 18px 24px 32px; border-top: 1px solid var(--bar-line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 13px; }
+
+  @media (max-width: 1000px) {
+    .shelf-row { grid-template-columns: repeat(3, 1fr); }
+    .tiles { grid-template-columns: 1fr 1fr; }
+    .tiles .tile:first-child { grid-column: 1 / -1; }
+  }
+  @media (max-width: 800px) {
+    .hero { grid-template-columns: 1fr; min-height: 0; }
+    .hero-photo { height: 64vh; min-height: 360px; }
+    .hero-text { padding: 36px 20px 44px; }
+    .bio-photo { float: none; width: 100%; margin: 8px 0 24px; }
+    .foot-in { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    main > section { padding: 40px 16px 40px; }
+    .shelf-in { padding: 48px 16px 56px; }
+    .shelf-row { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
+    .home-quote { padding: 64px 16px 48px; }
+    .tiles { grid-template-columns: 1fr; padding: 0 16px 64px; }
+    .tile { min-height: 300px; }
+    .foot-links { grid-template-columns: 1fr; }
+    .foot-in, .foot-bottom { padding-left: 16px; padding-right: 16px; }
+  }
+  @media print {
+    .topbar, .theme-toggle, .subtabs, .pager, iframe, .yt, .lightbox, .form, .hero-photo, .tiles, .home-trailer { display: none !important; }
+    .js main > section, .js .subpanel { display: block !important; }
+    .layout { display: block; padding: 0; }
+    .sidebar { position: static; }
+  }
+   /* Iconos de contacto en el pie de página */
+  footer { align-items: center; }
+  .foot-social { display: flex; gap: 10px; }
+  .foot-social a {
+    width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center;
+    color: var(--ink-2); border: 1px solid var(--rule); text-decoration: none;
+    transition: color .2s ease, border-color .2s ease, box-shadow .25s ease, transform .2s ease;
+  }
+  .foot-social a:hover, .foot-social a:focus-visible {
+    color: var(--accent); border-color: var(--accent); outline: none; transform: translateY(-2px);
+    box-shadow: 0 0 16px rgba(var(--glow), .45);
+  }
+  .foot-social svg { width: 17px; height: 17px; }
+  @media (max-width: 600px) {
+    footer { flex-direction: column; text-align: center; gap: 14px; }
+    .foot-social { order: -1; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="laurel" viewBox="0 0 200 200"><g fill="currentColor"><path d="M86.1 178.8 L80.9 177.7 L75.8 176.3 L70.8 174.5 L65.9 172.4 L61.2 170.0 L56.7 167.2 L52.3 164.2 L48.2 160.9 L44.2 157.4 L40.5 153.5 L37.1 149.5 L34.0 145.2 L31.1 140.7 L28.6 136.1 L26.4 131.3 L24.4 126.3 L22.9 121.2 L21.6 116.1 L20.7 110.9 L20.2 105.6 L20.0 100.3 L20.2 95.0 L20.7 89.7 L21.5 84.5 L22.7 79.3 L24.3 74.2 L26.1 69.3 L28.3 64.4 L30.9 59.8 L33.7 55.3 L36.8 51.0 L40.2 46.9 L43.8 43.0 L47.7 39.4 L51.9 36.1 L56.2 33.1 L60.7 30.3 L65.4 27.9 L70.3 25.7 L75.3 23.9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="67.7" cy="179.2" rx="9.0" ry="3.6" transform="rotate(163.0 67.7 179.2)"/><ellipse cx="70.7" cy="169.2" rx="9.0" ry="3.6" transform="rotate(-129.0 70.7 169.2)"/><ellipse cx="53.6" cy="171.7" rx="8.8" ry="3.5" transform="rotate(173.8 53.6 171.7)"/><ellipse cx="58.3" cy="162.7" rx="8.8" ry="3.5" transform="rotate(-118.2 58.3 162.7)"/><ellipse cx="41.1" cy="161.7" rx="8.5" ry="3.4" transform="rotate(-175.3 41.1 161.7)"/><ellipse cx="47.3" cy="154.0" rx="8.5" ry="3.4" transform="rotate(-107.3 47.3 154.0)"/><ellipse cx="30.8" cy="149.6" rx="8.3" ry="3.3" transform="rotate(-164.5 30.8 149.6)"/><ellipse cx="38.2" cy="143.3" rx="8.3" ry="3.3" transform="rotate(-96.5 38.2 143.3)"/><ellipse cx="22.9" cy="135.8" rx="8.1" ry="3.2" transform="rotate(-153.6 22.9 135.8)"/><ellipse cx="31.1" cy="131.2" rx="8.1" ry="3.2" transform="rotate(-85.6 31.1 131.2)"/><ellipse cx="17.8" cy="120.8" rx="7.8" ry="3.1" transform="rotate(-142.8 17.8 120.8)"/><ellipse cx="26.4" cy="117.9" rx="7.8" ry="3.1" transform="rotate(-74.8 26.4 117.9)"/><ellipse cx="15.5" cy="105.1" rx="7.6" ry="3.0" transform="rotate(-131.9 15.5 105.1)"/><ellipse cx="24.2" cy="103.9" rx="7.6" ry="3.0" transform="rotate(-63.9 24.2 103.9)"/><ellipse cx="16.1" cy="89.3" rx="7.4" ry="3.0" transform="rotate(-121.1 16.1 89.3)"/><ellipse cx="24.7" cy="89.8" rx="7.4" ry="3.0" transform="rotate(-53.1 24.7 89.8)"/><ellipse cx="19.7" cy="74.0" rx="7.2" ry="2.9" transform="rotate(-110.2 19.7 74.0)"/><ellipse cx="27.8" cy="76.0" rx="7.2" ry="2.9" transform="rotate(-42.2 27.8 76.0)"/><ellipse cx="26.1" cy="59.6" rx="6.9" ry="2.8" transform="rotate(-99.4 26.1 59.6)"/><ellipse cx="33.4" cy="62.9" rx="6.9" ry="2.8" transform="rotate(-31.4 33.4 62.9)"/><ellipse cx="35.0" cy="46.6" rx="6.7" ry="2.7" transform="rotate(-88.5 35.0 46.6)"/><ellipse cx="41.4" cy="51.1" rx="6.7" ry="2.7" transform="rotate(-20.5 41.4 51.1)"/><ellipse cx="46.2" cy="35.6" rx="6.5" ry="2.6" transform="rotate(-77.7 46.2 35.6)"/><ellipse cx="51.4" cy="41.0" rx="6.5" ry="2.6" transform="rotate(-9.7 51.4 41.0)"/><ellipse cx="59.2" cy="26.8" rx="6.2" ry="2.5" transform="rotate(-66.8 59.2 26.8)"/><ellipse cx="63.1" cy="32.9" rx="6.2" ry="2.5" transform="rotate(1.2 63.1 32.9)"/><ellipse cx="73.5" cy="20.7" rx="6.0" ry="2.4" transform="rotate(-56.0 73.5 20.7)"/><ellipse cx="76.1" cy="27.1" rx="6.0" ry="2.4" transform="rotate(12.0 76.1 27.1)"/><ellipse cx="81.0" cy="22.1" rx="7" ry="2.8" transform="rotate(-18.0 81.0 22.1)"/><path d="M113.9 178.8 L119.1 177.7 L124.2 176.3 L129.2 174.5 L134.1 172.4 L138.8 170.0 L143.3 167.2 L147.7 164.2 L151.8 160.9 L155.8 157.4 L159.5 153.5 L162.9 149.5 L166.0 145.2 L168.9 140.7 L171.4 136.1 L173.6 131.3 L175.6 126.3 L177.1 121.2 L178.4 116.1 L179.3 110.9 L179.8 105.6 L180.0 100.3 L179.8 95.0 L179.3 89.7 L178.5 84.5 L177.3 79.3 L175.7 74.2 L173.9 69.3 L171.7 64.4 L169.1 59.8 L166.3 55.3 L163.2 51.0 L159.8 46.9 L156.2 43.0 L152.3 39.4 L148.1 36.1 L143.8 33.1 L139.3 30.3 L134.6 27.9 L129.7 25.7 L124.7 23.9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><ellipse cx="132.3" cy="179.2" rx="9.0" ry="3.6" transform="rotate(17.0 132.3 179.2)"/><ellipse cx="129.3" cy="169.2" rx="9.0" ry="3.6" transform="rotate(309.0 129.3 169.2)"/><ellipse cx="146.4" cy="171.7" rx="8.8" ry="3.5" transform="rotate(6.2 146.4 171.7)"/><ellipse cx="141.7" cy="162.7" rx="8.8" ry="3.5" transform="rotate(298.2 141.7 162.7)"/><ellipse cx="158.9" cy="161.7" rx="8.5" ry="3.4" transform="rotate(355.3 158.9 161.7)"/><ellipse cx="152.7" cy="154.0" rx="8.5" ry="3.4" transform="rotate(287.3 152.7 154.0)"/><ellipse cx="169.2" cy="149.6" rx="8.3" ry="3.3" transform="rotate(344.5 169.2 149.6)"/><ellipse cx="161.8" cy="143.3" rx="8.3" ry="3.3" transform="rotate(276.5 161.8 143.3)"/><ellipse cx="177.1" cy="135.8" rx="8.1" ry="3.2" transform="rotate(333.6 177.1 135.8)"/><ellipse cx="168.9" cy="131.2" rx="8.1" ry="3.2" transform="rotate(265.6 168.9 131.2)"/><ellipse cx="182.2" cy="120.8" rx="7.8" ry="3.1" transform="rotate(322.8 182.2 120.8)"/><ellipse cx="173.6" cy="117.9" rx="7.8" ry="3.1" transform="rotate(254.8 173.6 117.9)"/><ellipse cx="184.5" cy="105.1" rx="7.6" ry="3.0" transform="rotate(311.9 184.5 105.1)"/><ellipse cx="175.8" cy="103.9" rx="7.6" ry="3.0" transform="rotate(243.9 175.8 103.9)"/><ellipse cx="183.9" cy="89.3" rx="7.4" ry="3.0" transform="rotate(301.1 183.9 89.3)"/><ellipse cx="175.3" cy="89.8" rx="7.4" ry="3.0" transform="rotate(233.1 175.3 89.8)"/><ellipse cx="180.3" cy="74.0" rx="7.2" ry="2.9" transform="rotate(290.2 180.3 74.0)"/><ellipse cx="172.2" cy="76.0" rx="7.2" ry="2.9" transform="rotate(222.2 172.2 76.0)"/><ellipse cx="173.9" cy="59.6" rx="6.9" ry="2.8" transform="rotate(279.4 173.9 59.6)"/><ellipse cx="166.6" cy="62.9" rx="6.9" ry="2.8" transform="rotate(211.4 166.6 62.9)"/><ellipse cx="165.0" cy="46.6" rx="6.7" ry="2.7" transform="rotate(268.5 165.0 46.6)"/><ellipse cx="158.6" cy="51.1" rx="6.7" ry="2.7" transform="rotate(200.5 158.6 51.1)"/><ellipse cx="153.8" cy="35.6" rx="6.5" ry="2.6" transform="rotate(257.7 153.8 35.6)"/><ellipse cx="148.6" cy="41.0" rx="6.5" ry="2.6" transform="rotate(189.7 148.6 41.0)"/><ellipse cx="140.8" cy="26.8" rx="6.2" ry="2.5" transform="rotate(246.8 140.8 26.8)"/><ellipse cx="136.9" cy="32.9" rx="6.2" ry="2.5" transform="rotate(178.8 136.9 32.9)"/><ellipse cx="126.5" cy="20.7" rx="6.0" ry="2.4" transform="rotate(236.0 126.5 20.7)"/><ellipse cx="123.9" cy="27.1" rx="6.0" ry="2.4" transform="rotate(168.0 123.9 27.1)"/><ellipse cx="119.0" cy="22.1" rx="7" ry="2.8" transform="rotate(198.0 119.0 22.1)"/><circle cx="86" cy="183.9" r="1.7"/><circle cx="93" cy="185.5" r="1.7"/><circle cx="100" cy="187.0" r="2.4"/><circle cx="107" cy="185.5" r="1.7"/><circle cx="114" cy="183.9" r="1.7"/></g></symbol></svg>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#inicio">Tadeo Palacios</a>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="#inicio">Inicio</a>
+      <a href="#biodata">Biografía</a>
+      <div class="nav-group">
+        <button class="nav-group-btn" type="button" aria-haspopup="true" aria-expanded="false">Trayectoria
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-menu">
+          <a href="#formacion">Formación</a>
+          <a href="#docencia">Docencia</a>
+          <a href="#ponencias">Ponencias</a>
+          <a href="#premios">Premios y distinciones</a>
+        </div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-group-btn" type="button" aria-haspopup="true" aria-expanded="false">Obra
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="nav-menu">
+          <a href="#obra">Obra de ficción</a>
+          <a href="#publicaciones">Ensayos publicados</a>
+        </div>
+      </div>
+      <a href="#podcasts">Podcasts</a>
+      <a href="#blog">Blog</a>
+      <a href="#actividades">Actividades</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div style="display:flex; gap:8px;">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar entre modo claro y oscuro">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- ===================== BARRA LATERAL ===================== -->
+
+  <!-- ===================== CONTENIDO ===================== -->
+  <main id="contenido">
+    <!-- ========== INICIO ========== -->
+    <section id="inicio" data-title="Inicio">
+      <div class="hero">
+        <figure class="hero-photo"><img src="foto.jpg" alt="Retrato de Tadeo Palacios"></figure>
+        <div class="hero-text">
+          <h1 class="hero-name">Tadeo<br>Palacios</h1>
+          <p class="hero-role">Autor, investigador, docente y abogado</p>
+          <p class="hero-bio">Candidato a doctor en Literatura Hispanoamericana por la Pontificia Universidad Católica del Perú. Autor del libro de cuentos <em>Mañana nunca llega</em> (Pesopluma, 2021) y guionista de manga.</p>
+          <div class="hero-cta">
+            <a class="btn btn-solid" href="#biodata">Biografía</a>
+            <a class="btn btn-solid" href="#obra">Obra de ficción</a>
+            <a class="btn btn-solid" href="#publicaciones">Ensayos literarios</a>
+          </div>
+          <ul class="hero-links" aria-label="Contacto y perfiles">
+        <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tadeo.palacios@pucp.edu.pe&amp;su=Contacto%20desde%20tu%20p%C3%A1gina%20web" target="_blank" rel="noopener" aria-label="Correo" title="Correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a></li>
+        <li><a href="https://wa.me/51971751038?text=Hola%20Tadeo%2C%20le%20escribo%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6z"/><path d="M9 9.2c.2 1.9 1.9 4.1 4.6 5.3l1.2-1.2 1.7.8c0 .9-.7 1.7-1.6 1.7C11.6 15.8 8.2 12.4 8.2 9.1c0-.9.8-1.6 1.7-1.6l.8 1.7z"/></svg></a></li>
+        <li><a href="https://orcid.org/0000-0003-1207-0770" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.3 17.2H6.6V9.3h1.7v7.9zM7.4 8.2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3 9V9.3h3c2.6 0 4 1.7 4 3.9 0 2.3-1.6 4-4 4h-3zm1.7-1.5h1.2c1.8 0 2.4-1.3 2.4-2.5 0-1.4-.8-2.5-2.4-2.5h-1.2v5z"/></svg></a></li>
+        <li><a href="https://scholar.google.com/citations?user=0ieccrkAAAAJ&hl=es" target="_blank" rel="noopener" aria-label="Google Académico" title="Google Académico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 9.5 12 15l10-5.5L12 4z"/><path d="M6 11.7v4.6c0 1.5 2.7 3.2 6 3.2s6-1.7 6-3.2v-4.6"/></svg></a></li>
+        <li><a href="https://www.instagram.com/sonambulario/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/tadeopalacios/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a></li>
+        <li><a href="https://linktr.ee/tadeopalacios" target="_blank" rel="noopener" aria-label="Linktree" title="Linktree"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4l-1.1 1.1"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.1-1.1"/></svg></a></li>
+          </ul>
+          <a class="btn btn-cv" href="cv.pdf" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+            Descargar CV (PDF)
+          </a>
+        </div>
+      </div>
+
+      <!-- Tráiler de Mañana nunca llega -->
+      <div class="home-trailer">
+        <div class="ht-in">
+          <div class="ht-head">
+            <span class="eyebrow">Tráiler</span>
+            <h2><em>Mañana nunca llega</em></h2>
+            <p>Cuentos · Pesopluma, 2021 · <a href="#manana-nunca-llega">Lo que dice la crítica</a></p>
+          </div>
+          <button class="yt" type="button" data-yt="5RN82l5wHlI" aria-label="Reproducir el tráiler de Mañana nunca llega" style="background-image:url('https://i.ytimg.com/vi/5RN82l5wHlI/hqdefault.jpg')">
+            <span class="play"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="shelf">
+        <div class="shelf-in">
+          <div class="shelf-head">
+            <h2>Libros</h2>
+            <a href="#obra">Toda la obra</a>
+          </div>
+          <ul class="shelf-row">
+          <li><a href="#manana-nunca-llega">
+            <span class="shelf-cover"><img src="portadas/manana-nunca-llega.jpg" alt="Portada de Mañana nunca llega" loading="lazy" onerror="this.parentNode.classList.add('noimg')"><span class="shelf-fb">Mañana nunca llega</span></span>
+            <span class="shelf-title">Mañana nunca llega</span><span class="shelf-meta">Cuentos · 2021</span>
+          </a></li>
+          <li><a href="#el-hipocampo-de-oro">
+            <span class="shelf-cover"><img src="portadas/el-hipocampo-de-oro.jpg" alt="Portada de El hipocampo de oro" loading="lazy" onerror="this.parentNode.classList.add('noimg')"><span class="shelf-fb">El hipocampo de oro</span></span>
+            <span class="shelf-title">El hipocampo de oro</span><span class="shelf-meta">Manga inédito · 2025</span>
+          </a></li>
+          <li><a href="#antologia-del-cuento-peruano">
+            <span class="shelf-cover"><img src="https://acdn-us.mitiendanube.com/stores/006/658/448/products/02d54510-6f8c-46b4-ba38-3dd99710f1ca-abfd3a8ecef2d5a32a17764548410324-640-0.webp" alt="Portada de Antología del cuento peruano" loading="lazy" onerror="this.parentNode.classList.add('noimg')"><span class="shelf-fb">Antología del cuento peruano</span></span>
+            <span class="shelf-title">Antología del cuento peruano</span><span class="shelf-meta">Antología · 2026</span>
+          </a></li>
+          <li><a href="https://www.buscalibre.pe/libro-la-destruccion-del-reino/9786124416569/p/64584271" target="_blank" rel="noopener">
+            <span class="shelf-cover"><img src="https://i0.wp.com/pesopluma.net/web007/wp-content/uploads/la-destruccion-del-reino-miguel-gutierrez-pesopluma.png?fit=340%2C435&amp;ssl=1" alt="Portada de La destrucción del reino" loading="lazy" onerror="this.parentNode.classList.add('noimg')"><span class="shelf-fb">La destrucción del reino</span></span>
+            <span class="shelf-title">La destrucción del reino</span><span class="shelf-meta">Edición crítica · 2025</span>
+          </a></li>
+          <li><a href="https://www.buscalibre.pe/libro-la-premeditacion-y-el-azar/9786124416538/p/63357424" target="_blank" rel="noopener">
+            <span class="shelf-cover"><img src="https://i0.wp.com/pesopluma.net/web007/wp-content/uploads/la-premeditacion-y-el-azar-pilar-dughi.png?fit=340%2C435&amp;ssl=1" alt="Portada de La premeditación y el azar" loading="lazy" onerror="this.parentNode.classList.add('noimg')"><span class="shelf-fb">La premeditación y el azar</span></span>
+            <span class="shelf-title">La premeditación y el azar</span><span class="shelf-meta">Edición crítica · 2024</span>
+          </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Citas de la crítica: se alternan solas. Para agregar otra, copia un bloque <div class="hq"> -->
+      <figure class="home-quote" aria-label="Lo que dicen de Mañana nunca llega">
+        <div class="hq-stage">
+          <div class="hq active">
+            <p>«A pesar de su juventud, Tadeo Palacios tiene una prosa tan lograda que podría leerse cantando».</p>
+            <footer>Juan Manuel Robles, sobre <a href="#manana-nunca-llega"><em>Mañana nunca llega</em></a></footer>
+          </div>
+          <div class="hq" aria-hidden="true">
+            <p>«Ante todo, <em>Mañana nunca llega</em> es un libro que no teme».</p>
+            <footer>Miluska Benavides, sobre <a href="#manana-nunca-llega"><em>Mañana nunca llega</em></a></footer>
+          </div>
+          <div class="hq long" aria-hidden="true">
+            <p>«Espera, abandono, amor, resistencia, malentendido, pisoteo, lucha. La tarde es ambigua y urgente. La tarde arremete, no es retráctil. Como estos cuentos. Sus colores: rojo fuego; su paisaje: el desierto, el mar y la ciudad; un sabor: tamarindo; y estos lenguajes: la ternura y la cólera».</p>
+            <footer>Katya Adaui, sobre <a href="#manana-nunca-llega"><em>Mañana nunca llega</em></a></footer>
+          </div>
+          <div class="hq" aria-hidden="true">
+            <p>«Estamos ante un escritor impetuoso, vital, arriesgado que vive la literatura y defiende a muerte esta extraña forma de vida».</p>
+            <footer>Diego Trelles Paz, sobre <a href="#manana-nunca-llega"><em>Mañana nunca llega</em></a></footer>
+          </div>
+          <div class="hq long" aria-hidden="true">
+            <p>«Sin concesiones, con prosa ágil, vigorosa y registros que subvierten con talento las convenciones, los cuentos de Tadeo Palacios Valverde nos hunden en la vorágine de las pasiones humanas».</p>
+            <footer>Christiane Félip Vidal, sobre <a href="#manana-nunca-llega"><em>Mañana nunca llega</em></a></footer>
+          </div>
+        </div>
+        <div class="hq-dots" role="group" aria-label="Elegir cita"></div>
+      </figure>
+
+      <!-- Distinciones en sellos de laurel: se alternan solas, como las citas. Para agregar otra, copia un bloque <li> (sin class="active") -->
+      <div class="laurels" aria-label="Distinciones">
+        <ul class="laurel-row">
+          <li class="active"><a class="laurel" href="#el-hipocampo-de-oro">
+            <svg class="laurel-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#laurel"/></svg>
+            <span class="laurel-txt">
+              <span class="l-prize">Finalista del 7.° Concurso Nacional de Narrativa Gráfica del Perú</span>
+              <span class="l-org">MINCUL, CASLIT y Alianza Francesa</span>
+              <span class="l-year">2025</span>
+            </span>
+          </a></li>
+          <li><a class="laurel" href="#premios">
+            <svg class="laurel-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#laurel"/></svg>
+            <span class="laurel-txt">
+              <span class="l-prize">Ganador del Concurso Nacional de Cuento «Nuestros Relatos»</span>
+              <span class="l-org">PCM y Programa Bicentenario del Perú</span>
+              <span class="l-year">2020</span>
+            </span>
+          </a></li>
+          <li><a class="laurel" href="#premios">
+            <svg class="laurel-art" viewBox="0 0 200 200" aria-hidden="true"><use href="#laurel"/></svg>
+            <span class="laurel-txt">
+              <span class="l-prize">Ganador del Concurso «Duelo de Escritura Espontánea»</span>
+              <span class="l-org">Alianza Francesa</span>
+              <span class="l-year">2019</span>
+            </span>
+          </a></li>
+        </ul>
+        <div class="hq-dots l-dots" role="group" aria-label="Elegir distinción"></div>
+        <a class="laurels-more" href="#premios">Ver todas las distinciones</a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile tile-img" href="#antologia-del-cuento-peruano">
+          <img src="galeria/fil-buenos-aires-2.jpg" alt="" loading="lazy">
+          <span class="tile-body"><span class="tile-k">Presentación</span><strong><em>Antología del cuento peruano</em> en la Feria Internacional del Libro de Buenos Aires</strong></span>
+        </a>
+        <a class="tile tile-img" href="#el-hipocampo-de-oro">
+          <img src="portadas/el-hipocampo-de-oro.jpg" alt="" loading="lazy" class="top">
+          <span class="tile-body"><span class="tile-k">Manga</span><strong><em>El hipocampo de oro</em>, finalista del 7.° Concurso Nacional de Narrativa Gráfica</strong></span>
+        </a>
+        <a class="tile tile-text" href="#blog" id="tileBlog">
+          <span class="tile-k">Blog</span>
+          <strong id="tileBlogTitle">Ensayos, reseñas y notas de lectura</strong>
+          <span class="tile-more" id="tileBlogMore">Leer el blog</span>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ========== BIOGRAFÍA ========== -->
+    <section id="biodata" data-title="Biografía">
+      <span class="eyebrow">Presentación</span>
+      <h2>Jesús Tadeo Palacios Valverde</h2>
+      <h3>Piura, Perú, 1994.</h3>
+      <figure class="bio-photo">
+        <img src="galeria/fil-buenos-aires-1.jpg" alt="Tadeo Palacios en la presentación de la Antología del cuento peruano" loading="lazy">
+        <figcaption>En la presentación de la <em>Antología del cuento peruano</em>, Feria Internacional del Libro de Buenos Aires.</figcaption>
+      </figure>
+      <p>Candidato a doctor y maestro en Literatura Hispanoamericana por la Pontificia Universidad Católica del Perú (PUCP), abogado y bachiller en derecho y ciencias políticas por la Universidad Nacional de Piura (UNP). Es docente e investigador del Centro de Estudios Orientales de la PUCP, en el área de cultura popular japonesa, y actualmente se desempeña como gestor de la Red Interdisciplinaria de Estudios Latinoamericanos del siglo XIX de dicho claustro. Posee, además, formación en corrección de estilo por el Ministerio de Cultura del Perú.</p>
+      <p>Como autor, publicó el libro de relatos <em>Mañana nunca llega</em> (Pesopluma, 2021) y ha participado en volúmenes como <em>Antología del cuento peruano</em> (SB, 2026), preparada para la Feria Internacional de Buenos Aires 2026 en la que Perú fue el país invitado, y <em>El tiempo es nuestro. Cuentos peruanos post-2000</em> (Seix Barral, 2023). Asimismo, ha preparado las ediciones críticas de <em>La premeditación y el azar</em> de Pilar Dughi (Pesopluma, 2024) y <em>La destrucción del reino</em> de Miguel Gutiérrez (Pesopluma, 2025).</p>
+      <p>Su trayectoria profesional incluye la asesoría y la consultoría tanto en el ámbito público como privado, con énfasis en asuntos vinculados a los derechos humanos, la gestión pública, la gestión cultural y las controversias en materia administrativa y laboral.</p>
+      <h3 class="label">Áreas de interés</h3>
+      <ul class="tags" aria-label="Áreas de interés">
+        <li>Narrativa hispanoamericana contemporánea</li>
+        <li>Narrativa peruana de los siglos XX y XXI</li>
+        <li>Narrativa estadounidense de los siglos XX y XXI</li>
+        <li>Memoria, afectos y violencia política en el cono sur</li>
+        <li>Estudios literarios</li>
+        <li>Weird fiction y ficción especulativa</li>
+        <li>Estudios de género</li>
+        <li>Cultura popular japonesa</li>
+        <li>Manga y anime</li>
+        <li>Edición crítica</li>
+        <li>Edición y cadena del libro y la lectura</li>
+        <li>Corrección de estilo y asesoría editorial</li>
+        <li>Gestión cultural</li>
+        <li>Gestión pública</li>
+        <li>Derechos humanos</li>
+      </ul>
+    </section>
+
+    <!-- ========== FORMACIÓN ========== -->
+    <section id="formacion" data-title="Formación">
+      <span class="eyebrow">Trayectoria</span>
+      <h2>Formación profesional</h2>
+      <p class="intro">Estudios, grupos de investigación y labor como evaluador.</p>
+
+      <div class="subtabs" role="tablist">
+        <button role="tab" data-target="f-academica">Formación académica</button>
+        <button role="tab" data-target="f-grupos">Grupos de investigación</button>
+        <button role="tab" data-target="f-pares">Evaluación de pares y jurado</button>
+      </div>
+
+      <div class="subpanel" id="f-academica">
+        <ul class="entries">
+          <li class="entry"><span class="when">2025 al presente</span><span class="what"><strong>Candidato a doctor en Literatura Hispanoamericana</strong><span class="meta">Pontificia Universidad Católica del Perú. Beca Doctoral PUCP 2025. Proyecto de tesis doctoral enfocado en la representación del bandido en las novelas de Miguel Gutiérrez Correa.</span></span></li>
+          <li class="entry"><span class="when">2024</span><span class="what"><strong>Maestro en Literatura Hispanoamericana</strong><span class="meta">Pontificia Universidad Católica del Perú. Tesis: «La representación del sujeto femenino alzado en armas y militante en los cuentos de la violencia política de Pilar Dughi».</span></span></li>
+          <li class="entry"><span class="when">2022</span><span class="what"><strong>Diploma de Posgrado en Literatura Hispanoamericana</strong><span class="meta">PUCP.</span></span></li>
+          <li class="entry"><span class="when">2019</span><span class="what"><strong>Título de Abogado</strong><span class="meta">Universidad Nacional de Piura. Bachiller en Derecho y Ciencias Políticas (2018), décimo superior.</span></span></li>
+        </ul>
+      </div>
+
+      <div class="subpanel" id="f-grupos">
+        <ul class="entries">
+          <li class="entry"><span class="when">CEO–PUCP</span><span class="what">Grupo de Investigación José León Herrera / Estudios Asiáticos en el Perú (Área de cultura popular japonesa)</span></li>
+          <li class="entry"><span class="when">RIEL–PUCP</span><span class="what">Red Interdisciplinaria de Estudios Latinoamericanos del Siglo XIX</span></li>
+        </ul>
+      </div>
+
+      <div class="subpanel" id="f-pares">
+        <ul class="entries">
+          <li class="entry"><span class="when">2026</span><span class="what"><strong>Revisor</strong>, <em>América sin Nombre</em><span class="meta">Universidad de Alicante. Scopus Q2.</span></span></li>
+          <li class="entry"><span class="when">2026</span><span class="what"><strong>Revisor</strong>, <em>Revista de la Unidad de Investigaciones</em><span class="meta">Facultad de Letras y Ciencias Humanas, Universidad Nacional Mayor de San Marcos (UNMSM). DOAJ, Latindex Catálogo 2.0, MIAR.</span></span></li>
+          <li class="entry"><span class="when">2025</span><span class="what"><strong>Jurado</strong>, <em>Concurso de proyectos para la difusión del libro y autores peruanos</em><span class="meta">Dirección del Libro y la Lectura del Ministerio de Cultura del Perú.</span></span></li>
+          <li class="entry"><span class="when">2021</span><span class="what"><strong>Jurado</strong>, VII Concurso Nacional de Cuentos Jurídicos <em>Fabellae Iuris</em><span class="meta">Asociación Civil Derecho &amp; Sociedad / Grupo Pólemos, PUCP.</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== DOCENCIA ========== -->
+    <section id="docencia" data-title="Docencia">
+      <span class="eyebrow">Enseñanza</span>
+      <h2>Experiencia docente</h2>
+      <p class="intro">Cursos dictados en la PUCP, la Universidad Nacional de Piura y la Universidad Tecnológica del Perú.</p>
+      <ul class="entries">
+        <li class="entry"><span class="when">2026-II</span><span class="what"><strong>Vínculos masculinos apasionados: deseo, amistad y rivalidad en el manga y anime contemporáneos (1970-2025)</strong><span class="meta">Centro de Estudios Orientales, PUCP.</span></span></li>
+        <li class="entry"><span class="when">2025-II</span><span class="what"><strong>Mecanismos de la ficción en el manga y el anime contemporáneos</strong><span class="meta">Centro de Estudios Orientales, PUCP.</span></span></li>
+        <li class="entry"><span class="when">2024-II</span><span class="what"><strong>Taller de Escritura Creativa</strong><span class="meta">Universidad Nacional de Piura. Docente instructor.</span></span></li>
+        <li class="entry"><span class="when">2024-II</span><span class="what"><strong>Derechos Humanos · Ciencia Política · Historia del Derecho</strong><span class="meta">Facultad de Derecho, Universidad Tecnológica del Perú.</span></span></li>
+        <li class="entry"><span class="when">2022-II</span><span class="what"><strong>Técnicas de Escritura: Cuento</strong><span class="meta">Maestría en Escritura Creativa, PUCP. Asistente de docencia del Dr. Ezio Neyra.</span></span></li>
+        <li class="entry"><span class="when">2021-II</span><span class="what"><strong>Técnicas de Escritura: Novela</strong><span class="meta">Maestría en Escritura Creativa, PUCP. Asistente de docencia del Dr. Ezio Neyra.</span></span></li>
+      </ul>
+    </section>
+
+    <!-- ========== PONENCIAS ========== -->
+    <section id="ponencias" data-title="Ponencias">
+      <span class="eyebrow">Eventos académicos</span>
+      <h2>Ponencias y conferencias</h2>
+      <p class="intro">Participación en congresos, coloquios, simposios y conferencias.</p>
+
+      <div class="subtabs" role="tablist">
+        <button role="tab" data-target="po-recientes">2025-2026<span class="count">8</span></button>
+        <button role="tab" data-target="po-anteriores">2017-2024<span class="count">14</span></button>
+      </div>
+
+      <div class="subpanel" id="po-recientes">
+        <ul class="entries">
+          <li class="entry"><span class="when">2026</span><span class="what">«Un dios hambriento y jadeante: derivas del deseo, ritualidad y terror en <em>El cielo de la selva</em> (2025), de Elaine Vilar Madruga».<span class="meta">XXXI Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP. Lima.</span></span></li>
+          <li class="entry"><span class="when">2026</span><span class="what">«Símbolo, iconografía y gráfica del manga/anime en las movilizaciones sociales peruanas (2020-2025)».<span class="meta">XIX Congreso Internacional de ALADAA. Buenos Aires.</span></span></li>
+          <li class="entry"><span class="when">2025</span><span class="what">«<em>Dan Da Dan</em> de Yukinobu Tatsu: folklor tradicional, leyenda urbana y <em>weird fiction</em> en el manga y anime contemporáneo».<span class="meta">I Simposio Internacional de Estudios Japoneses, CEO–PUCP. Lima.</span></span></li>
+          <li class="entry"><span class="when">2025</span><span class="what">«"El cantar de la Zarca" o la construcción transgresora del sujeto femenino heroico beligerante en la novela <em>La destrucción del reino</em> de Miguel Gutiérrez».<span class="meta">XLV Congreso Internacional del IILI. Lima.</span></span></li>
+          <li class="entry"><span class="when">2025</span><span class="what">«Dengue, capitalismo patológico y necropolítica ecocida: una lectura distópica y mutante de <em>La infancia del mundo</em> (2023) de Michel Nieva».<span class="meta">XXX Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP. Lima.</span></span></li>
+          <li class="entry"><span class="when">2025</span><span class="what">«La investigación y el ensayo literario: reflexiones sobre su práctica en la literatura peruana contemporánea a partir de Mario Vargas Llosa y Miguel Gutiérrez». Conferencia invitada.<span class="meta">Universidad Nacional de Piura.</span></span></li>
+          <li class="entry"><span class="when">2025</span><span class="what">«Subversión, brujería y mujer monstrificada en el relato "Christi nomine invocato"».<span class="meta">I Andean and Amazonian Symposium, CLAS, Rutgers University. Nueva Jersey.</span></span></li>
+          <li class="entry"><span class="when">2025</span><span class="what">Conversatorio sobre <em>Ave de la noche</em> y <em>La premeditación y el azar</em> de Pilar Dughi.<span class="meta">XI Congreso Internacional de Estudiantes de Literatura «Voces y Resistencias».</span></span></li>
+        </ul>
+      </div>
+
+      <div class="subpanel" id="po-anteriores">
+        <ul class="entries">
+          <li class="entry"><span class="when">2024</span><span class="what">«El Cantar de la Zarca». Conferencia invitada.<span class="meta">Universidad Nacional de Piura.</span></span></li>
+          <li class="entry"><span class="when">2024</span><span class="what">Taller didáctico «Domina el uso de las Normas APA».<span class="meta">Facultad de Derecho y Ciencias Políticas, Universidad Nacional de Piura.</span></span></li>
+          <li class="entry"><span class="when">2024</span><span class="what">«Los dilemas de la ficción y el lugar del creador en los mangas <em>Look Back</em> (2021) y <em>Sayonara Eri</em> (2022) de Tatsuki Fujimoto».<span class="meta">I Jornada Internacional de Estudios Japoneses, CEO–PUCP.</span></span></li>
+          <li class="entry"><span class="when">2024</span><span class="what">«Subversión, brujería y mujer monstrificada en el relato "Christi nomine invocato"».<span class="meta">XXIX Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP.</span></span></li>
+          <li class="entry"><span class="when">2023</span><span class="what">Trayectoria literaria de Pilar Dughi. Conversatorio por los 25 años de <em>Puñales escondidos</em>.<span class="meta">44.ª Feria del Libro Ricardo Palma, Cámara Peruana del Libro.</span></span></li>
+          <li class="entry"><span class="when">2023</span><span class="what">«Influjo de J. D. Salinger en la narrativa de Guillermo Niño de Guzmán y Pilar Dughi».<span class="meta">Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP.</span></span></li>
+          <li class="entry"><span class="when">2022</span><span class="what">«<em>Chainsaw Man</em>: un espejo de precarización, sangre y desencanto para un presente envuelto en llamas».<span class="meta">Jornadas de Estudios Japoneses, CEO–PUCP.</span></span></li>
+          <li class="entry"><span class="when">2022</span><span class="what">Pilar Dughi: «Uno de los trece» y «Kentoripayeni» / Guillermo Niño de Guzmán: «10».<span class="meta">Lecturas Peruanas en Casa, Biblioteca Mario Vargas Llosa.</span></span></li>
+          <li class="entry"><span class="when">2021</span><span class="what">«Cultura popular japonesa: <em>shōnen</em>».<span class="meta">Ciclo «Japón: cultura popular ayer y hoy», CEO–PUCP.</span></span></li>
+          <li class="entry"><span class="when">2021</span><span class="what">«"Bajo el agua negra": memoria, desapariciones forzadas y terror lovecraftiano en Argentina».<span class="meta">Coloquio de Estudiantes de Posgrado de Literatura Hispanoamericana, PUCP.</span></span></li>
+          <li class="entry"><span class="when">2021</span><span class="what">«<em>Shingeki no Kyojin</em>: memoria, guerra y política».<span class="meta">Semana del Manga, CEO–PUCP.</span></span></li>
+          <li class="entry"><span class="when">2020</span><span class="what">«Violencia de género y estética gótica en "Si haces mal no esperes bien" de Juana Manuela Gorriti».<span class="meta">Congreso de Literatura siglos XIX y XX, RIEL–Perú XIX y PUCP.</span></span></li>
+          <li class="entry"><span class="when">2020</span><span class="what">Taller de análisis crítico de literatura y derecho.<span class="meta">I Taller de Escritura Creativa <em>Fabellae Iuris</em>, Derecho &amp; Sociedad / Grupo Pólemos, PUCP.</span></span></li>
+          <li class="entry"><span class="when">2017</span><span class="what">«Mi experiencia lectora con Gabriel García Márquez y Mario Vargas Llosa».<span class="meta">Panel sobre el Boom hispanoamericano, Universidad Nacional de Piura.</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== PREMIOS Y DISTINCIONES ========== -->
+    <section id="premios" data-title="Premios y distinciones">
+      <span class="eyebrow">Trayectoria</span>
+      <h2>Premios y distinciones</h2>
+      <p class="intro">Reconocimientos literarios y académicos.</p>
+      <ul class="entries">
+        <li class="entry"><span class="when">2025</span><span class="what"><strong>Finalista</strong>, 7.° Concurso Nacional de Narrativa Gráfica<span class="meta">Adaptación al manga del relato «El hipocampo de oro» de Abraham Valdelomar junto con el ilustrador peruano <a class="person" href="https://linktr.ee/spalaciosart" target="_blank" rel="noopener" title="Portafolio de Sergio Palacios">Sergio Palacios</a> (inédito). Casa de la Literatura Peruana, Ministerio de Cultura del Perú y Alianza Francesa. <a href="#el-hipocampo-de-oro">Ver el video</a></span></span></li>
+        <li class="entry"><span class="when">2024</span><span class="what"><strong>Beca Doctoral PUCP 2025</strong><span class="meta">Doctorado en Literatura Hispanoamericana, PUCP.</span></span></li>
+        <li class="entry"><span class="when">2020</span><span class="what"><strong>Ganador</strong>, Concurso Nacional de Cuento «Nuestros Relatos»<span class="meta">Presidencia del Consejo de Ministros y Programa Bicentenario del Perú.</span></span></li>
+        <li class="entry"><span class="when">2019</span><span class="what"><strong>Ganador</strong>, Concurso «Duelo de Escritura Espontánea»<span class="meta">Alianza Francesa.</span></span></li>
+        <li class="entry"><span class="when">2017</span><span class="what"><strong>Autor seleccionado</strong>, Programa de Pasantías «Arequipa Imaginada»<span class="meta">Ministerio de Cultura del Perú, primera edición.</span></span></li>
+        <li class="entry"><span class="when">2017</span><span class="what"><strong>Ganador</strong>, Certamen Nacional de Cuento Jurídico «La Justicia»<span class="meta">Universidad del Pacífico. Cuento «Miserable», adaptado al teatro por François Vallaeys.</span></span></li>
+        <li class="entry"><span class="when">2014</span><span class="what"><strong>Reconocimiento a la trayectoria literaria joven</strong><span class="meta">Instituto Cultural Peruano Norteamericano (ICPNA), Región Grau.</span></span></li>
+      </ul>
+    </section>
+
+    <!-- ========== OBRA CREATIVA ========== -->
+    <section id="obra" data-title="Obra de ficción">
+      <span class="eyebrow">Obra</span>
+      <h2>Obra de ficción</h2>
+      <p class="intro">Libro de cuentos, relatos en antologías, guion de manga y ediciones críticas.</p>
+
+      <figure class="trailer">
+        <button class="yt" type="button" data-yt="5RN82l5wHlI" aria-label="Reproducir el tráiler de Mañana nunca llega" style="background-image:url('https://i.ytimg.com/vi/5RN82l5wHlI/hqdefault.jpg')">
+          <span class="play"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </button>
+        <figcaption><span class="tag">Tráiler</span><em>Mañana nunca llega</em> <span>Pesopluma, 2021</span> <a href="#manana-nunca-llega">Lo que dicen del libro →</a></figcaption>
+      </figure>
+
+      <div class="subtabs" role="tablist">
+        <button role="tab" data-target="o-libros">Libros y antologías</button>
+        <button role="tab" data-target="o-ediciones">Ediciones críticas</button>
+      </div>
+
+      <div class="subpanel" id="o-libros">
+        <ul class="books">
+          <li class="book">
+            <a class="cover-link" href="#manana-nunca-llega" aria-label="Lo que dicen del libro">
+            <figure class="cover" data-label="Lo que dicen del libro">
+              <img src="portadas/manana-nunca-llega.jpg" alt="Portada de Mañana nunca llega" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">Mañana nunca llega</span><span class="fb-pub">Pesopluma</span></span>
+            </figure>
+            </a>
+            <span class="kind">Libro de cuentos · 2021</span>
+            <span class="title">Mañana nunca llega</span>
+            <span class="detail">Pesopluma.</span>
+            <span class="acts">
+              <a class="more" href="#manana-nunca-llega">Lo que dicen del libro</a>
+              <a href="https://pesopluma.net/tienda/manana-nunca-llega/" target="_blank" rel="noopener">Pesopluma</a>
+              <a href="https://www.buscalibre.pe/libro-manana-nunca-llega/9786124416286/p/54377122" target="_blank" rel="noopener">Buscalibre</a>
+              <a href="https://www.goodreads.com/book/show/59654356-ma-ana-nunca-llega" target="_blank" rel="noopener">Goodreads</a>
+            </span>
+          </li>
+          <li class="book">
+            <a class="cover-link" href="#el-hipocampo-de-oro" aria-label="El hipocampo de oro: ver el video del premio">
+            <figure class="cover" data-label="Ver el video del premio">
+              <img src="portadas/el-hipocampo-de-oro.jpg" alt="Portada del manga El hipocampo de oro" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">El hipocampo de oro</span><span class="fb-pub">Manga inédito</span></span>
+            </figure>
+            </a>
+            <span class="kind">Manga inédito · 2025</span>
+            <span class="title">El hipocampo de oro</span>
+            <span class="detail">Adaptación al manga del relato de Abraham Valdelomar, junto con el ilustrador <a class="person" href="https://linktr.ee/spalaciosart" target="_blank" rel="noopener" title="Portafolio de Sergio Palacios">Sergio Palacios</a>. Finalista del 7.° Concurso Nacional de Narrativa Gráfica.</span>
+            <span class="acts">
+              <a class="more" href="#el-hipocampo-de-oro">Ver el video del premio</a>
+            </span>
+          </li>
+          <li class="book">
+            <a class="cover-link" href="#antologia-del-cuento-peruano" aria-label="Antología del cuento peruano: ver la presentación">
+            <figure class="cover" data-label="Ver la presentación">
+              <img src="https://acdn-us.mitiendanube.com/stores/006/658/448/products/02d54510-6f8c-46b4-ba38-3dd99710f1ca-abfd3a8ecef2d5a32a17764548410324-640-0.webp" alt="Portada de Antología del cuento peruano" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">Antología del cuento peruano</span><span class="fb-pub">SB editorial</span></span>
+            </figure>
+            </a>
+            <span class="kind">Antología · 2026</span>
+            <span class="title">Antología del cuento peruano</span>
+            <span class="detail">Relato «Un par de cuencas vacías» (pp. 166-173). SB editorial.</span>
+            <span class="acts">
+              <a class="more" href="#antologia-del-cuento-peruano">Ver la presentación</a>
+              <a href="https://www.editorialsb.com/es/productos/antologia-del-cuento-peruano" target="_blank" rel="noopener">SB editorial</a>
+            </span>
+          </li>
+          <li class="book">
+            <a class="cover-link" href="https://www.planetadelibros.com.pe/libro-el-tiempo-es-nuestro/341760" target="_blank" rel="noopener" aria-label="Ver en Planeta">
+            <figure class="cover" data-label="Ver en Planeta ↗">
+              <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1684613657i/157878723.jpg" alt="Portada de El tiempo es nuestro" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">El tiempo es nuestro</span><span class="fb-pub">Seix Barral</span></span>
+            </figure>
+            </a>
+            <span class="kind">Antología · 2023</span>
+            <span class="title">El tiempo es nuestro. Cuentos peruanos post-2000</span>
+            <span class="detail">Relato «Un par de cuencas vacías» (pp. 259-270). Ed. V. Ruiz Velazco. Seix Barral.</span>
+            <span class="acts">
+              <a href="https://www.planetadelibros.com.pe/libro-el-tiempo-es-nuestro/341760" target="_blank" rel="noopener">Planeta</a>
+              <a href="https://www.goodreads.com/book/show/157878723-el-tiempo-es-nuestro-cuentos-peruanos-post-2000" target="_blank" rel="noopener">Goodreads</a>
+            </span>
+          </li>
+          <li class="book">
+            <a class="cover-link" href="https://mangaplus-creators.jp/episodes/6c2303211424546840009732193" target="_blank" rel="noopener" aria-label="Leer el manga">
+            <figure class="cover" data-label="Leer el manga ↗">
+              <img src="https://assets.mangaplus-creators.jp/u/title/vm2303211424546800009732193/thumb_74425423.jpg?h=am_vrIlJSaw0OaSRJGw_kQ" alt="Portada del manga La espera" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">La espera</span><span class="fb-pub">MANGA Plus Creators</span></span>
+            </figure>
+            </a>
+            <span class="kind">Manga digital · 2023</span>
+            <span class="title">La espera</span>
+            <span class="detail">Guion, adaptación del cuento «Horizonte de eventos». Ilustración de <a class="person" href="https://linktr.ee/spalaciosart" target="_blank" rel="noopener" title="Portafolio de Sergio Palacios">Sergio Palacios</a>. MANGA Plus Creators by SHUEISHA.</span>
+            <span class="acts">
+              <a href="https://mangaplus-creators.jp/episodes/6c2303211424546840009732193" target="_blank" rel="noopener">Leer el manga</a>
+            </span>
+          </li>
+          <li class="book">
+            <a class="cover-link" href="https://www.urp.edu.pe/pdf/id/30529/n/nuestros-relatos-libro.pdf" target="_blank" rel="noopener" aria-label="Leer el PDF">
+            <figure class="cover contain" data-label="Leer el PDF ↗">
+              <img src="portadas/nuestros-relatos.jpg" alt="Portada de Nuestros relatos" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">Nuestros relatos</span><span class="fb-pub">Ministerio de Cultura</span></span>
+            </figure>
+            </a>
+            <span class="kind">Antología · 2023</span>
+            <span class="title">Nuestros relatos</span>
+            <span class="detail">Relato «El legado» (pp. 10-13), obra ganadora del concurso nacional. Ministerio de Cultura del Perú.</span>
+            <span class="acts">
+              <a href="https://www.urp.edu.pe/pdf/id/30529/n/nuestros-relatos-libro.pdf" target="_blank" rel="noopener">PDF</a>
+            </span>
+          </li>
+          <li class="book">
+            <a class="cover-link" href="https://cultura.petroperu.com.pe/wp-content/uploads/2020/12/Narrar-desde-la-nueva-vida.pdf" target="_blank" rel="noopener" aria-label="Leer el PDF">
+            <figure class="cover" data-label="Leer el PDF ↗">
+              <img src="portadas/narrar-desde-la-nueva-vida.jpg" alt="Portada de Narrar desde la nueva vida" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">Narrar desde la nueva vida</span><span class="fb-pub">Petroperú</span></span>
+            </figure>
+            </a>
+            <span class="kind">Antología · 2020</span>
+            <span class="title">Narrar desde la nueva vida</span>
+            <span class="detail">Relato «Horizonte de eventos» (pp. 15-16). Ed. R. Sumalavia. Petroperú.</span>
+            <span class="acts">
+              <a href="https://cultura.petroperu.com.pe/wp-content/uploads/2020/12/Narrar-desde-la-nueva-vida.pdf" target="_blank" rel="noopener">PDF</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="subpanel" id="o-ediciones">
+        <ul class="books">
+          <li class="book">
+            <a class="cover-link" href="https://www.buscalibre.pe/libro-la-destruccion-del-reino/9786124416569/p/64584271" target="_blank" rel="noopener" aria-label="Ver en Buscalibre">
+            <figure class="cover" data-label="Ver en Buscalibre ↗">
+              <img src="https://i0.wp.com/pesopluma.net/web007/wp-content/uploads/la-destruccion-del-reino-miguel-gutierrez-pesopluma.png?fit=340%2C435&amp;ssl=1" alt="Portada de La destrucción del reino" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">La destrucción del reino</span><span class="fb-pub">Pesopluma</span></span>
+            </figure>
+            </a>
+            <span class="kind">Edición crítica · 2025</span>
+            <span class="title">La destrucción del reino</span>
+            <span class="detail">Miguel Gutiérrez. Edición y epílogo. Pesopluma.</span>
+            <span class="acts">
+              <a href="https://pesopluma.net/tienda/la-destruccion-del-reino/" target="_blank" rel="noopener">Pesopluma</a>
+              <a href="https://www.buscalibre.pe/libro-la-destruccion-del-reino/9786124416569/p/64584271" target="_blank" rel="noopener">Buscalibre</a>
+            </span>
+          </li>
+          <li class="book">
+            <a class="cover-link" href="https://www.buscalibre.pe/libro-la-premeditacion-y-el-azar/9786124416538/p/63357424" target="_blank" rel="noopener" aria-label="Ver en Buscalibre">
+            <figure class="cover" data-label="Ver en Buscalibre ↗">
+              <img src="https://i0.wp.com/pesopluma.net/web007/wp-content/uploads/la-premeditacion-y-el-azar-pilar-dughi.png?fit=340%2C435&amp;ssl=1" alt="Portada de La premeditación y el azar" loading="lazy" onerror="this.parentNode.classList.add('noimg')">
+              <span class="cover-fb"><span class="fb-title">La premeditación y el azar</span><span class="fb-pub">Pesopluma</span></span>
+            </figure>
+            </a>
+            <span class="kind">Edición crítica · 2024</span>
+            <span class="title">La premeditación y el azar</span>
+            <span class="detail">Pilar Dughi. Edición y prólogo. Pesopluma.</span>
+            <span class="acts">
+              <a href="https://pesopluma.net/tienda/la-premeditacion-y-el-azar/" target="_blank" rel="noopener">Pesopluma</a>
+              <a href="https://www.buscalibre.pe/libro-la-premeditacion-y-el-azar/9786124416538/p/63357424" target="_blank" rel="noopener">Buscalibre</a>
+              <a href="https://www.goodreads.com/book/show/208499820-la-premeditaci-n-y-el-azar" target="_blank" rel="noopener">Goodreads</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- ========== SUBPÁGINA: MAÑANA NUNCA LLEGA ========== -->
+    <section id="manana-nunca-llega" data-parent="obra" data-title="Mañana nunca llega">
+      <a class="back" href="#obra">← Volver a Obra de ficción</a>
+      <div class="book-hero">
+        <figure class="cover"><img src="portadas/manana-nunca-llega.jpg" alt="Portada de Mañana nunca llega"></figure>
+        <div>
+          <span class="eyebrow">Libro de cuentos · 2021</span>
+          <h2><em>Mañana nunca llega</em></h2>
+          <p class="intro">Pesopluma, Serie Iceberg, 2021.</p>
+          <div class="btns">
+            <a class="btn" href="https://pesopluma.net/tienda/manana-nunca-llega/" target="_blank" rel="noopener">Comprar en Pesopluma</a>
+            <a class="btn" href="https://www.buscalibre.pe/libro-manana-nunca-llega/9786124416286/p/54377122" target="_blank" rel="noopener">Comprar en Buscalibre</a>
+            <a class="btn" href="https://www.goodreads.com/book/show/59654356-ma-ana-nunca-llega" target="_blank" rel="noopener">Goodreads</a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="label">Texto de contratapa</h3>
+      <blockquote class="quote quote-lg">
+        <p>«Ante todo, <em>Mañana nunca llega</em> es un libro que no teme. No teme construir desde los insumos locales: de la Piura bullente, de su habla, mar, desierto, sueños y miedos; su burocracia y estructuras verticales, que son las del país. No teme tampoco explorar zonas grises y los saldos de la violencia del conflicto armado interno, ni teme devolverle a la ficción la posibilidad de inquirir en lo inmediato —hoy dominio de la crónica—, como la memoria del 14N. <em>Mañana nunca llega</em>, primera entrega de Tadeo Palacios, responde a la urgencia de contar historias a partir de la recuperación de la memoria; construye desde un lenguaje que captura la densidad de la experiencia vivida. A partir de modelos mayores como Pilar Dughi y Miguel Gutiérrez, en los que el individuo es hechura de sus vínculos, Palacios recuerda el pacto histórico de la narrativa peruana con su dimensión política, colectiva y humana».</p>
+        <footer>Miluska Benavides</footer>
+      </blockquote>
+
+      <h3 class="label">Opiniones de autores</h3>
+      <div class="quotes">
+        <blockquote class="quote">
+          <p>«"La tarde ya lo inundaba todo con su sangre", escribe Tadeo. La tarde y su promesa agridulce, materna y paterna. Espera, abandono, amor, resistencia, malentendido, pisoteo, lucha. La tarde es ambigua y urgente. La tarde arremete, no es retráctil. Como estos cuentos. Sus colores: rojo fuego; su paisaje: el desierto, el mar y la ciudad; un sabor: tamarindo; y estos lenguajes: la ternura y la cólera. Cada tarde llega a su mañana, Tadeo, pero el mañana nunca llega».</p>
+          <footer>Katya Adaui</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>«La irrupción de Tadeo Palacios en el circuito literario con estos poderosos relatos confirma lo que intuíamos los que nos acercamos a sus primeros esbozos: no solo es el vuelo y la innegable calidad de su prosa, estamos ante un escritor impetuoso, vital, arriesgado que vive la literatura y defiende a muerte esta extraña forma de vida».</p>
+          <footer>Diego Trelles Paz</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>«A pesar de su juventud, Tadeo Palacios tiene una prosa tan lograda que podría leerse cantando. Vive en ella algo de la oralidad de Oswaldo Reynoso —en <em>Los inocentes</em>— y de la música del hablar de Piura. Pero esta elegancia sutil no es señal de calma: el lenguaje, como un viento que se manifiesta suave solo al principio, va construyendo historias donde el dolor y la ira emergen brutales, con la sensorialidad a flor de piel».</p>
+          <footer>Juan Manuel Robles</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>«Sin concesiones, con prosa ágil, vigorosa y registros que subvierten con talento las convenciones, los cuentos de Tadeo Palacios Valverde nos hunden en la vorágine de las pasiones humanas que los tiempos de crisis sanitaria y política han acrecentado. Se trata de la radiografía lúcida de una sociedad frente a cuya descomposición resisten con terquedad quienes aún creen que otro mundo es posible».</p>
+          <footer>Christiane Félip Vidal</footer>
+        </blockquote>
+      </div>
+
+      <h3 class="label">Tráiler</h3>
+      <button class="yt" type="button" data-yt="5RN82l5wHlI" aria-label="Reproducir el tráiler de Mañana nunca llega" style="background-image:url('https://i.ytimg.com/vi/5RN82l5wHlI/hqdefault.jpg')">
+        <span class="play"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+      </button>
+    </section>
+
+    <!-- ========== SUBPÁGINA: ANTOLOGÍA DEL CUENTO PERUANO ========== -->
+    <section id="antologia-del-cuento-peruano" data-parent="obra" data-title="Antología del cuento peruano">
+      <a class="back" href="#obra">← Volver a Obra de ficción</a>
+      <div class="book-hero">
+        <figure class="cover"><img src="https://acdn-us.mitiendanube.com/stores/006/658/448/products/02d54510-6f8c-46b4-ba38-3dd99710f1ca-abfd3a8ecef2d5a32a17764548410324-640-0.webp" alt="Portada de Antología del cuento peruano" onerror="this.parentNode.classList.add('noimg')"><span class="cover-fb"><span class="fb-title">Antología del cuento peruano</span><span class="fb-pub">SB editorial</span></span></figure>
+        <div>
+          <span class="eyebrow">Antología · 2026</span>
+          <h2><em>Antología del cuento peruano</em></h2>
+          <p class="intro">SB editorial. Incluye mi relato «Un par de cuencas vacías» (pp. 166-173).</p>
+          <p>Volumen presentado en la 50.ª Feria Internacional del Libro de Buenos Aires, en la que Perú fue país invitado de honor. En la presentación participaron Teresa Ruiz Rosas, Ricardo Sumalavia, Kathy Serrano y Tadeo Palacios, con la organización de SB Editorial.</p>
+          <div class="btns">
+            <a class="btn" href="https://www.editorialsb.com/es/productos/antologia-del-cuento-peruano" target="_blank" rel="noopener">Ver en SB editorial</a>
+            <a class="btn" href="https://www.facebook.com/perulee.pe/posts/pfbid034pfgU9khad7Bvs5UZYYsJDaUAgTzUgcZq8sRv8xmUdUc9LNKYCWbkwELyAG1neuXl" target="_blank" rel="noopener">Publicación de Perú Lee ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="label">Presentación en la Feria Internacional del Libro de Buenos Aires</h3>
+      <div class="carousel" tabindex="0" aria-roledescription="carrusel" aria-label="Fotos de la presentación">
+        <div class="c-track">
+          <figure class="c-slide">
+            <img src="galeria/fil-buenos-aires-1.jpg" alt="Tadeo Palacios durante la presentación de la Antología del cuento peruano" loading="lazy">
+            <figcaption>Tadeo Palacios durante la presentación del libro.</figcaption>
+          </figure>
+          <figure class="c-slide">
+            <img src="galeria/fil-buenos-aires-2.jpg" alt="Presentación de la Antología del cuento peruano en el espacio de Perú, país invitado de honor" loading="lazy">
+            <figcaption>Presentación del libro en el espacio de Perú, país invitado de honor.</figcaption>
+          </figure>
+          <figure class="c-slide contain">
+            <img src="galeria/fil-buenos-aires-programa.jpg" alt="Portada del programa cultural de Perú en la 50.ª Feria Internacional del Libro de Buenos Aires" loading="lazy">
+            <figcaption>Programa cultural de Perú en la 50.ª Feria Internacional del Libro de Buenos Aires.</figcaption>
+          </figure>
+        </div>
+        <button class="c-btn c-prev" type="button" aria-label="Foto anterior">‹</button>
+        <button class="c-btn c-next" type="button" aria-label="Foto siguiente">›</button>
+        <div class="c-dots" role="tablist"></div>
+      </div>
+
+      <h3 class="label">Perú Lee</h3>
+      <div class="fb-embed">
+        <iframe data-src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fperulee.pe%2Fposts%2Fpfbid034pfgU9khad7Bvs5UZYYsJDaUAgTzUgcZq8sRv8xmUdUc9LNKYCWbkwELyAG1neuXl&amp;show_text=true&amp;width=500" title="Publicación de Perú Lee sobre la presentación" height="640" scrolling="no" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <p class="note"><a href="https://www.facebook.com/perulee.pe/posts/pfbid034pfgU9khad7Bvs5UZYYsJDaUAgTzUgcZq8sRv8xmUdUc9LNKYCWbkwELyAG1neuXl" target="_blank" rel="noopener">Ver la publicación de Perú Lee en Facebook ↗</a></p>
+    </section>
+
+    <!-- ========== SUBPÁGINA: EL HIPOCAMPO DE ORO ========== -->
+    <section id="el-hipocampo-de-oro" data-parent="obra" data-title="El hipocampo de oro">
+      <a class="back" href="#obra">← Volver a Obra de ficción</a>
+      <div class="book-hero">
+        <figure class="cover"><img src="portadas/el-hipocampo-de-oro.jpg" alt="Portada del manga El hipocampo de oro"></figure>
+        <div>
+          <span class="eyebrow">Manga inédito · 2025</span>
+          <h2><em>El hipocampo de oro</em></h2>
+          <p class="intro"><a class="person" href="https://linktr.ee/spalaciosart" target="_blank" rel="noopener" title="Portafolio de Sergio Palacios">Sergio Palacios</a> y Tadeo Palacios. Basado en un cuento de Abraham Valdelomar.</p>
+          <p>Adaptación al manga del relato «El hipocampo de oro» de Abraham Valdelomar, realizada junto con el ilustrador peruano <a class="person" href="https://linktr.ee/spalaciosart" target="_blank" rel="noopener" title="Portafolio de Sergio Palacios">Sergio Palacios</a>. En 2025, la obra quedó entre los doce finalistas del 7.° Concurso Nacional de Narrativa Gráfica, convocado por la Casa de la Literatura Peruana, el Ministerio de Cultura del Perú y la Alianza Francesa.</p>
+        </div>
+      </div>
+
+      <h3 class="label">Video de la Casa de la Literatura Peruana</h3>
+      <div class="ig-embed">
+        <iframe data-src="https://www.instagram.com/p/DdIEwaEjbGv/embed/captioned/" title="Video de la Casa de la Literatura Peruana sobre los finalistas del 7.° Concurso Nacional de Narrativa Gráfica" height="760" scrolling="no" allowtransparency="true" loading="lazy"></iframe>
+      </div>
+      <p class="note"><a href="https://www.instagram.com/p/DdIEwaEjbGv/" target="_blank" rel="noopener">Ver la publicación en Instagram ↗</a></p>
+    </section>
+
+    <!-- ========== PUBLICACIONES ========== -->
+    <section id="publicaciones" data-title="Ensayos publicados">
+      <span class="eyebrow">Obra</span>
+      <h2>Ensayos publicados</h2>
+      <p class="intro">Capítulos de libro, ensayos, reseñas y tesis.</p>
+
+      <div class="subtabs" role="tablist">
+        <button role="tab" data-target="p-capitulos">Capítulos de libro<span class="count">3</span></button>
+        <button role="tab" data-target="p-articulos">Artículos y ensayos<span class="count">6</span></button>
+        <button role="tab" data-target="p-resenas">Reseñas<span class="count">3</span></button>
+        <button role="tab" data-target="p-tesis">Tesis<span class="count">1</span></button>
+      </div>
+
+      <div class="subpanel" id="p-capitulos">
+        <ol class="biblio">
+          <li>Palacios, T. (2025). El influjo salingeriano en Guillermo Niño de Guzmán y Pilar Dughi: suicidio, género y violencia. En M. Mascarell García, M. Arriaga Flórez y F. Denegri (Eds.), <em>Textos olvidados. Archivos periféricos y archivos inusuales</em> (pp. 391-396). Dykinson. https://doi.org/10.2307/jj.34829385 <a class="ext" href="https://www.academia.edu/144011586/El_influjo_salingeriano_en_Guillermo_Ni%C3%B1o_de_Guzm%C3%A1n_y_Pilar_Dughi_suicidio_g%C3%A9nero_y_violencia" target="_blank" rel="noopener">Leer</a> <a class="ext" href="https://www.academia.edu/144011586/El_influjo_salingeriano_en_Guillermo_Ni%C3%B1o_de_Guzm%C3%A1n_y_Pilar_Dughi_suicidio_g%C3%A9nero_y_violencia" target="_blank" rel="noopener">Academia.edu</a></li>
+          <li>Palacios, T. (2025). <em>La destrucción del reino</em>: memorias y canto espectral desde las ruinas de una era. En M. Gutiérrez, <em>La destrucción del reino</em> (pp. 243-263). Pesopluma. <a class="ext" href="https://www.academia.edu/143698170/La_destrucci%C3%B3n_del_reino_memorias_y_canto_espectral_desde_las_ruinas_de_una_era_Ep%C3%ADlogo_de_La_destrucci%C3%B3n_del_reino_" target="_blank" rel="noopener">Leer</a></li>
+          <li>Palacios, T. (2024). Treinta y cinco años de una vehemente poética de lo inesperado. En P. Dughi, <em>La premeditación y el azar</em> (pp. 9-35). Pesopluma. <a class="ext" href="https://www.academia.edu/127406936/Pilar_Dughi_Treinta_y_cinco_a%C3%B1os_de_una_vehemente_po%C3%A9tica_de_lo_inesperado_Pr%C3%B3logo_de_La_premeditaci%C3%B3n_y_el_azar_" target="_blank" rel="noopener">Leer</a></li>
+        </ol>
+      </div>
+
+      <div class="subpanel" id="p-articulos">
+        <ol class="biblio">
+          <li>Palacios, T. (2025). El ahayu-watan, la muerte germinal y el retorno del hijo difunto en el poema «Epopeya del qe buelbe» de Gamaliel Churata. <em>Espinela</em>, (13), 46-53. <a class="ext" href="https://revistas.pucp.edu.pe/index.php/espinela/article/view/32558" target="_blank" rel="noopener">Revistas PUCP</a></li>
+          <li>Palacios, T. (2022). «El beso de Evans»: la influencia del dandismo en un cuento de Abraham Valdelomar. <em>Archivo Vallejo</em>, <em>5</em>(9), 133-164. https://doi.org/10.31381/archivoVallejo.v5n9.5231. <a class="ext" href="https://doi.org/10.31381/archivoVallejo.v5n9.5231" target="_blank" rel="noopener">DOI</a></li>
+          <li>Palacios, T. (2022). Cuerpo atormentado y necropolítica en <em>Purgatorio</em> (1979) de Raúl Zurita. <em>Espinela</em>, (10), 60-68. <a class="ext" href="https://revistas.pucp.edu.pe/index.php/espinela/article/view/26178" target="_blank" rel="noopener">Revistas PUCP</a></li>
+          <li>Palacios, T. (2022). Enter the Jojos: ¿De qué hablamos cuando hablamos de Jojo? <em>Sugoi</em>, (31), 46-49. <a class="ext" href="https://www.academia.edu/90781063/Enter_the_Jojos_De_qu%C3%A9_hablamos_cuando_hablamos_de_Jojo" target="_blank" rel="noopener">Academia.edu</a></li>
+          <li>Palacios, T. (2021). «Bajo el agua negra» de Mariana Enríquez: memoria, desapariciones forzadas y terror lovecraftiano en Argentina. <em>Espinela</em>, (9), 52-59. <a class="ext" href="https://revistas.pucp.edu.pe/index.php/espinela/article/view/25243" target="_blank" rel="noopener">Revistas PUCP</a></li>
+          <li>Palacios, T. (2020). El búho que acariciaba la penumbra: apuntes sobre <em>Ave de la noche</em> de Pilar Dughi. <em>Red Literaria Peruana</em>. <a class="ext" href="https://redlitperu.wordpress.com/2020/09/02/el-buho-que-acariciaba-la-penumbra-apuntes-sobre-ave-de-la-noche-de-pilar-dughi/" target="_blank" rel="noopener">Leer</a></li>
+        </ol>
+      </div>
+
+      <div class="subpanel" id="p-resenas">
+        <ol class="biblio">
+          <li>Palacios, T. (2025). [Reseña del libro <em>La violencia del tiempo</em>, por M. Gutiérrez]. <em>Guaraguao</em>, <em>29</em>(80), 241-244. <a class="ext" href="https://www.jstor.org/stable/27433686" target="_blank" rel="noopener">JSTOR</a></li>
+          <li>Palacios, T. (2025). El mundo sin Xóchitl. <em>Círculo de Lectores</em>, (16), 8. <a class="ext" href="https://www.academia.edu/176675420/Rese%C3%B1a_de_El_mundo_sin_X%C3%B3chitl" target="_blank" rel="noopener">Leer</a></li>
+          <li>Palacios, T. (2022). En el jardín de lirios: entre la confidencia y la diversificación del ensayo peruano. <em>Crónicas de la Diversidad</em>, (31), 48-49.<a class="ext" href="https://www.academia.edu/127406757/En_el_jard%C3%ADn_de_lirios_entre_la_confidencia_y_la_diversificaci%C3%B3n_del_ensayo_peruano" target="_blank" rel="noopener">Leer</a></li>
+        </ol>
+      </div>
+
+      <div class="subpanel" id="p-tesis">
+        <ol class="biblio">
+          <li>Palacios, T. (2024). <em>La representación del sujeto femenino alzado en armas y militante en los cuentos de la violencia política de Pilar Dughi</em> [Tesis de maestría, Pontificia Universidad Católica del Perú]. http://hdl.handle.net/20.500.12404/27503. <a class="ext" href="http://hdl.handle.net/20.500.12404/27503" target="_blank" rel="noopener">Repositorio</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== PODCASTS ========== -->
+    <section id="podcasts" data-title="Podcasts">
+      <span class="eyebrow">Voz</span>
+      <h2>Podcasts</h2>
+      <p class="intro">Proyectos sonoros y audiovisuales en los que he participado.</p>
+      <ul class="pods">
+        <li class="pod">
+          <span class="kind">Podcast · Posgrado en Literatura Hispanoamericana PUCP</span>
+          <span class="title">Tramas abiertas</span>
+          <span class="detail">Podcast del Doctorado en Literatura Hispanoamericana de la PUCP. Un espacio para conversar sobre literatura, autores, obras e ideas.</span>
+          <iframe title="Tramas abiertas en Spotify" data-src="https://open.spotify.com/embed/show/033VI43IHi81YE3NdWM6rA?utm_source=generator&amp;theme=0" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <a href="https://open.spotify.com/show/033VI43IHi81YE3NdWM6rA" target="_blank" rel="noopener">Escuchar en Spotify</a>
+        </li>
+        <li class="pod">
+          <span class="kind">Audiorrelato · Proyecto Audiorrelatos PUCP · 2023</span>
+          <span class="title">«Un par de cuencas vacías»</span>
+          <span class="detail">Lectura en mi voz del cuento incluido en <em>Mañana nunca llega</em> (Pesopluma, 2021).</span>
+          <iframe title="Un par de cuencas vacías en Spotify" data-src="https://open.spotify.com/embed/episode/3EnzqBH3a7KVsYU6kE84xs?utm_source=generator&amp;theme=0" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <a href="https://open.spotify.com/episode/3EnzqBH3a7KVsYU6kE84xs" target="_blank" rel="noopener">Escuchar en Spotify</a>
+        </li>
+        <li class="pod">
+          <span class="kind">Podcast · Proyecto Machete · 2021</span>
+          <span class="title">Diálogo con Katya Adaui</span>
+          <span class="detail">Episodio 2: «<em>Geografía de la oscuridad</em>, una cartografía de luminosas heridas». Conversación sobre el libro de cuentos de Katya Adaui (Páginas de Espuma, 2021).</span>
+          <iframe title="Proyecto Machete en Spotify" data-src="https://open.spotify.com/embed/episode/79hS9XnutzBQQgrpEQHa8c?utm_source=generator&amp;theme=0" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <a href="https://open.spotify.com/episode/79hS9XnutzBQQgrpEQHa8c" target="_blank" rel="noopener">Escuchar en Spotify</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="blog" data-title="Blog">
+      <div class="blog-home" id="blogHome">
+        <span class="eyebrow">Escritura</span>
+        <h2>Blog</h2>
+        <p class="intro">Ensayos, reseñas, notas de lectura y textos de archivo.</p>
+        <div class="subtabs" role="tablist">
+          <button role="tab" data-target="b-ultimas">Últimas entradas</button>
+          <button role="tab" data-target="b-todas">Todas las entradas<span class="count" id="blogCount"></span></button>
+          <button role="tab" data-target="b-etiquetas">Etiquetas</button>
+          <button role="tab" data-target="b-archivo">Archivo</button>
+        </div>
+        <div class="subpanel" id="b-ultimas"><div class="post-feature" id="blogLatest"><p class="empty">Cargando entradas…</p></div></div>
+        <div class="subpanel" id="b-todas">
+          <div class="blog-tools">
+            <input type="search" id="blogSearch" placeholder="Buscar por título o tema" aria-label="Buscar en el blog">
+            <div class="chips" id="blogCats"></div>
+          </div>
+          <div id="blogTagFilter"></div>
+          <ul class="post-list" id="blogAll"></ul>
+        </div>
+        <div class="subpanel" id="b-etiquetas"><div class="tag-cloud" id="blogTags"></div></div>
+        <div class="subpanel" id="b-archivo"><div class="archive" id="blogArchive"></div></div>
+      </div>
+      <article id="blogReader" hidden></article>
+    </section>
+
+    <section id="actividades" data-title="Actividades">
+      <span class="eyebrow">Agenda</span>
+      <h2>Actividades y eventos</h2>
+      <p class="intro">Congresos, presentaciones, talleres y otras actividades, con enlaces a mis publicaciones en LinkedIn e Instagram.</p>
+      <div class="subtabs" role="tablist">
+        <button role="tab" data-target="a-proximas">Próximas<span class="count" id="evNextCount"></span></button>
+        <button role="tab" data-target="a-realizadas">Realizadas<span class="count" id="evPastCount"></span></button>
+      </div>
+      <div class="subpanel" id="a-proximas"><ul class="events" id="evNext"></ul></div>
+      <div class="subpanel" id="a-realizadas"><ul class="events" id="evPast"></ul></div>
+      <div class="follow">
+        <span>Sígueme también en</span>
+        <a class="pill" href="https://www.linkedin.com/in/tadeopalacios/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="pill" href="https://linktr.ee/tadeopalacios" target="_blank" rel="noopener">Linktree</a>
+      </div>
+    </section>
+
+    <section id="galeria" data-title="Galería">
+      <span class="eyebrow">Imágenes</span>
+      <h2>Galería</h2>
+      <p class="intro">Fotografías y videos de presentaciones, eventos y actividades.</p>
+      <div class="subtabs" role="tablist">
+        <button role="tab" data-target="g-todo">Todo<span class="count" id="gAllCount"></span></button>
+        <button role="tab" data-target="g-fotos">Fotos<span class="count" id="gPhotoCount"></span></button>
+        <button role="tab" data-target="g-videos">Videos<span class="count" id="gVideoCount"></span></button>
+        <button role="tab" data-target="g-eventos">De eventos<span class="count" id="gEventCount"></span></button>
+      </div>
+      <div class="subpanel" id="g-todo"><div class="gallery" id="gAll"></div></div>
+      <div class="subpanel" id="g-fotos"><div class="gallery" id="gPhotos"></div></div>
+      <div class="subpanel" id="g-videos"><div class="gallery" id="gVideos"></div></div>
+      <div class="subpanel" id="g-eventos"><div class="gallery" id="gEvents"></div></div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section id="contacto" data-title="Contacto">
+      <span class="eyebrow">Contacto</span>
+      <h2>Escríbeme</h2>
+      <p class="intro">Para colaboraciones académicas, participaciones en eventos, asesoría, consultas editoriales o para dialogar.</p>
+      <div class="contact-grid">
+        <div class="card">
+
+          <p>Envía un correo a <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tadeo.palacios@pucp.edu.pe&amp;su=Contacto%20desde%20tu%20p%C3%A1gina%20web" target="_blank" rel="noopener">tadeo.palacios@pucp.edu.pe</a> o escribe a mi WhatsApp.</p>
+          <div class="btns">
+            <a class="btn" href="https://wa.me/51971751038?text=Hola%20Tadeo%2C%20le%20escribo%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6z"/><path d="M9 9.2c.2 1.9 1.9 4.1 4.6 5.3l1.2-1.2 1.7.8c0 .9-.7 1.7-1.6 1.7C11.6 15.8 8.2 12.4 8.2 9.1c0-.9.8-1.6 1.7-1.6l.8 1.7z"/></svg>
+              WhatsApp
+            </a>
+            <a class="btn" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tadeo.palacios@pucp.edu.pe&amp;su=Contacto%20desde%20tu%20p%C3%A1gina%20web" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              Correo
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <p>Si leíste alguno de mis textos o quieres compartirme una idea, este es el momento.</p>
+          <!-- El formulario usa el servicio gratuito FormSubmit. Para recibir los mensajes en otro correo, cambia la dirección en data-email. -->
+          <form class="form" id="commentForm" data-email="tadeo.palacios@pucp.edu.pe" action="https://formsubmit.co/tadeo.palacios@pucp.edu.pe" method="POST">
+            <div class="row2">
+              <label>Nombre<input type="text" name="nombre" required autocomplete="name"></label>
+              <label>Correo electrónico<input type="email" name="correo" required autocomplete="email"></label>
+            </div>
+            <label>Comentario<textarea name="comentario" required></textarea></label>
+            <input type="hidden" name="_subject" value="Nuevo comentario desde tu página web">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="hp" aria-hidden="true"><label>No llenar<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+            <div class="btns"><button class="btn" type="submit">Enviar comentario</button></div>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <p class="note">Tu correo solo se usará para responderte.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galería">
+  <button class="lb-btn lb-close" type="button" aria-label="Cerrar">✕</button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Anterior">‹</button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-btn lb-next" type="button" aria-label="Siguiente">›</button>
+</div>
+
+<footer class="site-foot">
+  <div class="foot-in">
+    <div class="foot-brand">
+      <strong>Tadeo Palacios</strong>
+      <span>Autor, investigador, docente y abogado</span>
+      <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a>
+    </div>
+    <ul class="foot-links" aria-label="Contacto y perfiles">
+        <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tadeo.palacios@pucp.edu.pe&amp;su=Contacto%20desde%20tu%20p%C3%A1gina%20web" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>tadeo.palacios@pucp.edu.pe</span></a></li>
+        <li><a href="https://wa.me/51971751038?text=Hola%20Tadeo%2C%20le%20escribo%20desde%20su%20p%C3%A1gina%20web." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.6-4.4A8.4 8.4 0 1 1 20.5 11.6z"/><path d="M9 9.2c.2 1.9 1.9 4.1 4.6 5.3l1.2-1.2 1.7.8c0 .9-.7 1.7-1.6 1.7C11.6 15.8 8.2 12.4 8.2 9.1c0-.9.8-1.6 1.7-1.6l.8 1.7z"/></svg><span>WhatsApp</span></a></li>
+        <li><a href="https://orcid.org/0000-0003-1207-0770" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.3 17.2H6.6V9.3h1.7v7.9zM7.4 8.2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm3 9V9.3h3c2.6 0 4 1.7 4 3.9 0 2.3-1.6 4-4 4h-3zm1.7-1.5h1.2c1.8 0 2.4-1.3 2.4-2.5 0-1.4-.8-2.5-2.4-2.5h-1.2v5z"/></svg><span>ORCID 0000-0003-1207-0770</span></a></li>
+        <li><a href="https://scholar.google.com/citations?user=0ieccrkAAAAJ&hl=es" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2 9.5 12 15l10-5.5L12 4z"/><path d="M6 11.7v4.6c0 1.5 2.7 3.2 6 3.2s6-1.7 6-3.2v-4.6"/></svg><span>Google Académico</span></a></li>
+        <li><a href="https://www.instagram.com/sonambulario/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg><span>@sonambulario</span></a></li>
+        <li><a href="https://www.linkedin.com/in/tadeopalacios/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg><span>LinkedIn</span></a></li>
+        <li><a href="https://linktr.ee/tadeopalacios" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4l-1.1 1.1"/><path d="M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.1-1.1"/></svg><span>Portafolio</span></a></li>
+    </ul>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Jesús Tadeo Palacios Valverde</span>
+    <span>Última actualización: octubre de 2026</span>
+  </div>
+</footer>
+
+<script>
+  // ================= Utilidades =================
+  var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var MES_CORTO = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  function parseFecha(s) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(s || ''));
+    return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null;
+  }
+  function fechaLarga(s) {
+    var d = parseFecha(s);
+    return d ? d.getDate() + ' de ' + MESES[d.getMonth()] + ' de ' + d.getFullYear() : '';
+  }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  var cache = {};
+  function cargarJSON(url) {
+    if (!cache[url]) {
+      cache[url] = fetch(url, { cache: 'no-cache' }).then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      });
+    }
+    return cache[url];
+  }
+  var ICON_EXT = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
+  var ICON_IN = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>';
+  var ICON_IG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>';
+  var ICON_PLAY = '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+
+  // ================= Tema claro / oscuro =================
+  (function () {
+    var root = document.documentElement;
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (e) {}
+    if (saved) root.setAttribute('data-theme', saved);
+    document.getElementById('themeToggle').addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+
+  // ================= Menú =================
+  var nav = document.getElementById('nav');
+  var menuBtn = document.getElementById('menuToggle');
+  // Luz que sigue al cursor sobre el menú
+  ['mousemove', 'pointermove'].forEach(function (ev) {
+    nav.addEventListener(ev, function (e) {
+      var r = nav.getBoundingClientRect();
+      nav.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      nav.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+  menuBtn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+  // Submenú "Trayectoria": se abre al pasar el cursor, al pulsar o con el teclado
+  document.querySelectorAll('.nav-group').forEach(function (g) {
+    var b = g.querySelector('.nav-group-btn');
+    b.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var o = g.classList.toggle('open');
+      b.setAttribute('aria-expanded', o);
+    });
+  });
+  function cerrarGrupos() {
+    document.querySelectorAll('.nav-group.open').forEach(function (g) {
+      g.classList.remove('open');
+      g.querySelector('.nav-group-btn').setAttribute('aria-expanded', 'false');
+    });
+  }
+  document.addEventListener('click', cerrarGrupos);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrarGrupos(); });
+
+  // ================= Videos de YouTube con vista previa =================
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.yt[data-yt]');
+    if (!b) return;
+    b.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(b.dataset.yt) +
+      '?autoplay=1&rel=0" title="Video de YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+    b.removeAttribute('data-yt');
+    b.style.cursor = 'default';
+  });
+
+  // ================= Subpestañas =================
+  function selectSub(section, targetId) {
+    section.querySelectorAll('.subtabs button').forEach(function (b) {
+      b.setAttribute('aria-selected', b.dataset.target === targetId ? 'true' : 'false');
+    });
+    section.querySelectorAll('.subpanel').forEach(function (p) {
+      p.classList.toggle('active', p.id === targetId);
+    });
+  }
+  function initSubtabs(s) {
+    var btns = s.querySelectorAll('.subtabs button');
+    if (!btns.length) return;
+    var first = null;
+    btns.forEach(function (b) { if (!first && !b.hidden) first = b; });
+    selectSub(s, (first || btns[0]).dataset.target);
+  }
+  document.querySelectorAll('main > section').forEach(function (s) {
+    initSubtabs(s);
+    s.querySelectorAll('.subtabs button').forEach(function (b) {
+      b.addEventListener('click', function () { selectSub(s, b.dataset.target); });
+    });
+  });
+
+  // ================= BLOG =================
+  var Blog = (function () {
+    var posts = null, filtroCat = 'Todas', busqueda = '', filtroTag = null, tagPendiente = null;
+    var home = document.getElementById('blogHome');
+    var reader = document.getElementById('blogReader');
+
+    function badges(p) {
+      var h = '';
+      if (p.archivo) h += '<span class="badge">PDF</span>';
+      if (p.enlace) h += '<span class="badge">Enlace</span>';
+      return h ? '<span class="badges">' + h + '</span>' : '';
+    }
+    function tagHref(t) { return '#blog/etiqueta/' + encodeURIComponent(t); }
+    function tagsTexto(p) {
+      return p.etiquetas.length ? '<span class="ptags">' + p.etiquetas.map(function (t) { return '<span>#' + esc(t) + '</span>'; }).join('') + '</span>' : '';
+    }
+    function card(p, big) {
+      return '<a class="post-card' + (big ? ' big' : '') + '" href="#blog/' + esc(p.slug) + '">' +
+        (big && p.imagen ? '<span class="pc-img" style="background-image:url(\'' + esc(p.imagen) + '\')"></span>' : '') +
+        '<span class="pc-body"><span class="post-meta"><span class="cat">' + esc(p.categoria) + '</span><span>' + fechaLarga(p.fecha) + '</span>' + badges(p) + '</span>' +
+        '<h3>' + esc(p.titulo) + '</h3><p>' + esc(p.resumen) + '</p>' + tagsTexto(p) + '<span class="read">Leer entrada →</span></span></a>';
+    }
+    function renderLatest() {
+      var el = document.getElementById('blogLatest');
+      if (!posts.length) { el.innerHTML = '<p class="empty">Muy pronto publicaré aquí mis primeras entradas.</p>'; return; }
+      el.innerHTML = posts.slice(0, 5).map(function (p, i) { return card(p, i === 0); }).join('');
+    }
+    function renderCats() {
+      var cats = ['Todas'];
+      posts.forEach(function (p) { if (cats.indexOf(p.categoria) === -1) cats.push(p.categoria); });
+      var el = document.getElementById('blogCats');
+      el.innerHTML = cats.length > 2 ? cats.map(function (c) {
+        return '<button type="button" aria-pressed="' + (c === filtroCat) + '" data-cat="' + esc(c) + '">' + esc(c) + '</button>';
+      }).join('') : '';
+      el.querySelectorAll('button').forEach(function (b) {
+        b.addEventListener('click', function () { filtroCat = b.dataset.cat; renderCats(); renderAll(); });
+      });
+    }
+    function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+    function renderAll() {
+      var q = norm(busqueda);
+      var list = posts.filter(function (p) {
+        return (filtroCat === 'Todas' || p.categoria === filtroCat) &&
+          (!filtroTag || p.etiquetas.indexOf(filtroTag) !== -1) &&
+          (!q || norm(p.titulo + ' ' + p.resumen + ' ' + p.categoria + ' ' + p.etiquetas.join(' ')).indexOf(q) !== -1);
+      });
+      var tf = document.getElementById('blogTagFilter');
+      tf.innerHTML = filtroTag ? '<div class="tag-filter">Entradas con la etiqueta <strong>#' + esc(filtroTag) + '</strong> <a href="#blog" id="tagClear">Quitar filtro ✕</a></div>' : '';
+      var tc = document.getElementById('tagClear');
+      if (tc) tc.addEventListener('click', function (e) { e.preventDefault(); filtroTag = null; renderAll(); if (location.hash.indexOf('#blog/etiqueta/') === 0) history.replaceState(null, '', '#blog'); });
+      document.getElementById('blogAll').innerHTML = list.length ? list.map(function (p) {
+        return '<li><a href="#blog/' + esc(p.slug) + '"><span class="when">' + fechaLarga(p.fecha) + '</span><span><span class="post-meta"><span class="cat">' + esc(p.categoria) + '</span>' + badges(p) + '</span>' +
+          '<span class="pl-title">' + esc(p.titulo) + '</span><span class="pl-sum">' + esc(p.resumen) + '</span>' + tagsTexto(p) + '</span></a></li>';
+      }).join('') : '<li><p class="empty">No hay entradas que coincidan con la búsqueda.</p></li>';
+    }
+    function renderTags() {
+      var cuenta = {};
+      posts.forEach(function (p) { p.etiquetas.forEach(function (t) { cuenta[t] = (cuenta[t] || 0) + 1; }); });
+      var tags = Object.keys(cuenta).sort(function (a, b) { return cuenta[b] - cuenta[a] || a.localeCompare(b, 'es'); });
+      var max = tags.length ? cuenta[tags[0]] : 1;
+      document.getElementById('blogTags').innerHTML = tags.length ? tags.map(function (t) {
+        var nivel = Math.ceil(cuenta[t] / max * 3);
+        return '<a class="tag t' + nivel + '" href="' + tagHref(t) + '">#' + esc(t) + '<span class="n">' + cuenta[t] + '</span></a>';
+      }).join('') : '<p class="empty">Las entradas aún no tienen etiquetas.</p>';
+    }
+    function renderArchive() {
+      var years = {};
+      posts.forEach(function (p) {
+        var d = parseFecha(p.fecha); if (!d) return;
+        var y = d.getFullYear(), m = d.getMonth();
+        (years[y] = years[y] || {}); (years[y][m] = years[y][m] || []).push(p);
+      });
+      var ys = Object.keys(years).sort(function (a, b) { return b - a; });
+      document.getElementById('blogArchive').innerHTML = ys.length ? ys.map(function (y, i) {
+        var ms = Object.keys(years[y]).sort(function (a, b) { return b - a; });
+        var n = ms.reduce(function (t, m) { return t + years[y][m].length; }, 0);
+        return '<details' + (i === 0 ? ' open' : '') + '><summary>' + y + ' <span class="n">' + n + (n === 1 ? ' entrada' : ' entradas') + '</span></summary>' +
+          ms.map(function (m) {
+            return '<div class="month">' + MESES[m] + '</div><ul>' + years[y][m].map(function (p) {
+              return '<li><span class="d">' + parseFecha(p.fecha).getDate() + '</span><a href="#blog/' + esc(p.slug) + '">' + esc(p.titulo) + '</a></li>';
+            }).join('') + '</ul>';
+          }).join('') + '</details>';
+      }).join('') : '<p class="empty">El archivo está vacío por ahora.</p>';
+    }
+    function renderReader(slug) {
+      var i = -1;
+      posts.forEach(function (p, k) { if (p.slug === slug) i = k; });
+      if (i === -1) { location.hash = '#blog'; return; }
+      var p = posts[i], prev = posts[i + 1], next = posts[i - 1];
+      var url = location.origin + (p.url || ('/blog/' + p.slug + '/'));
+      var h = '<a class="back" href="#blog">← Volver al blog</a>' +
+        '<div class="post-meta"><span class="cat">' + esc(p.categoria) + '</span><span>' + fechaLarga(p.fecha) + '</span></div>' +
+        '<h2 class="post-title">' + esc(p.titulo) + '</h2>' +
+        (p.resumen ? '<p class="intro">' + esc(p.resumen) + '</p>' : '') +
+        (p.imagen ? '<figure class="post-hero"><img src="' + esc(p.imagen) + '" alt=""></figure>' : '') +
+        '<div class="prose">' + (p.contenido || '') + '</div>';
+      if (p.etiquetas.length) {
+        h += '<div class="post-tags"><span>Etiquetas:</span>' + p.etiquetas.map(function (t) {
+          return '<a class="tag" href="' + tagHref(t) + '">#' + esc(t) + '</a>';
+        }).join('') + '</div>';
+      }
+      if (p.archivo) {
+        h += '<div class="attach"><span class="ic">PDF</span><span class="txt"><strong>Documento adjunto</strong>Puedes leerlo en pantalla o descargarlo.</span>' +
+          '<span class="btns"><button class="btn" type="button" id="pdfToggle">Leer aquí</button><a class="btn" href="' + esc(p.archivo) + '" download>Descargar</a></span></div>' +
+          '<div id="pdfBox"></div>';
+      }
+      if (p.enlace) h += '<p><a class="btn" href="' + esc(p.enlace) + '" target="_blank" rel="noopener">Leer la publicación original ↗</a></p>';
+      h += '<div class="share"><span>Compartir:</span>' +
+        '<button type="button" id="copyLink">Copiar enlace</button>' +
+        '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url) + '" target="_blank" rel="noopener">LinkedIn</a>' +
+        '<a href="https://wa.me/?text=' + encodeURIComponent(p.titulo + ' ' + url) + '" target="_blank" rel="noopener">WhatsApp</a>' +
+        '<a href="https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url) + '" target="_blank" rel="noopener">Facebook</a></div>';
+      if (prev || next) {
+        h += '<nav class="post-nav">' +
+          (prev ? '<a href="#blog/' + esc(prev.slug) + '"><small>Entrada anterior</small>' + esc(prev.titulo) + '</a>' : '') +
+          (next ? '<a class="nx" href="#blog/' + esc(next.slug) + '"><small>Entrada siguiente</small>' + esc(next.titulo) + '</a>' : '') + '</nav>';
+      }
+      reader.innerHTML = h;
+      document.title = p.titulo + ' · Tadeo Palacios Valverde';
+      var t = document.getElementById('pdfToggle');
+      if (t) t.addEventListener('click', function () {
+        var box = document.getElementById('pdfBox');
+        if (box.innerHTML) { box.innerHTML = ''; t.textContent = 'Leer aquí'; }
+        else { box.innerHTML = '<iframe class="pdf-frame" src="' + esc(p.archivo) + '" title="Documento PDF"></iframe>'; t.textContent = 'Ocultar'; }
+      });
+      document.getElementById('copyLink').addEventListener('click', function (e) {
+        var b = e.target;
+        (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () {
+          b.textContent = 'Enlace copiado';
+        }, function () { window.prompt('Copia el enlace:', url); });
+      });
+    }
+    function open(slug) {
+      document.title = 'Tadeo Palacios Valverde';
+      // Enlaces del tipo #blog/etiqueta/Nombre muestran las entradas con esa etiqueta
+      if (slug && slug.indexOf('etiqueta/') === 0) { tagPendiente = slug.slice(9); slug = null; }
+      home.hidden = !!slug; reader.hidden = !slug;
+      cargarJSON('entradas.json').then(function (data) {
+        if (!posts) {
+          posts = (data || []).filter(function (p) { return p && p.slug; })
+            .sort(function (a, b) { return a.fecha < b.fecha ? 1 : -1; });
+          posts.forEach(function (p) {
+            var e = p.etiquetas;
+            if (typeof e === 'string') e = e.split(',');
+            p.etiquetas = (Array.isArray(e) ? e : []).map(function (t) { return String(t).trim(); }).filter(Boolean);
+          });
+          document.getElementById('blogCount').textContent = posts.length;
+          renderLatest(); renderCats(); renderAll(); renderTags(); renderArchive();
+          document.getElementById('blogSearch').addEventListener('input', function (e) { busqueda = e.target.value; renderAll(); });
+        }
+        if (slug) renderReader(slug);
+        if (tagPendiente !== null) {
+          filtroTag = tagPendiente; tagPendiente = null; renderAll();
+          selectSub(document.getElementById('blog'), 'b-todas');
+        }
+      }).catch(function () {
+        document.getElementById('blogLatest').innerHTML = '<p class="empty">No se pudieron cargar las entradas en este momento.</p>';
+        if (slug) { home.hidden = false; reader.hidden = true; }
+      });
+    }
+    return { open: open };
+  })();
+
+  // ================= ACTIVIDADES Y EVENTOS =================
+  var Actividades = (function () {
+    var hecho = false;
+    function embedLinkedIn(u) {
+      if (/linkedin\.com\/embed\//.test(u)) return u;
+      var m = /(activity|share|ugcPost)[:-](\d{10,})/.exec(u);
+      return m ? 'https://www.linkedin.com/embed/feed/update/urn:li:' + m[1] + ':' + m[2] : null;
+    }
+    function embedInstagram(u) {
+      var m = /instagram\.com\/(p|reel|tv)\/([^\/?#]+)/.exec(u);
+      return m ? 'https://www.instagram.com/' + m[1] + '/' + m[2] + '/embed/' : null;
+    }
+    var listas = [];
+    function fotosHTML(a, i) {
+      var f = fotosDeActividad(a);
+      listas[i] = f;
+      if (!f.length) return '';
+      var max = 4, h = '<div class="ev-photos">';
+      f.slice(0, max).forEach(function (it, k) {
+        var resto = (k === max - 1 && f.length > max) ? '<span class="more-n">+' + (f.length - max + 1) + '</span>' : '';
+        h += '<button type="button" class="ev-ph" data-ev="' + i + '" data-k="' + k + '"><img src="' + esc(it.archivo) + '" alt="Foto de ' + esc(a.titulo) + '" loading="lazy">' + resto + '</button>';
+      });
+      return h + '</div>';
+    }
+    function item(a, i) {
+      var d = parseFecha(a.fecha) || new Date();
+      var rango = a.fecha_fin && a.fecha_fin !== a.fecha ? 'Del ' + fechaLarga(a.fecha) + ' al ' + fechaLarga(a.fecha_fin) : fechaLarga(a.fecha);
+      var li = embedLinkedIn(a.linkedin || ''), ig = embedInstagram(a.instagram || '');
+      var links = '';
+      if (a.linkedin) links += '<a class="pill" href="' + esc(a.linkedin) + '" target="_blank" rel="noopener">' + ICON_IN + 'LinkedIn</a>';
+      if (a.instagram) links += '<a class="pill" href="' + esc(a.instagram) + '" target="_blank" rel="noopener">' + ICON_IG + 'Instagram</a>';
+      if (a.enlace) links += '<a class="pill" href="' + esc(a.enlace) + '" target="_blank" rel="noopener">' + ICON_EXT + 'Más información</a>';
+      if (li || ig) links += '<button class="pill" type="button" data-embed="' + i + '" data-li="' + esc(li || '') + '" data-ig="' + esc(ig || '') + '">Ver publicación aquí</button>';
+      return '<li class="event"><div class="ev-date"><span class="dd">' + d.getDate() + '</span><span class="mm">' + MES_CORTO[d.getMonth()] + '</span><span class="yy">' + d.getFullYear() + '</span></div>' +
+        '<div class="ev-body"><h3>' + esc(a.titulo) + '</h3><div class="ev-place">' + esc(a.lugar) + (a.lugar ? ' · ' : '') + rango + '</div>' +
+        (a.imagen ? '<img class="ev-img" src="' + esc(a.imagen) + '" alt="" loading="lazy">' : '') +
+        (a.descripcion ? '<p>' + esc(a.descripcion) + '</p>' : '') +
+        fotosHTML(a, i) +
+        (links ? '<div class="ev-links">' + links + '</div>' : '') + '<div class="embeds"></div></div></li>';
+    }
+    function load() {
+      if (hecho) return; hecho = true;
+      var sec = document.getElementById('actividades');
+      cargarJSON('actividades.json').then(function (data) {
+        var hoy = new Date(); hoy.setHours(0, 0, 0, 0);
+        var lista = (data || []).filter(function (a) { return a && a.fecha; });
+        var prox = lista.filter(function (a) { return parseFecha(a.fecha_fin || a.fecha) >= hoy; })
+          .sort(function (a, b) { return a.fecha > b.fecha ? 1 : -1; });
+        var pas = lista.filter(function (a) { return parseFecha(a.fecha_fin || a.fecha) < hoy; })
+          .sort(function (a, b) { return a.fecha < b.fecha ? 1 : -1; });
+        var todos = prox.concat(pas);
+        document.getElementById('evNext').innerHTML = prox.length ? prox.map(function (a) { return item(a, todos.indexOf(a)); }).join('') : '<li><p class="empty">No hay actividades programadas por ahora.</p></li>';
+        document.getElementById('evPast').innerHTML = pas.length ? pas.map(function (a) { return item(a, todos.indexOf(a)); }).join('') : '<li><p class="empty">Aún no hay actividades registradas.</p></li>';
+        document.getElementById('evNextCount').textContent = prox.length;
+        document.getElementById('evPastCount').textContent = pas.length;
+        selectSub(sec, prox.length ? 'a-proximas' : 'a-realizadas');
+        sec.querySelectorAll('.ev-ph').forEach(function (b) {
+          b.addEventListener('click', function () { Visor.abrir(listas[+b.dataset.ev], +b.dataset.k); });
+        });
+        sec.querySelectorAll('[data-embed]').forEach(function (b) {
+          b.addEventListener('click', function () {
+            var box = b.closest('.ev-body').querySelector('.embeds');
+            if (box.innerHTML) { box.innerHTML = ''; b.textContent = 'Ver publicación aquí'; return; }
+            var h = '';
+            if (b.dataset.li) h += '<iframe src="' + b.dataset.li + '" height="560" title="Publicación de LinkedIn" loading="lazy" allowfullscreen></iframe>';
+            if (b.dataset.ig) h += '<iframe src="' + b.dataset.ig + '" height="640" title="Publicación de Instagram" loading="lazy" scrolling="no"></iframe>';
+            box.innerHTML = h; b.textContent = 'Ocultar publicación';
+          });
+        });
+      }).catch(function () {
+        hecho = false;
+        document.getElementById('evPast').innerHTML = '<li><p class="empty">No se pudieron cargar las actividades en este momento.</p></li>';
+        selectSub(sec, 'a-realizadas');
+      });
+    }
+    return { load: load };
+  })();
+
+  // ================= Visor de fotos y videos (galería y eventos) =================
+  var Visor = (function () {
+    var lista = [], actual = 0;
+    var lb = document.getElementById('lightbox'), stage = document.getElementById('lbStage');
+    function esVideo(it) { return it.tipo === 'video' || !!it.youtube; }
+    function mostrar(i) {
+      actual = (i + lista.length) % lista.length;
+      var it = lista[actual], h;
+      if (it.youtube) h = '<div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(it.youtube) + '?autoplay=1&rel=0" title="' + esc(it.titulo) + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>';
+      else if (esVideo(it)) h = '<video src="' + esc(it.archivo) + '" controls autoplay playsinline></video>';
+      else h = '<img src="' + esc(it.archivo) + '" alt="' + esc(it.titulo) + '">';
+      var cap = (it.titulo ? '<strong>' + esc(it.titulo) + '</strong>' : '') + esc([it.descripcion, fechaLarga(it.fecha)].filter(Boolean).join(' · '));
+      if (lista.length > 1) cap += '<span class="lb-n">' + (actual + 1) + ' / ' + lista.length + '</span>';
+      stage.innerHTML = h + (cap ? '<div class="lb-cap">' + cap + '</div>' : '');
+      lb.hidden = false; document.body.style.overflow = 'hidden';
+      lb.querySelector('.lb-prev').hidden = lb.querySelector('.lb-next').hidden = lista.length < 2;
+    }
+    function cerrar() { lb.hidden = true; stage.innerHTML = ''; document.body.style.overflow = ''; }
+    lb.querySelector('.lb-close').addEventListener('click', cerrar);
+    lb.querySelector('.lb-prev').addEventListener('click', function () { mostrar(actual - 1); });
+    lb.querySelector('.lb-next').addEventListener('click', function () { mostrar(actual + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) cerrar(); });
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') cerrar();
+      if (e.key === 'ArrowLeft') mostrar(actual - 1);
+      if (e.key === 'ArrowRight') mostrar(actual + 1);
+    });
+    return { abrir: function (l, i) { lista = l; mostrar(i || 0); }, esVideo: esVideo };
+  })();
+
+  // Convierte las fotos de una actividad en elementos del visor
+  function fotosDeActividad(a) {
+    return (a.fotos || []).map(function (f) {
+      var src = typeof f === 'string' ? f : f.archivo;
+      return { tipo: 'foto', archivo: src, titulo: a.titulo, descripcion: (typeof f === 'object' && f.descripcion) || a.lugar, fecha: a.fecha, evento: true };
+    }).filter(function (f) { return f.archivo; });
+  }
+
+  // ================= GALERÍA =================
+  var Galeria = (function () {
+    var hecho = false;
+    function thumb(it) {
+      if (it.youtube) return 'https://i.ytimg.com/vi/' + encodeURIComponent(it.youtube) + '/hqdefault.jpg';
+      return it.miniatura || it.archivo;
+    }
+    function tile(it, lista) {
+      var i = lista.indexOf(it), video = Visor.esVideo(it);
+      var media = (video && !it.youtube && !it.miniatura)
+        ? '<video src="' + esc(it.archivo) + '#t=0.5" muted preload="metadata"></video>'
+        : '<img src="' + esc(thumb(it)) + '" alt="' + esc(it.titulo) + '" loading="lazy">';
+      return '<button class="g-item" type="button" data-i="' + i + '">' + media +
+        (video ? '<span class="g-play">' + ICON_PLAY + '</span>' : '') +
+        (it.titulo ? '<span class="g-cap">' + esc(it.titulo) + '</span>' : '') + '</button>';
+    }
+    function pintar(id, lista) {
+      var el = document.getElementById(id);
+      el.innerHTML = lista.map(function (it) { return tile(it, lista); }).join('');
+      el.querySelectorAll('.g-item').forEach(function (b) {
+        b.addEventListener('click', function () { Visor.abrir(lista, +b.dataset.i); });
+      });
+    }
+    function load() {
+      if (hecho) return; hecho = true;
+      var sec = document.getElementById('galeria');
+      Promise.all([
+        cargarJSON('galeria.json'),
+        cargarJSON('actividades.json').catch(function () { return []; })
+      ]).then(function (r) {
+        var propios = (r[0] || []).filter(function (it) { return it && (it.archivo || it.youtube); });
+        // Las fotos de las actividades se suman solas a la galería
+        var deEventos = [];
+        (r[1] || []).slice().sort(function (a, b) { return a.fecha < b.fecha ? 1 : -1; })
+          .forEach(function (a) { if (a && a.fecha) deEventos = deEventos.concat(fotosDeActividad(a)); });
+        var items = propios.concat(deEventos);
+        var fotos = items.filter(function (it) { return !Visor.esVideo(it); });
+        var videos = items.filter(Visor.esVideo);
+        if (items.length) pintar('gAll', items);
+        else document.getElementById('gAll').innerHTML = '<p class="empty">Pronto habrá contenido aquí.</p>';
+        pintar('gPhotos', fotos); pintar('gVideos', videos); pintar('gEvents', deEventos);
+        document.getElementById('gAllCount').textContent = items.length;
+        document.getElementById('gPhotoCount').textContent = fotos.length;
+        document.getElementById('gVideoCount').textContent = videos.length;
+        document.getElementById('gEventCount').textContent = deEventos.length;
+        // Ocultar las subpestañas sin contenido
+        sec.querySelector('[data-target="g-fotos"]').hidden = !fotos.length;
+        sec.querySelector('[data-target="g-videos"]').hidden = !videos.length;
+        sec.querySelector('[data-target="g-eventos"]').hidden = !deEventos.length;
+      }).catch(function () {
+        hecho = false;
+        document.getElementById('gAll').innerHTML = '<p class="empty">No se pudo cargar la galería en este momento.</p>';
+      });
+    }
+    return { load: load };
+  })();
+
+  // ================= Formulario de comentarios =================
+  (function () {
+    var f = document.getElementById('commentForm');
+    if (!f) return;
+    var st = document.getElementById('formStatus');
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (f._honey.value) return;
+      var btn = f.querySelector('button[type="submit"]');
+      var datos = {};
+      new FormData(f).forEach(function (v, k) { datos[k] = v; });
+      btn.disabled = true; st.className = 'form-status'; st.textContent = 'Enviando…';
+      fetch('https://formsubmit.co/ajax/' + f.dataset.email, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(datos)
+      }).then(function (r) { return r.json(); }).then(function (r) {
+        if (String(r.success) === 'true') {
+          st.className = 'form-status ok'; st.textContent = '¡Gracias! Tu comentario fue enviado.'; f.reset();
+        } else { throw new Error(r.message || 'error'); }
+      }).catch(function (err) {
+        // Si el envío directo falla, se ofrece Gmail con el mensaje ya escrito
+        var cuerpo = 'Nombre: ' + datos.nombre + '\nCorreo: ' + datos.correo + '\n\n' + datos.comentario;
+        var gmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(f.dataset.email) +
+          '&su=' + encodeURIComponent('Comentario desde tu página web') + '&body=' + encodeURIComponent(cuerpo);
+        st.className = 'form-status err';
+        st.innerHTML = 'No se pudo enviar desde aquí. <a href="' + gmail + '" target="_blank" rel="noopener">Envíalo con Gmail</a>: tu mensaje ya estará escrito.' +
+          (/activ/i.test(err && err.message) ? ' <span class="note">(Aviso para el administrador: el formulario aún no está activado en FormSubmit.)</span>' : '');
+      }).then(function () { btn.disabled = false; });
+    });
+  })();
+
+  // ================= Carruseles de fotos =================
+  document.querySelectorAll('.carousel').forEach(function (c) {
+    var track = c.querySelector('.c-track');
+    var slides = Array.prototype.slice.call(c.querySelectorAll('.c-slide'));
+    var dots = c.querySelector('.c-dots');
+    slides.forEach(function (s, i) {
+      var d = document.createElement('button');
+      d.type = 'button'; d.setAttribute('aria-label', 'Foto ' + (i + 1));
+      d.addEventListener('click', function () { ir(i); });
+      dots.appendChild(d);
+    });
+    function actual() { return Math.round(track.scrollLeft / track.clientWidth); }
+    function ir(i) { i = (i + slides.length) % slides.length; track.scrollTo({ left: i * track.clientWidth }); }
+    function marcar() {
+      var a = actual();
+      dots.querySelectorAll('button').forEach(function (d, i) { d.setAttribute('aria-selected', i === a ? 'true' : 'false'); });
+    }
+    c.querySelector('.c-prev').addEventListener('click', function () { ir(actual() - 1); });
+    c.querySelector('.c-next').addEventListener('click', function () { ir(actual() + 1); });
+    track.addEventListener('scroll', function () { window.requestAnimationFrame(marcar); });
+    c.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') ir(actual() - 1);
+      if (e.key === 'ArrowRight') ir(actual() + 1);
+    });
+    // Al pulsar una foto se abre en grande en el visor
+    var lista = slides.map(function (s) {
+      return { tipo: 'foto', archivo: s.querySelector('img').getAttribute('src'), titulo: s.querySelector('figcaption').textContent };
+    });
+    slides.forEach(function (s, i) { s.addEventListener('click', function () { Visor.abrir(lista, i); }); });
+    marcar();
+  });
+
+  // ================= Portada: citas y sellos que se alternan =================
+  function rotador(box, items, dots, opciones) {
+    if (!box || !dots || items.length === 0) return;
+    var actual = 0, timer = null, pausa = false;
+    var quieto = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    items.forEach(function (q, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', opciones.etiqueta(q, i));
+      b.addEventListener('click', function () { mostrar(i); reiniciar(); });
+      dots.appendChild(b);
+    });
+    function mostrar(i) {
+      actual = (i + items.length) % items.length;
+      items.forEach(function (q, k) {
+        q.classList.toggle('active', k === actual);
+        if (k === actual) q.removeAttribute('aria-hidden'); else q.setAttribute('aria-hidden', 'true');
+        q.querySelectorAll('a').forEach(function (a) { if (k === actual) a.removeAttribute('tabindex'); else a.setAttribute('tabindex', '-1'); });
+      });
+      dots.querySelectorAll('button').forEach(function (b, k) { b.setAttribute('aria-pressed', k === actual ? 'true' : 'false'); });
+    }
+    function reiniciar() {
+      clearTimeout(timer);
+      if (quieto || items.length < 2) return;
+      timer = setTimeout(function paso() {
+        if (!pausa && !document.hidden) mostrar(actual + 1);
+        timer = setTimeout(paso, opciones.duracion(items[actual]));
+      }, opciones.duracion(items[actual]));
+    }
+    box.addEventListener('mouseenter', function () { pausa = true; });
+    box.addEventListener('mouseleave', function () { pausa = false; });
+    box.addEventListener('focusin', function () { pausa = true; });
+    box.addEventListener('focusout', function () { pausa = false; });
+    // En pantallas táctiles: deslizar con el dedo hacia un lado u otro
+    var x0 = null;
+    box.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    box.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) { mostrar(actual + (dx < 0 ? 1 : -1)); reiniciar(); }
+    });
+    mostrar(0); reiniciar();
+  }
+  (function () {
+    var citas = document.querySelector('.home-quote');
+    if (citas) rotador(citas, Array.prototype.slice.call(citas.querySelectorAll('.hq')), citas.querySelector('.hq-dots'), {
+      etiqueta: function (q, i) { return 'Cita ' + (i + 1) + ': ' + q.querySelector('footer').textContent.split(',')[0]; },
+      // Cada cita permanece en pantalla según su extensión (mínimo 7 segundos)
+      duracion: function (q) { return Math.max(7000, q.querySelector('p').textContent.length * 55); }
+    });
+    var sellos = document.querySelector('.laurels');
+    if (sellos) rotador(sellos, Array.prototype.slice.call(sellos.querySelectorAll('.laurel-row > li')), sellos.querySelector('.l-dots'), {
+      etiqueta: function (q) { return q.querySelector('.l-year').textContent + ': ' + q.querySelector('.l-prize').textContent; },
+      duracion: function () { return 5500; }
+    });
+  })();
+
+  // ================= Portada: última entrada del blog =================
+  cargarJSON('entradas.json').then(function (d) {
+    var p = (d || []).filter(function (x) { return x && x.slug; }).sort(function (a, b) { return a.fecha < b.fecha ? 1 : -1; })[0];
+    if (!p) return;
+    document.getElementById('tileBlogTitle').textContent = p.titulo;
+    document.getElementById('tileBlogMore').textContent = 'Leer la última entrada';
+    document.getElementById('tileBlog').setAttribute('href', '#blog/' + p.slug);
+  }).catch(function () {});
+
+  // ================= Navegación por secciones =================
+  (function () {
+    var sections = Array.prototype.slice.call(document.querySelectorAll('main > section'));
+    var principales = sections.filter(function (s) { return !s.dataset.parent; });
+    var links = Array.prototype.slice.call(nav.querySelectorAll('a'));
+    var ids = sections.map(function (s) { return s.id; });
+    var main = document.getElementById('contenido');
+    var first = true;
+
+    // Enlaces "anterior / siguiente" al pie de cada sección principal
+    principales.forEach(function (s, i) {
+      var pager = document.createElement('div');
+      pager.className = 'pager';
+      var html = '';
+      if (i > 0) html += '<a class="prev" href="#' + principales[i - 1].id + '"><small>Anterior</small>← ' + principales[i - 1].dataset.title + '</a>';
+      if (i < principales.length - 1) html += '<a class="next" href="#' + principales[i + 1].id + '"><small>Siguiente</small>' + principales[i + 1].dataset.title + ' →</a>';
+      pager.innerHTML = html;
+      s.appendChild(pager);
+    });
+
+    function show() {
+      var id = location.hash.slice(1);
+      try { id = decodeURIComponent(id); } catch (e) {}
+      var post = null, sub = null;
+      if (id.indexOf('blog/') === 0) { post = id.slice(5).replace(/\/$/, ''); id = 'blog'; }
+      var el = id && document.getElementById(id);
+      // Si el enlace apunta a una subsección, abrir su sección madre
+      if (el && el.classList.contains('subpanel')) { sub = id; id = el.closest('section').id; }
+      if (ids.indexOf(id) === -1) id = ids[0];
+
+      var current = document.getElementById(id);
+      var navId = current.dataset.parent || id;
+      sections.forEach(function (s) { s.classList.toggle('active', s.id === id); });
+      links.forEach(function (a) { a.classList.toggle('active', a.getAttribute('href') === '#' + navId); });
+      document.querySelectorAll('.nav-group').forEach(function (g) {
+        g.querySelector('.nav-group-btn').classList.toggle('active', !!g.querySelector('a.active'));
+      });
+      if (sub) selectSub(current, sub);
+      if (id !== 'blog') document.title = 'Tadeo Palacios Valverde';
+
+      if (id === 'blog') Blog.open(post);
+      if (id === 'actividades') Actividades.load();
+      if (id === 'galeria') Galeria.load();
+      // Los reproductores de Spotify se cargan solo al abrir su sección
+      current.querySelectorAll('iframe[data-src]').forEach(function (f) { f.src = f.dataset.src; f.removeAttribute('data-src'); });
+
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', false);
+      cerrarGrupos();
+      if (document.activeElement && nav.contains(document.activeElement)) document.activeElement.blur();
+      if (!first) {
+        var top = window.innerWidth <= 920 ? main.getBoundingClientRect().top + window.scrollY - 68 : 0;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      } else if (location.hash) {
+        window.scrollTo(0, 0);
+      }
+      first = false;
+    }
+
+    window.addEventListener('hashchange', show);
+    show();
+  })();
+</script>
+</body>
+</html>
